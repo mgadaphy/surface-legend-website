@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle2, MessageCircle } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SCurveDivider } from "@/components/SCurveDivider";
 import { useTranslation } from "react-i18next";
 
 interface ServiceDetailProps {
@@ -13,6 +14,7 @@ interface ServiceDetailProps {
   processSteps: string[];
   whyChooseUs: string[];
   galleryImages?: string[];
+  heroImage?: string; // NEW: Optional hero image for split-layout
 }
 
 export function ServiceDetail({
@@ -22,7 +24,8 @@ export function ServiceDetail({
   benefits,
   processSteps,
   whyChooseUs,
-  galleryImages = []
+  galleryImages = [],
+  heroImage
 }: ServiceDetailProps) {
   const { t } = useTranslation();
 
@@ -30,29 +33,82 @@ export function ServiceDetail({
     <div className="min-h-screen bg-white">
       <Navigation currentPage="services" />
 
-      {/* HERO SECTION */}
-      <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-20 md:py-28">
-        <div className="container max-w-3xl mx-auto text-center">
-          <h1 className="mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-            {title}
-          </h1>
-          <p className="text-xl text-gray-700 mb-12">{subtitle}</p>
+      {/* HERO SECTION - Split Layout with S-Curve Division */}
+      <section className="relative bg-primary overflow-hidden">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-0 min-h-[500px]">
+            {/* Left Side - Content */}
+            <div className="flex flex-col justify-center py-16 md:py-20 lg:py-24 pr-0 lg:pr-12 relative z-10">
+              <h1 className="text-white mb-4 font-display">
+                {title}
+              </h1>
+              <p className="text-white/90 text-lg mb-8 max-w-xl leading-relaxed">
+                {subtitle}
+              </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact">
-              <Button className="bg-accent hover:bg-opacity-90 text-white px-8 py-3 font-semibold">
-                {t('service_details_page.hero.cta_quote')}
-              </Button>
-            </a>
-            <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white text-primary hover:bg-gray-100 px-8 py-3 font-semibold shadow-sm">
-                <MessageCircle className="w-4 h-4 mr-2" />
-                {t('service_details_page.hero.cta_whatsapp')}
-              </Button>
-            </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="/contact">
+                  <Button className="btn-primary">
+                    {t('service_details_page.hero.cta_quote')}
+                  </Button>
+                </a>
+                <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+                  <Button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    {t('service_details_page.hero.cta_whatsapp')}
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Side - Service Hero Image */}
+            <div className="relative h-[350px] lg:h-auto">
+              {heroImage ? (
+                <>
+                  <img
+                    src={heroImage}
+                    alt={title}
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Subtle gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-transparent"></div>
+                </>
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-primary-light to-accent flex items-center justify-center">
+                  <div className="text-center text-white/60 p-8">
+                    <p className="text-sm">Service Image</p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Vertical S-Curve Divider */}
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-24 -ml-12 pointer-events-none z-20">
+              <svg
+                className="w-full h-full"
+                viewBox="0 0 100 800"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient id="service-scurve-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#1E3A5F" stopOpacity="1" />
+                    <stop offset="50%" stopColor="#14B8A6" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="transparent" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M 0,0 Q 40,200 50,400 T 100,800 L 0,800 Z"
+                  fill="url(#service-scurve-gradient)"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Horizontal S-Curve Divider */}
+      <SCurveDivider variant="reverse" className="my-0" />
 
       {/* SERVICE OVERVIEW */}
       <section className="container py-20 md:py-28">

@@ -36,9 +36,10 @@ export default function InteriorPainting() {
             ]}
             galleryImages={[
                 "/assets/images/services/interior_painting_bedroom.png",
-                "/assets/images/services/residential_painting_living_room.png",
-                "/assets/images/services/interior_painting_kitchen.png"
+                "/assets/images/services/interior_painting_kitchen.png",
+                "/assets/images/services/residential_painting_living_room.png"
             ]}
+            heroImage="/assets/images/services/interior_painting_bedroom.png"
         />
     );
 }

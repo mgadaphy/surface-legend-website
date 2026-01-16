@@ -44,6 +44,7 @@ export default function CommercialPainting() {
         "/assets/images/services/commercial_painting_exterior.png",
         "/assets/images/services/commercial_painting_warehouse.png"
       ]}
+      heroImage="/assets/images/services/commercial_painting_office.png"
     />
   );
 }

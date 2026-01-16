@@ -41,9 +41,10 @@ export default function ExteriorPainting() {
       ]}
       galleryImages={[
         "/assets/images/services/exterior_painting_house.png",
-        "/assets/images/services/commercial_painting_exterior.png",
-        "/assets/images/services/exterior_painting_villa.png"
+        "/assets/images/services/exterior_painting_villa.png",
+        "/assets/images/services/commercial_painting_exterior.png"
       ]}
+      heroImage="/assets/images/services/exterior_painting_house.png"
     />
   );
 }

@@ -44,6 +44,7 @@ export default function ResidentialPainting() {
         "/assets/images/services/residential_painting_living_room.png",
         "/assets/images/services/residential_painting_detail.png"
       ]}
+      heroImage="/assets/images/services/residential_painting_hero.png"
     />
   );
 }
