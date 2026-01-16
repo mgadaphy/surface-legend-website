@@ -27,38 +27,43 @@ export default function Home() {
       />
       <Navigation currentPage="home" />
 
-      {/* SECTION 1: HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/images/hero-paint-texture.jpg"
-            alt="Paint texture"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
-        </div>
+      {/* SECTION 1: HERO - Split Layout */}
+      <section className="relative bg-primary overflow-hidden">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-0 min-h-[600px] md:min-h-[700px]">
+            {/* Left Side - Content */}
+            <div className="flex flex-col justify-center py-16 md:py-24 lg:py-32 pr-0 lg:pr-12">
+              <div className="text-accent-label mb-4 text-accent-light">{t('home.hero_label')}</div>
+              <h1 className="text-white mb-6 font-display">
+                {t('home.hero_title')}
+              </h1>
+              <p className="text-white/90 text-lg mb-8 max-w-xl">
+                {t('home.hero_subtitle')}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+                  <Button className="btn-primary">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    {t('home.hero_cta_whatsapp')}
+                  </Button>
+                </a>
+                <a href="/services">
+                  <Button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
+                    {t('home.hero_cta_services')}
+                  </Button>
+                </a>
+              </div>
+            </div>
 
-        <div className="relative container py-24 md:py-32 flex flex-col justify-center min-h-[600px]">
-          <div className="max-w-2xl">
-            <div className="text-accent-label mb-4">{t('home.hero_label')}</div>
-            <h1 className="text-white mb-6 font-display">
-              {t('home.hero_title')}
-            </h1>
-            <p className="text-white/90 text-lg mb-8 max-w-xl">
-              {t('home.hero_subtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
-                <Button className="btn-primary">
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  {t('home.hero_cta_whatsapp')}
-                </Button>
-              </a>
-              <a href="/services">
-                <Button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
-                  {t('home.hero_cta_services')}
-                </Button>
-              </a>
+            {/* Right Side - Professional Painted Interior Image */}
+            <div className="relative h-[400px] lg:h-auto">
+              <img
+                src="/images/hero-painted-interior.jpg"
+                alt="Luxury interior with professional navy blue painted accent wall"
+                className="w-full h-full object-cover"
+              />
+              {/* Subtle gradient overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-transparent"></div>
             </div>
           </div>
         </div>
