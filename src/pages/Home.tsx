@@ -27,12 +27,12 @@ export default function Home() {
       />
       <Navigation currentPage="home" />
 
-      {/* SECTION 1: HERO - Split Layout */}
+      {/* SECTION 1: HERO - Split Layout with S-Curve Division */}
       <section className="relative bg-primary overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-0 min-h-[600px] md:min-h-[700px]">
             {/* Left Side - Content */}
-            <div className="flex flex-col justify-center py-16 md:py-24 lg:py-32 pr-0 lg:pr-12">
+            <div className="flex flex-col justify-center py-16 md:py-24 lg:py-32 pr-0 lg:pr-12 relative z-10">
               <div className="text-accent-label mb-4 text-accent-light">{t('home.hero_label')}</div>
               <h1 className="text-white mb-6 font-display">
                 {t('home.hero_title')}
@@ -64,6 +64,29 @@ export default function Home() {
               />
               {/* Subtle gradient overlay for depth */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-transparent"></div>
+            </div>
+
+            {/* Vertical S-Curve Divider - Logo-inspired smooth transition */}
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-24 -ml-12 pointer-events-none z-20">
+              <svg
+                className="w-full h-full"
+                viewBox="0 0 100 800"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient id="vertical-scurve-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#1E3A5F" stopOpacity="1" />
+                    <stop offset="50%" stopColor="#14B8A6" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="transparent" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                {/* Smooth S-curve path */}
+                <path
+                  d="M 0,0 Q 40,200 50,400 T 100,800 L 0,800 Z"
+                  fill="url(#vertical-scurve-gradient)"
+                />
+              </svg>
             </div>
           </div>
         </div>
