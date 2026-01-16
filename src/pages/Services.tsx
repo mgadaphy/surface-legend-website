@@ -122,6 +122,9 @@ export default function Services() {
         </div>
       </section>
 
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="subtle" className="my-0" />
+
       {/* SECTION 3: PAINTING SOLUTIONS */}
       <section className="container py-20 md:py-28">
         <h2 className="mb-4">
@@ -181,6 +184,9 @@ export default function Services() {
           ))}
         </div>
       </section>
+
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="default" className="my-0" />
 
       {/* SECTION 4: DECORATIVE & SPECIALIZED FINISHES */}
       <section className="bg-secondary py-20 md:py-28">

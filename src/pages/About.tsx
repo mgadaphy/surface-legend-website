@@ -129,6 +129,9 @@ export default function About() {
         </div>
       </section>
 
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="default" className="my-0" />
+
       {/* SECTION 3: MISSION, VISION & PROMISE */}
       <section className="container py-20 md:py-28">
         <div className="grid md:grid-cols-3 gap-8">
@@ -160,6 +163,9 @@ export default function About() {
           </Card>
         </div>
       </section>
+
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 4: BRAND ECOSYSTEM */}
       <section className="bg-secondary py-20 md:py-28">
@@ -269,6 +275,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="reverse" className="my-0" />
 
       {/* SECTION 5: WHAT MAKES US UNIQUE */}
       <section className="container py-20 md:py-28">

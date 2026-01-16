@@ -198,6 +198,9 @@ export default function Portfolio() {
         )}
       </section>
 
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="default" className="my-0" />
+
       {/* STATS SECTION */}
       <section className="bg-secondary py-20 md:py-28">
         <div className="container">
