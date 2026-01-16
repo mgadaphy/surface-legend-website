@@ -189,7 +189,7 @@ export default function Contact() {
 
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700">{t('contact_page.form.type_label')}</label>
-                <Select onValueChange={(val) => handleSelectChange(val, 'type')} required>
+                <Select onValueChange={(val) => handleSelectChange(val, 'type')} defaultValue="services" required>
                   <SelectTrigger>
                     <SelectValue placeholder={t('contact_page.form.type_placeholder')} />
                   </SelectTrigger>
@@ -205,7 +205,7 @@ export default function Contact() {
               {formData.type === 'services' && (
                 <div className="space-y-2 animate-in fade-in slide-in-from-top-2">
                   <label className="text-sm font-medium text-gray-700">{t('contact_page.form.service_label')}</label>
-                  <Select onValueChange={(val) => handleSelectChange(val, 'specificInterest')}>
+                  <Select onValueChange={(val) => handleSelectChange(val, 'specificInterest')} defaultValue="residential">
                     <SelectTrigger>
                       <SelectValue placeholder={t('contact_page.form.service_placeholder')} />
                     </SelectTrigger>
