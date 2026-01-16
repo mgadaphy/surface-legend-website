@@ -1,0 +1,1231 @@
+{
+    "general": {
+        "title": "Surface Legend",
+        "description": "Peinture et Revêtements Premium"
+    },
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Services",
+        "portfolio": "Réalisations",
+        "contact": "Contact",
+        "academy": "Académie d'Art",
+        "products": "Peintures"
+    },
+    "home": {
+        "hero_title": "Transformer les Espaces avec des Finitions Légendaires",
+        "hero_subtitle": "Découvrez le mélange parfait d'artisanat, d'innovation et d'art. Surface Legend sublime les maisons, les entreprises et les espaces architecturaux avec des revêtements supérieurs et des professionnels experts.",
+        "hero_cta_whatsapp": "Obtenir un Devis Gratuit sur WhatsApp",
+        "hero_cta_services": "Voir Nos Services",
+        "who_we_are": {
+            "label": "Notre Écosystème",
+            "title": "Un Écosystème Complet pour la Peinture, les Produits & la Formation",
+            "description": "Surface Legend est la marque de peinture de référence au Cameroun — combinant des services professionnels, des produits haute performance et une académie formant la prochaine génération de peintres qualifiés.",
+            "mission": "Notre mission est simple : offrir l'excellence sur chaque surface que nous touchons.",
+            "cards": {
+                "services": "Services Premium",
+                "services_desc": "Peinture professionnelle pour tous secteurs",
+                "products": "Nos Peintures",
+                "products_desc": "Revêtements haute performance conçus pour le Cameroun",
+                "academy": "Académie d'Art",
+                "academy_desc": "Formation de la prochaine génération de professionnels",
+                "innovation": "Innovation",
+                "innovation_desc": "Techniques modernes et standards professionnels"
+            }
+        },
+        "services": {
+            "label": "Notre Offre",
+            "title": "Nos Services de Peinture & Finition",
+            "description": "Des transformations résidentielles aux revêtements industriels, nos services sont conçus pour répondre aux plus hauts standards de durabilité et de beauté.",
+            "items": {
+                "residential": "Peinture Résidentielle",
+                "residential_desc": "Redonnez vie à votre maison avec des finitions belles et durables.",
+                "commercial": "Peinture Commerciale",
+                "commercial_desc": "Améliorez l'image de votre entreprise avec des revêtements propres et professionnels.",
+                "industrial": "Revêtements Industriels",
+                "industrial_desc": "Protections durables pour usines, structures en acier, et plus.",
+                "waterproofing": "Étanchéité & Réparations",
+                "waterproofing_desc": "Stoppez les fuites et l'humidité avec une expertise professionnelle.",
+                "panels": "Panneaux 3D & Projets Spéciaux",
+                "panels_desc": "Apportez profondeur, créativité et luxe à vos intérieurs.",
+                "epoxy": "Époxydes & Revêtements Spéciaux",
+                "epoxy_desc": "Revêtements de protection avancés pour applications spécialisées."
+            },
+            "cta": "Explorer Tous les Services"
+        },
+        "products": {
+            "label": "Revêtements Premium",
+            "title": "Revêtements Premium Conçus pour le Cameroun",
+            "description": "Notre gamme exclusive de peintures offre une durabilité exceptionnelle, une forte couverture et des formulations adaptées au climat.",
+            "benefits": [
+                "Rétention durable de la couleur",
+                "Résistance à la moisissure et à l'humidité",
+                "Application lisse",
+                "Finitions durables intérieur & extérieur",
+                "Formulations de qualité professionnelle"
+            ],
+            "cta": "En Savoir Plus sur Nos Produits"
+        },
+        "academy": {
+            "label": "Développement Professionnel",
+            "title": "Formez-vous avec les Experts. Devenez un Peintre Pro.",
+            "description": "L'Académie d'Art Surface Legend équipe les apprentis et peintres en activité avec des techniques modernes et une maîtrise des produits.",
+            "features_title": "Les Programmes Incluent :",
+            "features": [
+                "Peinture Basique & Professionnelle",
+                "Préparation de Surface & Finition",
+                "Techniques de Revêtement Avancées",
+                "Applications Décoratives & Texturées",
+                "Normes de Sécurité & Conduite Pro"
+            ],
+            "cta": "Rejoindre le Programme"
+        },
+        "why_us": {
+            "label": "Notre Engagement",
+            "title": "Pourquoi les Clients Font Confiance à Surface Legend",
+            "reasons": [
+                "Qualité Premium & Finitions Pro",
+                "Équipes Qualifiées, Formées, Certifiées",
+                "Produits de Peinture Haute Performance",
+                "Chantiers Propres & Sécurité",
+                "Prix Transparents & Communication Claire",
+                "Flexibilité de Service Nationale"
+            ]
+        },
+        "portfolio": {
+            "label": "Nos Réalisations",
+            "title": "Voyez Ce Que Nous Avons Créé",
+            "description": "Des intérieurs élégants aux projets industriels complexes, notre travail parle de lui-même.",
+            "cta": "Voir Tout le Portfolio"
+        },
+        "testimonials": {
+            "label": "Avis Clients",
+            "title": "Ce Que Disent Nos Clients",
+            "items": [
+                {
+                    "text": "Surface Legend a complètement transformé notre maison. Le souci du détail était exceptionnel.",
+                    "name": "Amara Nkomo",
+                    "role": "Propriétaire, Douala"
+                },
+                {
+                    "text": "Les travaux de peinture commerciale ont été terminés à temps et ont dépassé nos attentes.",
+                    "name": "Jean-Pierre Dubois",
+                    "role": "Chef d'Entreprise, Yaoundé"
+                },
+                {
+                    "text": "Leurs revêtements industriels se sont révélés durables et de haute qualité.",
+                    "name": "Dr. Kwame Asante",
+                    "role": "Facility Manager, Limbe"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Rendons Votre Espace Légendaire",
+            "description": "Prêt à transformer votre espace ? Contactez-nous dès aujourd'hui.",
+            "whatsapp": "Discuter sur WhatsApp",
+            "quote": "Demander un Devis",
+            "call": "Appelez-nous"
+        },
+        "contact_info": {
+            "title": "Informations de Contact",
+            "phone_label": "Téléphone",
+            "hours_label": "Heures d'Ouverture",
+            "locations_label": "Localisations",
+            "hours_week": "Lun - Jeu : 8h00 - 18h00",
+            "hours_fri": "Ven : Fermé",
+            "hours_weekend": "Sam - Dim : 8h00 - 18h00",
+            "locations_list": "Douala • Yaoundé • Bamenda • Buea & Limbe",
+            "call_us": "Appelez-nous"
+        }
+    },
+    "about": {
+        "hero": {
+            "subtitle": "Notre Histoire",
+            "title": "À Propos de Surface Legend",
+            "intro_bold": "Un Écosystème Complet pour la Peinture, les Revêtements Premium & la Formation Professionnelle",
+            "intro_text": "Surface Legend est plus qu'une entreprise de peinture — c'est une marque visionnaire bâtie sur l'excellence, l'artisanat et l'innovation. À travers nos divisions intégrées de services de peinture professionnelle, de fabrication de peinture premium et de formation de peintres, nous façonnons l'avenir de l'industrie de la finition de surface au Cameroun."
+        },
+        "story": {
+            "title": "Notre Histoire : Bâtie sur l'Artisanat. Guidée par l'Innovation.",
+            "p1": "Surface Legend a commencé avec une conviction simple : chaque surface a le potentiel d'être extraordinaire. De la transformation de maisons et bureaux à la création de revêtements protecteurs pour les environnements industriels, nous avons vu une opportunité d'élever les standards de la peinture, de la finition et du soin des surfaces à travers le Cameroun.",
+            "p2": "Ce qui a commencé comme un service de peinture dédié a progressivement évolué vers quelque chose de beaucoup plus grand — un écosystème complet conçu pour offrir une qualité inégalée et autonomiser les professionnels.",
+            "today_intro": "Aujourd'hui, Surface Legend abrite :",
+            "services_title": "Services Surface Legend",
+            "services_desc": "Une division professionnelle de peinture et de finition décorative.",
+            "products_title": "Peinture Surface Legend",
+            "products_desc": "Une gamme premium de produits de revêtement haute performance.",
+            "academy_title": "Académie d'Art Surface Legend",
+            "academy_desc": "Une institution de formation habilitant la prochaine génération de peintres qualifiés.",
+            "growth": "Notre croissance reflète la demande croissante pour un travail de qualité, des solutions de revêtement modernes et des professionnels formés capables d'exécuter à un standard supérieur.",
+            "conclusion": "Surface Legend se positionne comme un leader dans la transformation des espaces, l'élévation des surfaces et le façonnement des talents."
+        },
+        "mission_vision": {
+            "mission_title": "Notre Mission",
+            "mission_text": "Fournir des services de peinture exceptionnels, développer des produits de peinture premium adaptés au climat du Cameroun, et former des peintres qualifiés qui maintiennent les plus hauts standards professionnels.",
+            "vision_title": "Notre Vision",
+            "vision_text": "Devenir l'écosystème le plus fiable et influent dans l'industrie de la peinture et des revêtements — transformant les espaces, autonomisant les gens et établissant de nouvelles références de qualité à travers l'Afrique.",
+            "promise_title": "Notre Promesse de Marque",
+            "promise_text": "Nous promettons des finitions légendaires — combinant des matériaux premium, des professionnels qualifiés et un engagement envers l'excellence sur lequel les clients peuvent compter."
+        },
+        "divisions": {
+            "title": "Une Marque Bâtie sur Trois Divisions Puissantes",
+            "subtitle": "Surface Legend opère à travers un écosystème unique et interconnecté. Chaque division renforce l'autre — créant un cycle de qualité, de cohérence et de confiance.",
+            "services_title": "Services Surface Legend",
+            "services_subtitle": "Peinture Professionnelle & Solutions de Surface",
+            "services_items": {
+                "residential": "Peinture Résidentielle & Commerciale",
+                "industrial": "Revêtements Industriels",
+                "pop": "POP & Finitions Décoratives",
+                "epoxy": "Sols Époxy",
+                "waterproofing": "Étanchéité",
+                "panels": "Panneaux Muraux 3D",
+                "spray": "Finitions au Pistolet"
+            },
+            "services_note": "Nous combinons l'art avec l'excellence technique pour produire des finitions qui durent et inspirent.",
+            "products_title": "Peinture Surface Legend",
+            "products_subtitle": "Produits de Revêtement Premium Conçus pour le Cameroun",
+            "products_items": {
+                "durability": "Durabilité longue durée",
+                "application": "Application lisse",
+                "coverage": "Haute efficacité de couverture",
+                "weather": "Résistance aux intempéries",
+                "mold": "Protection contre la moisissure & l'humidité"
+            },
+            "products_note": "Les professionnels font confiance à la Peinture Surface Legend pour sa performance constante et sa formulation de qualité premium.",
+            "academy_title": "Académie d'Art Surface Legend",
+            "academy_subtitle": "Formation de la Prochaine Génération de Professionnels de Surface",
+            "academy_items": {
+                "techniques": "Techniques de peinture",
+                "coatings": "Revêtements avancés",
+                "decorative": "Finitions décoratives",
+                "spray": "Opération de machine à pulvériser",
+                "epoxy": "Application d'époxy",
+                "conduct": "Conduite professionnelle & sécurité"
+            },
+            "academy_note": "Nous autonomisons les apprentis, les créatifs et les peintres en activité pour devenir des professionnels confiants et prêts pour l'industrie."
+        },
+        "unique": {
+            "title": "Ce Qui Nous Rend Uniques ?",
+            "items": {
+                "premium": {
+                    "title": "Peinture Premium + Compétences Premium",
+                    "desc": "Nous n'appliquons pas seulement la peinture — nous la produisons et formons les personnes qui l'utilisent."
+                },
+                "tools": {
+                    "title": "Outils & Techniques Avancés",
+                    "desc": "Des machines à pulvériser aux systèmes de revêtement industriel, nous utilisons des équipements modernes pour des résultats supérieurs."
+                },
+                "clean": {
+                    "title": "Travail Propre, Sûr & Professionnel",
+                    "desc": "Chaque projet est exécuté avec discipline, sécurité et respect des espaces clients."
+                },
+                "trained": {
+                    "title": "Équipes Formées & Certifiées",
+                    "desc": "Nos équipes proviennent de l'Académie d'Art, assurant une qualité constante."
+                },
+                "nationwide": {
+                    "title": "Portée de Service Nationale",
+                    "desc": "Basé à Douala, desservant les grandes villes et acceptant des projets à travers le Cameroun."
+                },
+                "legacy": {
+                    "title": "Un Héritage de Transformation",
+                    "desc": "Notre travail élève les environnements et inspire confiance dans chaque espace que nous touchons."
+                }
+            }
+        },
+        "leadership": {
+            "title": "Leadership & Expertise",
+            "subtitle": "Surface Legend est dirigé par des professionnels passionnés dédiés à l'excellence et l'innovation dans l'industrie de la peinture et des revêtements.",
+            "founder_name": "Njoya Iscadarou Mbipeh",
+            "founder_role": "Fondateur, Formateur Principal & Coordinateur de Projet",
+            "founder_desc": "Avec des années de pratique dédiée et d'expertise en peinture, revêtements et formation professionnelle, Njoya dirige la mission de Surface Legend pour transformer les espaces et autonomiser les professionnels à travers le Cameroun."
+        },
+        "cta": {
+            "title": "Prêt à Transformer Votre Espace ?",
+            "subtitle": "Que vous ayez besoin de services de peinture professionnels, de produits de peinture premium ou d'opportunités de formation, Surface Legend est là pour offrir l'excellence.",
+            "whatsapp": "Discutez avec Nous sur WhatsApp",
+            "services": "Explorez Nos Services",
+            "join": "Rejoignez l'Académie d'Art"
+        },
+        "contact_info": {
+            "phone": "Téléphone",
+            "email": "Email",
+            "business_hours": "Heures d'Ouverture",
+            "mon_thu": "Lun - Jeu : 8:00 - 18:00",
+            "fri": "Ven : Fermé",
+            "sat_sun": "Sam - Dim : 8:00 - 18:00",
+            "locations": "Emplacements",
+            "locations_list": "Douala • Yaoundé • Bamenda • Buea & Limbe"
+        }
+    },
+    "services_page": {
+        "hero": {
+            "label": "Solutions Complètes",
+            "title": "Nos Services",
+            "subtitle": "Peinture Premium, Finitions Décoratives & Solutions de Revêtement Avancées",
+            "description": "Surface Legend offre une gamme complète de services de peinture, de revêtement et de transformation de surface, alimentée par des professionnels qualifiés et nos propres produits de peinture premium. Que vous rénoviez une maison, modernisiez des espaces commerciaux ou protégiez des structures industrielles, nous apportons art, durabilité et expertise technique à chaque projet."
+        },
+        "overview": {
+            "title": "Un Écosystème Complet de Solutions de Surface",
+            "description": "Nos services sont organisés en trois catégories majeures, assurant clarté et commodité pour nos clients. Des simples travaux de peinture aux revêtements avancés et installations décoratives, Surface Legend offre des solutions pour chaque espace et chaque vision.",
+            "cards": {
+                "painting": {
+                    "title": "Solutions de Peinture",
+                    "desc": "Services de peinture beaux, durables et exécutés professionnellement pour maisons, bureaux et bâtiments commerciaux."
+                },
+                "decorative": {
+                    "title": "Finitions Décoratives & Spécialisées",
+                    "desc": "Solutions décoratives sophistiquées et finitions artistiques modernes qui donnent vie à vos idées de design."
+                },
+                "industrial": {
+                    "title": "Revêtements Industriels & Protecteurs",
+                    "desc": "Protection de surface haute performance conçue pour endurer des conditions exigeantes."
+                }
+            }
+        },
+        "painting": {
+            "title": "Solutions de Peinture",
+            "description": "Services de peinture beaux, durables et exécutés professionnellement pour maisons, bureaux et bâtiments commerciaux. Notre équipe utilise la peinture Surface Legend pour une qualité constante, une finition lisse et une performance de couleur longue durée.",
+            "items": {
+                "residential": {
+                    "title": "Peinture Résidentielle",
+                    "desc": "Transformez votre maison avec des couleurs riches et élégantes et une finition impeccable. Nous améliorons les salons, chambres, cuisines, halls et intérieurs ou extérieurs complets de maison."
+                },
+                "commercial": {
+                    "title": "Peinture Commerciale",
+                    "desc": "Peinture de qualité professionnelle pour bureaux, magasins, hôtels, restaurants, écoles et environnements d'affaires qui exigent un look propre et moderne."
+                },
+                "interior": {
+                    "title": "Peinture Intérieure",
+                    "desc": "Finition murale intérieure fine avec des couches lisses, murs d'accent, options de texture et touches décoratives premium."
+                },
+                "exterior": {
+                    "title": "Peinture Extérieure",
+                    "desc": "Revêtements résistants aux intempéries conçus pour endurer chaleur, pluie et humidité — gardant votre bâtiment vibrant et protégé pour des années."
+                },
+                "metal": {
+                    "title": "Peinture sur Métal",
+                    "desc": "Revêtements antirouille et protecteurs pour portails, balustrades, balcons et éléments structurels en acier."
+                },
+                "roof": {
+                    "title": "Peinture de Toiture",
+                    "desc": "Services de rénovation de toiture offrant des revêtements imperméables et résistants aux UV qui restaurent l'apparence et prolongent la durée de vie du toit."
+                },
+                "waterproofing": {
+                    "title": "Solutions d'Étanchéité",
+                    "desc": "Prévenir et traiter les fuites, l'intrusion d'humidité et l'humidité des murs avec des systèmes d'étanchéité professionnels."
+                }
+            }
+        },
+        "decorative": {
+            "title": "Finitions Décoratives & Spécialisées",
+            "description": "Améliorez la beauté de vos intérieurs avec des solutions décoratives sophistiquées et des finitions artistiques modernes. Des plafonds POP aux murs texturés, Surface Legend mélange créativité et technique pour donner vie à vos idées de design.",
+            "items": {
+                "pop": {
+                    "title": "Design & Installation POP (Plâtre)",
+                    "desc": "Designs artistiques de plafond et mur qui ajoutent profondeur, élégance et caractère aux intérieurs."
+                },
+                "texture": {
+                    "title": "Texture & Finitions Décoratives",
+                    "desc": "Revêtements texturés premium, effets design et finitions artistiques adaptés à votre style préféré."
+                },
+                "panels": {
+                    "title": "Panneaux Muraux 3D",
+                    "desc": "Installations 3D élégantes pour intérieurs de luxe, ajoutant dimension et attrait moderne."
+                },
+                "wallpaper": {
+                    "title": "Installation de Papier Peint",
+                    "desc": "Installation de papier peint parfaitement alignée, sans bulles qui élève votre espace instantanément."
+                },
+                "furniture": {
+                    "title": "Restauration de Meubles & Revêtement Bois",
+                    "desc": "Restaurer les portes en bois, tables, armoires et meubles avec de beaux revêtements protecteurs."
+                },
+                "artistic": {
+                    "title": "Effets Muraux Artistiques",
+                    "desc": "Finitions personnalisées incluant textures métalliques, effets marbrés, lavis de couleur et plus encore."
+                }
+            }
+        },
+        "industrial": {
+            "title": "Revêtements Industriels & Protecteurs",
+            "description": "Protection de surface haute performance pour usines, entrepôts, structures en acier et environnements commerciaux. Nos revêtements sont conçus pour endurer des conditions exigeantes.",
+            "items": {
+                "epoxy": {
+                    "title": "Revêtement de Sol Époxy",
+                    "desc": "Sols époxy sans joint, solides et visuellement attrayants idéaux pour maisons, salles d'exposition, bureaux, garages et environnements industriels."
+                },
+                "steel": {
+                    "title": "Revêtement d'Acier Industriel",
+                    "desc": "Systèmes résistants à la corrosion qui protègent les structures en acier de la rouille et des dommages environnementaux."
+                },
+                "mold": {
+                    "title": "Peinture Anti-Moisissure",
+                    "desc": "Revêtements conçus pour traiter et prévenir la croissance de moisissure dans les zones sujettes à l'humidité."
+                },
+                "highrise": {
+                    "title": "Peinture d'Immeubles de Grande Hauteur",
+                    "desc": "Peinture extérieure spécialisée pour immeubles à plusieurs étages — utilisant un équipement de sécurité approprié et du personnel formé."
+                },
+                "protective": {
+                    "title": "Revêtements Protecteurs",
+                    "desc": "Revêtements conçus pour protéger les surfaces des produits chimiques, de l'impact, de la lumière UV et des intempéries difficiles."
+                }
+            }
+        },
+        "why_choose": {
+            "title": "Pourquoi Les Clients Nous Choisissent",
+            "items": {
+                "materials": {
+                    "title": "Matériaux Premium",
+                    "desc": "Nous utilisons notre propre peinture Surface Legend pour tous les projets — assurant une qualité constante et une durabilité à long terme."
+                },
+                "team": {
+                    "title": "Professionnels Qualifiés",
+                    "desc": "Notre équipe est composée de peintres formés et certifiés de l'Académie d'Art Surface Legend."
+                },
+                "tools": {
+                    "title": "Outils & Techniques Avancés",
+                    "desc": "Des machines à pulvériser aux systèmes époxy, nous utilisons des équipements modernes pour une finition raffinée."
+                },
+                "safety": {
+                    "title": "Approche Sécurité D'abord",
+                    "desc": "Chaque projet suit des normes de sécurité strictes pour notre équipe et votre propriété."
+                },
+                "transparent": {
+                    "title": "Processus Transparents",
+                    "desc": "Devis clairs, délais honnêtes et communication fiable tout au long du projet."
+                },
+                "nationwide": {
+                    "title": "Flexibilité Nationale",
+                    "desc": "Nous déployons des équipes à travers le Cameroun pour des projets de toutes tailles."
+                }
+            }
+        },
+        "cta": {
+            "title": "Prêt à Démarrer Votre Projet ?",
+            "description": "Discutons de vos besoins de transformation de surface et créons une solution adaptée à votre vision.",
+            "view_details": "Voir les Détails du Service",
+            "whatsapp": "Discutez avec Nous sur WhatsApp",
+            "quote": "Demander un Devis Gratuit"
+        }
+    },
+    "service_details": {
+        "residential": {
+            "title": "Peinture Résidentielle",
+            "subtitle": "Transformez votre maison avec des finitions élégantes et durables.",
+            "overview": "Votre maison mérite une finition qui reflète le confort, la beauté et le soin. Le service de peinture résidentielle de Surface Legend apporte chaleur, élégance et protection premium à chaque partie de votre maison — des chambres et salons aux murs extérieurs et boiseries détaillées. Notre équipe prépare méticuleusement chaque surface et applique la peinture premium Surface Legend pour une finition lisse, cohérente et durable. Que vous rafraîchissiez une seule pièce ou redessiniez toute votre maison, nous assurons une transformation que vous adorerez.",
+            "benefits": {
+                "0": "Revêtements premium résistants au climat",
+                "1": "Finition lisse et propre sans éclaboussures",
+                "2": "Conseils personnalisés sur la couleur et la finition",
+                "3": "Préparation professionnelle de la surface",
+                "4": "Protection contre les taches, l'humidité et la décoloration",
+                "5": "Équipe amicale et respectueuse à domicile",
+                "6": "Réalisation de projet rapide et propre"
+            },
+            "process": {
+                "0": "Inspection : Nous évaluons votre espace et discutons de vos objectifs.",
+                "1": "Préparation : Décapage, ponçage, lissage et apprêt.",
+                "2": "Application : Brosse, rouleau ou pulvérisation — selon la finition.",
+                "3": "Détails : Bords nets, couches uniformes, lignes parfaites.",
+                "4": "Contrôle Qualité : Chaque projet est vérifié minutieusement.",
+                "5": "Remise : Votre maison rafraîchie est impeccable et complète."
+            },
+            "why_us": {
+                "0": "Peintres hautement formés et certifiés",
+                "1": "Produits de peinture premium Surface Legend",
+                "2": "Environnement de travail propre et respectueux",
+                "3": "Prix clairs et sans frais cachés",
+                "4": "Satisfaction garantie",
+                "5": "Disponibilité nationale"
+            }
+        },
+        "commercial": {
+            "title": "Peinture Commerciale",
+            "subtitle": "Des finitions professionnelles qui valorisent l'image de votre entreprise.",
+            "overview": "Les espaces commerciaux exigent durabilité, style et efficacité. Surface Legend fournit des services de peinture qui élèvent les bureaux, hôtels, restaurants et environnements de vente au détail tout en minimisant les perturbations des opérations quotidiennes. Notre équipe expérimentée comprend les exigences uniques des projets commerciaux — de la coordination des horaires au maintien des normes professionnelles tout au long. Nous utilisons la peinture premium Surface Legend et des techniques avancées pour créer des finitions qui reflètent la qualité et le professionnalisme de votre marque.",
+            "benefits": {
+                "0": "Rotation rapide et efficace",
+                "1": "Revêtements premium pour zones à fort trafic",
+                "2": "Apparence propre et professionnelle",
+                "3": "Planification flexible (week-ends, soirées)",
+                "4": "Pratiques de travail conformes à la sécurité",
+                "5": "Perturbation minimale des opérations commerciales",
+                "6": "Finitions durables qui résistent à un usage intensif"
+            },
+            "process": {
+                "0": "Consultation : Comprendre vos besoins commerciaux et échéanciers.",
+                "1": "Planification : Programmer le travail pendant les heures creuses pour minimiser les perturbations.",
+                "2": "Préparation de Surface : Nettoyage professionnel et apprêt.",
+                "3": "Application : Application de revêtement de haute qualité avec précision.",
+                "4": "Assurance Qualité : Inspection minutieuse pour la cohérence et la durabilité.",
+                "5": "Visite Finale : Assurer une satisfaction complète et une remise professionnelle."
+            },
+            "why_us": {
+                "0": "Expérience avec les projets commerciaux",
+                "1": "Planification flexible pour les opérations commerciales",
+                "2": "Matériaux industriels premium",
+                "3": "Équipe professionnelle et certifiée",
+                "4": "Gestion de projet transparente",
+                "5": "Garantie sur tous les travaux"
+            }
+        },
+        "interior": {
+            "title": "Peinture Intérieure",
+            "subtitle": "Créez l'atmosphère parfaite avec des finitions intérieures impeccables.",
+            "overview": "Vos murs intérieurs donnent le ton à tout votre espace. Des chambres apaisantes aux salons vibrants et espaces de travail professionnels, le service de peinture intérieure de Surface Legend offre des résultats lisses, riches et durables. Nous nous spécialisons dans l'exécution de précision — lignes nettes, couches uniformes et protection soigneuse de vos meubles et sols. Utilisant la peinture premium Surface Legend à faible odeur, nous garantissons un nouveau look sans tracas.",
+            "benefits": {
+                "0": "Finition lisse impeccable",
+                "1": "Couleur vibrante et durable",
+                "2": "Peintures écologiques à faible odeur",
+                "3": "Protection des meubles et sols",
+                "4": "Conseils d'experts en couleur",
+                "5": "Exécution propre et soignée",
+                "6": "Travail minutieux sur les plinthes et plafonds"
+            },
+            "process": {
+                "0": "Consultation : Choix des couleurs et finitions.",
+                "1": "Protection : Couverture des meubles et sols.",
+                "2": "Préparation : Reouchage des trous et ponçage.",
+                "3": "Apprêt : Garantie d'une bonne adhérence.",
+                "4": "Peinture : Application de couches de finition premium.",
+                "5": "Nettoyage : Enlèvement de tout matériel et poussière.",
+                "6": "Inspection : Vérification finale avec vous."
+            },
+            "why_us": {
+                "0": "Attention aux détails",
+                "1": "Peintures premium à faible odeur",
+                "2": "Respect de votre propriété",
+                "3": "Conseils professionnels en couleur",
+                "4": "Politique de chantier propre",
+                "5": "Garantie de satisfaction"
+            }
+        },
+        "waterproofing": {
+            "title": "Solutions d'Étanchéité",
+            "subtitle": "Protégez votre propriété de l'humidité, des fuites et des dommages.",
+            "overview": "Les dégâts des eaux sont un destructeur silencieux des bâtiments. Surface Legend offre des solutions complètes d'étanchéité pour sceller toits, murs, sous-sols et fondations contre l'intrusion d'humidité. Notre équipe d'experts identifie les sources de fuites et applique des revêtements et membranes imperméables avancés qui offrent un bouclier durable contre la pluie, l'humidité et les remontées capillaires. Protégez votre investissement avec nos services professionnels.",
+            "benefits": {
+                "0": "Arrête les fuites et l'intrusion d'humidité",
+                "1": "Prévient la croissance de moisissures",
+                "2": "Protège l'intégrité structurelle",
+                "3": "Revêtements durables caoutchoutés ou cimentaires",
+                "4": "Réduit les coûts de maintenance",
+                "5": "Améliore la qualité de l'air intérieur",
+                "6": "Barrière résistante aux intempéries"
+            },
+            "process": {
+                "0": "Inspection : Identification des fuites et de l'humidité.",
+                "1": "Nettoyage : Enlèvement des débris et mousses.",
+                "2": "Réparation : Remplissage des fissures et joints.",
+                "3": "Apprêt : Application d'agents de liaison spécialisés.",
+                "4": "Revêtement : Application couches multiples d'étanchéité.",
+                "5": "Test : Vérification de l'étanchéité.",
+                "6": "Livraison : Conseils d'entretien et garantie."
+            },
+            "why_us": {
+                "0": "Expertise spécialisée en étanchéité",
+                "1": "Matériaux haute performance",
+                "2": "Diagnostic complet de l'humidité",
+                "3": "Protection de garantie à long terme",
+                "4": "Solutions préventives",
+                "5": "Équipe technique expérimentée"
+            }
+        },
+        "metal": {
+            "title": "Peinture sur Métal",
+            "subtitle": "Protection avancée et finition pour toutes surfaces métalliques.",
+            "overview": "Les surfaces métalliques nécessitent des soins spécialisés pour prévenir la rouille, la corrosion et l'usure. Surface Legend fournit des services experts de peinture sur métal pour portails, garde-corps, acier structurel et machines industrielles. Nous utilisons des apprêts antirouille haute performance et des couches de finition durables pour assurer que vos biens métalliques restent beaux et durent plus longtemps, même dans le climat humide du Cameroun.",
+            "benefits": {
+                "0": "Protection supérieure contre la rouille et la corrosion",
+                "1": "Finitions brillantes ou mates disponibles",
+                "2": "Prolonge la durée de vie des structures métalliques",
+                "3": "Revêtements résistants aux intempéries",
+                "4": "Préparation professionnelle (ponçage/dérouillage)",
+                "5": "Application au pistolet ou pinceau pour une couverture parfaite",
+                "6": "Remet à neuf le vieux métal usé"
+            },
+            "process": {
+                "0": "Évaluation : Vérification de la rouille et de l'intégrité structurelle.",
+                "1": "Préparation : Ponçage, brossage métallique et élimination de la rouille.",
+                "2": "Nettoyage : Utilisation de solvants pour enlever graisse et poussière.",
+                "3": "Apprêt : Application d'apprêts antirouille spécialisés.",
+                "4": "Peinture : Application de couches de finition durables.",
+                "5": "Inspection : Assurance d'une couverture complète.",
+                "6": "Nettoyage : Laisser le site impeccable."
+            },
+            "why_us": {
+                "0": "Expertise en protection du métal",
+                "1": "Produits antirouille de haute qualité",
+                "2": "Travail de préparation détaillé",
+                "3": "Résultats durables",
+                "4": "Équipement de pulvérisation professionnel",
+                "5": "Satisfaction garantie"
+            }
+        },
+        "roof": {
+            "title": "Peinture de Toiture",
+            "subtitle": "Restaurez la beauté et la protection de votre toit.",
+            "overview": "Votre toit est la première ligne de défense de votre propriété. Le service de peinture de toiture de Surface Legend améliore non seulement l'esthétique de votre maison ou bâtiment, mais ajoute également une couche de protection contre les rayons UV, la pluie et les fuites. Nous utilisons des revêtements spécialisés qui réfléchissent la chaleur, résistent à la décoloration et scellent les fissures mineures, prolongeant la vie de votre toit et gardant votre intérieur plus frais.",
+            "benefits": {
+                "0": "Restaure la couleur fanée du toit",
+                "1": "Revêtements réfléchissant la chaleur (réduit la température)",
+                "2": "Scelle les fissures capillaires mineures",
+                "3": "Prévient la croissance d'algues et de mousses",
+                "4": "Prolonge la durée de vie du toit",
+                "5": "Plus économique que le remplacement complet",
+                "6": "Protection imperméable"
+            },
+            "process": {
+                "0": "Inspection : Vérification de l'état du toit et sécurité.",
+                "1": "Nettoyage : Lavage haute pression pour enlever saleté et mousse.",
+                "2": "Réparation : Scellement des clous et petites fuites.",
+                "3": "Apprêt : Garantie d'une forte adhérence de la peinture.",
+                "4": "Revêtement : Application de plusieurs couches de peinture toiture.",
+                "5": "Contrôle Final : Vérification de la couverture et de l'étanchéité.",
+                "6": "Nettoyage : Enlèvement des débris des gouttières et du sol."
+            },
+            "why_us": {
+                "0": "Spécialistes toiture formés à la sécurité",
+                "1": "Peintures toiture premium résistantes aux intempéries",
+                "2": "Nettoyage et préparation minutieux",
+                "3": "Options réfléchissant la chaleur disponibles",
+                "4": "Garantie à long terme",
+                "5": "Achèvement efficace du projet"
+            }
+        },
+        "exterior": {
+            "title": "Peinture Extérieure",
+            "subtitle": "Des finitions résistantes aux intempéries conçues pour durer.",
+            "overview": "Les surfaces extérieures font face au soleil, à la pluie, à l'humidité et à la poussière. Surface Legend utilise des revêtements premium résistants aux intempéries pour protéger et embellir l'extérieur de votre bâtiment. Notre service de peinture extérieure combine durabilité protectrice et excellence esthétique, assurant que votre propriété est superbe tout en restant protégée du climat difficile du Cameroun. Des maisons résidentielles aux bâtiments commerciaux, nous livrons des finitions qui durent.",
+            "benefits": {
+                "0": "Revêtements résistants aux UV",
+                "1": "Protection contre la moisissure et l'humidité",
+                "2": "Durable contre les intempéries difficiles",
+                "3": "Vibrance de couleur longue durée",
+                "4": "Formulations adaptées au climat",
+                "5": "Préparation professionnelle de la surface",
+                "6": "Amélioration de l'attrait extérieur de la propriété"
+            },
+            "process": {
+                "0": "Évaluation de la Propriété : Évaluer l'état extérieur et l'exposition aux intempéries.",
+                "1": "Nettoyage de Surface : Enlever la saleté, la moisissure et l'ancienne peinture.",
+                "2": "Réparation & Préparation : Combler les fissures et apprêter les surfaces.",
+                "3": "Application d'Apprêt : Appliquer un apprêt résistant aux intempéries.",
+                "4": "Application de Finition : Application professionnelle de peinture extérieure premium.",
+                "5": "Inspection de Qualité : Assurer une couverture uniforme et une durabilité."
+            },
+            "why_us": {
+                "0": "Expertise en revêtements résistants aux intempéries",
+                "1": "Matériaux extérieurs premium",
+                "2": "Formulations de peinture adaptées au climat",
+                "3": "Préparation professionnelle de la surface",
+                "4": "Protection de couleur longue durée",
+                "5": "Garantie complète"
+            }
+        },
+        "pop_decorative": {
+            "title": "POP & Finitions Décoratives",
+            "subtitle": "Apportez créativité, profondeur et art à vos intérieurs.",
+            "overview": "Des plafonds POP aux murs texturés et revêtements artistiques, Surface Legend transforme les espaces ordinaires en intérieurs expressifs et beaux. Nos artisans qualifiés combinent l'artisanat traditionnel avec les tendances modernes du design pour créer des finitions uniques qui reflètent votre style personnel. Que vous souhaitiez des designs POP élégants, des effets texturés ou des finitions artistiques personnalisées, nous livrons créativité et qualité dans chaque projet.",
+            "benefits": {
+                "0": "Options décoratives premium",
+                "1": "Artisans et designers qualifiés",
+                "2": "Finitions de design modernes",
+                "3": "Motifs et effets personnalisés",
+                "4": "Ajoute de la profondeur et de la dimension aux espaces",
+                "5": "Consultation de design personnalisée",
+                "6": "Finitions artistiques durables"
+            },
+            "process": {
+                "0": "Consultation de Design : Discuter de votre vision et préférences de style.",
+                "1": "Développement de Concept : Création d'esquisses et d'échantillons de design.",
+                "2": "Sélection de Matériaux : Choisir des produits POP et décoratifs premium.",
+                "3": "Installation : Application experte de designs POP et finitions.",
+                "4": "Détails Artistiques : Ajouter des motifs personnalisés, textures et effets.",
+                "5": "Présentation Finale : Présenter votre espace transformé."
+            },
+            "why_us": {
+                "0": "Artisans décoratifs expérimentés",
+                "1": "Expertise en design créatif",
+                "2": "Matériaux et produits premium",
+                "3": "Solutions de design sur mesure",
+                "4": "Attention aux détails artistiques",
+                "5": "Consultation personnalisée"
+            }
+        },
+        "epoxy": {
+            "title": "Revêtement de Sol Époxy",
+            "subtitle": "Solutions de revêtement de sol solides, sans joint et visuellement éblouissantes.",
+            "overview": "Les sols en époxy sont idéaux pour les maisons, bureaux, salles d'exposition, garages et sites industriels. Surface Legend applique des systèmes époxy de haute qualité conçus pour la durabilité, l'hygiène et l'attrait esthétique. Notre revêtement de sol époxy transforme le béton ordinaire en une surface élégante et professionnelle qui est à la fois belle et fonctionnelle. Que vous ayez besoin d'une finition brillante pour salle d'exposition ou d'un sol industriel durable, notre application experte assure un résultat sans joint et durable.",
+            "benefits": {
+                "0": "Finition brillante et moderne",
+                "1": "Hautement durable & résistant aux chocs",
+                "2": "Facile à nettoyer et entretenir",
+                "3": "Résistant à l'eau et à l'humidité",
+                "4": "Parfait pour les espaces commerciaux et résidentiels",
+                "5": "Surface résistante aux produits chimiques",
+                "6": "Sécurité améliorée avec options antidérapantes"
+            },
+            "process": {
+                "0": "Évaluation de Surface : Évaluer l'état du béton et les exigences.",
+                "1": "Préparation du Béton : Meulage, nettoyage et apprêt de la surface.",
+                "2": "Application Époxy : Application professionnelle de couches de revêtement époxy.",
+                "3": "Durcissement : Laisser le temps nécessaire à l'époxy pour prendre et durcir.",
+                "4": "Inspection Finale : Vérifier la cohérence, la douceur et la qualité.",
+                "5": "Achèvement du Projet : Remise avec instructions d'entretien."
+            },
+            "why_us": {
+                "0": "Expertise en application époxy professionnelle",
+                "1": "Produits époxy premium",
+                "2": "Finitions sans joint de haute qualité",
+                "3": "Résultats durables et longue durée",
+                "4": "Prix compétitifs",
+                "5": "Garantie complète"
+            }
+        },
+        "steel_structure": {
+            "title": "Peinture de Structures Métalliques",
+            "subtitle": "Revêtements industriels pour une protection durable du métal.",
+            "overview": "Les structures en acier dans les usines, entrepôts, ponts et installations industrielles nécessitent des revêtements spécialisés pour prévenir la corrosion et assurer la longévité structurelle. Surface Legend fournit une peinture professionnelle de structures métalliques avec des primaires antirouille, des finitions haute performance et des méthodes d'application conformes aux normes de sécurité. Notre équipe expérimentée gère tout, du sablage de surface à la finition finale.",
+            "benefits": {
+                "0": "Protection supérieure contre la rouille et la corrosion",
+                "1": "Prolonge considérablement la durée de vie structurelle",
+                "2": "Systèmes de revêtement de qualité industrielle",
+                "3": "Résistance aux intempéries et aux produits chimiques",
+                "4": "Préparation de surface professionnelle",
+                "5": "Méthodes d'application certifiées sécurité",
+                "6": "Conformité aux normes industrielles"
+            },
+            "process": {
+                "0": "Évaluation Structurelle : Évaluation de l'état de l'acier, des niveaux de rouille et des exigences de revêtement.",
+                "1": "Préparation de Surface : Sablage ou brossage métallique pour enlever la rouille et les anciens revêtements.",
+                "2": "Nettoyage : Élimination de la poussière, de la graisse et des contaminants pour une bonne adhésion.",
+                "3": "Primaire Antirouille : Application de primaires spécialisés riches en zinc ou époxy.",
+                "4": "Application de la Finition : Application professionnelle par pulvérisation de peinture de qualité industrielle.",
+                "5": "Inspection Qualité : Vérification de la couverture complète et de l'épaisseur du revêtement.",
+                "6": "Nettoyage du Site : Enlèvement de tous les matériaux et débris de la zone de travail."
+            },
+            "why_us": {
+                "0": "Spécialistes de la peinture industrielle",
+                "1": "Équipement lourd et échafaudages",
+                "2": "Équipe certifiée sécurité",
+                "3": "Produits anticorrosion premium",
+                "4": "Expérience avec les grands projets",
+                "5": "Assurance projet complète"
+            }
+        },
+        "mold_resistant": {
+            "title": "Revêtements Anti-Moisissures",
+            "subtitle": "Protégez votre santé avec des solutions antifongiques avancées.",
+            "overview": "Les moisissures prolifèrent dans les environnements humides comme les salles de bains, cuisines, sous-sols et zones mal ventilées. Le service de revêtement anti-moisissures de Surface Legend utilise des peintures et traitements antifongiques spécialisés qui préviennent la croissance des moisissures, améliorent la qualité de l'air intérieur et créent des espaces de vie plus sains. Notre équipe experte identifie les zones sujettes aux moisissures et applique des revêtements protecteurs durables conçus spécifiquement pour le climat humide du Cameroun.",
+            "benefits": {
+                "0": "Prévient la croissance de moisissures et de mildiou",
+                "1": "Améliore la qualité de l'air intérieur",
+                "2": "Formulations axées sur la santé",
+                "3": "Protection antifongique durable",
+                "4": "Idéal pour salles de bains et cuisines",
+                "5": "Réduit l'entretien et la repeinture",
+                "6": "Adapté au climat pour environnements humides"
+            },
+            "process": {
+                "0": "Évaluation des Moisissures : Identification des moisissures existantes et des zones à haut risque.",
+                "1": "Élimination des Moisissures : Nettoyage et traitement professionnels des surfaces affectées.",
+                "2": "Préparation de Surface : Assurer des surfaces propres, sèches et sans moisissures.",
+                "3": "Primaire Antifongique : Application de primaire spécialisé anti-moisissures.",
+                "4": "Peinture Anti-Moisissures : Application professionnelle de finition antifongique.",
+                "5": "Conseil en Ventilation : Recommandations pour la prévention continue des moisissures.",
+                "6": "Couverture Garantie : Garantie de résistance aux moisissures à long terme."
+            },
+            "why_us": {
+                "0": "Certifié santé et sécurité",
+                "1": "Produits anti-moisissures spécialisés",
+                "2": "Expérience avec climats humides",
+                "3": "Remédiation professionnelle des moisissures",
+                "4": "Approche préventive",
+                "5": "Protection garantie à long terme"
+            }
+        },
+        "highrise": {
+            "title": "Peinture de Bâtiments de Grande Hauteur",
+            "subtitle": "Finition extérieure professionnelle pour structures hautes.",
+            "overview": "La peinture de bâtiments de grande hauteur nécessite un équipement spécialisé, une expertise en sécurité et des professionnels expérimentés. Surface Legend fournit des services complets de peinture de grande hauteur pour tours commerciales, complexes résidentiels et bâtiments institutionnels. Notre équipe formée en hauteur utilise l'accès par corde, les échafaudages et les systèmes de levage pour offrir des finitions extérieures impeccables tout en maintenant les normes de sécurité les plus élevées.",
+            "benefits": {
+                "0": "Équipe professionnelle certifiée hauteur",
+                "1": "Équipement et protocoles de sécurité avancés",
+                "2": "Expertise en accès par corde et échafaudages",
+                "3": "Revêtements extérieurs résistants aux intempéries",
+                "4": "Perturbation minimale pour les occupants",
+                "5": "Assurance projet complète",
+                "6": "Transformation extérieure professionnelle"
+            },
+            "process": {
+                "0": "Évaluation Sécurité : Évaluation de la hauteur du bâtiment, de l'accès et des exigences de sécurité.",
+                "1": "Installation Équipement : Installation d'échafaudages, accès par corde ou systèmes de levage.",
+                "2": "Préparation Surface : Nettoyage, réparation et apprêtage des surfaces extérieures.",
+                "3": "Application Systématique : Approche de peinture professionnelle étage par étage.",
+                "4": "Contrôle Qualité : Inspection régulière à chaque niveau pour la cohérence.",
+                "5": "Conformité Sécurité : Respect de toutes les réglementations de sécurité.",
+                "6": "Remise du Projet : Visite finale et documentation d'achèvement."
+            },
+            "why_us": {
+                "0": "Expérience spécialisée en grande hauteur",
+                "1": "Équipe certifiée accès par corde",
+                "2": "Systèmes d'échafaudage professionnels",
+                "3": "Couverture d'assurance projet complète",
+                "4": "Surveillance et planification météo",
+                "5": "Bilan éprouvé sur bâtiments hauts"
+            }
+        },
+        "protective_industrial": {
+            "title": "Revêtements Industriels Protecteurs",
+            "subtitle": "Protection robuste pour environnements industriels exigeants.",
+            "overview": "Les installations industrielles, usines chimiques, installations pétrolières et sites de fabrication font face à des conditions extrêmes qui nécessitent des revêtements protecteurs spécialisés. Surface Legend offre des solutions de revêtement industriel avancées conçues pour la résistance chimique, les températures extrêmes et les environnements opérationnels difficiles. Notre équipe technique applique des systèmes époxy, des revêtements polyuréthane et des finitions résistantes aux produits chimiques qui respectent les normes internationales.",
+            "benefits": {
+                "0": "Résistance chimique et aux solvants",
+                "1": "Tolérance aux températures extrêmes",
+                "2": "Résistance à l'abrasion et aux chocs",
+                "3": "Conformité aux normes industrielles",
+                "4": "Prolonge la durée de vie des équipements",
+                "5": "Réduit les temps d'arrêt de maintenance",
+                "6": "Respect des spécifications techniques"
+            },
+            "process": {
+                "0": "Évaluation Environnementale : Compréhension de l'exposition chimique et des conditions opérationnelles.",
+                "1": "Spécification Technique : Sélection des systèmes de revêtement appropriés pour l'environnement.",
+                "2": "Préparation Surface : Procédures de sablage et nettoyage de qualité industrielle.",
+                "3": "Application Primaire : Application de primaires industriels spécialisés.",
+                "4": "Revêtement Protecteur : Application multicouche de systèmes protecteurs.",
+                "5": "Tests Qualité : Vérification de l'épaisseur et de l'adhésion du revêtement.",
+                "6": "Documentation Conformité : Fourniture de rapports techniques et certifications."
+            },
+            "why_us": {
+                "0": "Spécialistes en revêtements industriels",
+                "1": "Certifications techniques",
+                "2": "Produits protecteurs premium",
+                "3": "Expérience avec environnements difficiles",
+                "4": "Axé sur sécurité et conformité",
+                "5": "Support technique complet"
+            }
+        }
+    },
+    "footer": {
+        "brand_desc": "Revêtements premium. Artisanat professionnel. Finitions légendaires.",
+        "tagline": "Revêtements premium. Artisanat professionnel. Finitions légendaires.",
+        "contact": "Contact",
+        "locations": "Localisations",
+        "follow_us": "Suivez-nous",
+        "get_quote": "Obtenir un Devis",
+        "rights": "© 2025 Surface Legend. Tous droits réservés.",
+        "developer_credit": "Créé par"
+    },
+    "products_page": {
+        "meta": {
+            "title": "Surface Legend - Produits de Peinture | Revêtements Premium",
+            "description": "Découvrez la Peinture Surface Legend : Revêtements haute performance conçus pour le climat du Cameroun."
+        },
+        "hero": {
+            "label": "Revêtements Premium",
+            "title": "Peinture Surface Legend",
+            "subtitle": "Peintures Premium & Revêtements Haute Performance Conçus pour l'Excellence",
+            "description": "La Peinture Surface Legend est notre division de fabrication de peinture premium, créée pour fournir des revêtements durables, beaux et haute performance pour maisons, entreprises et environnements industriels. Conçus pour les conditions climatiques locales et l'application professionnelle, nos produits établissent une nouvelle norme de qualité et de fiabilité.",
+            "cta_categories": "Voir les Catégories",
+            "cta_info": "Demander des Infos"
+        },
+        "philosophy": {
+            "title": "Plus Que de la Peinture — Une Norme de Performance",
+            "p1": "La Peinture Surface Legend est développée avec un seul objectif en tête : une performance exceptionnelle.",
+            "p2": "Chaque formulation est conçue pour fournir une forte couverture, une couleur durable, une application lisse et une résistance aux intempéries, à l'humidité et à l'usure.",
+            "p3": "Nos peintures ne sont pas expérimentales — elles sont testées sur le terrain quotidiennement par nos équipes de peinture professionnelles et affinées par une application réelle."
+        },
+        "categories": {
+            "title": "Notre Gamme de Peinture & Revêtement",
+            "items": {
+                "interior": {
+                    "title": "Peintures Intérieures",
+                    "desc": "Finitions lisses, lavables et vibrantes pour murs et plafonds."
+                },
+                "exterior": {
+                    "title": "Peintures Extérieures",
+                    "desc": "Revêtements résistants aux intempéries, au soleil, à la pluie et à l'humidité."
+                },
+                "industrial": {
+                    "title": "Revêtements Industriels",
+                    "desc": "Protection robuste pour structures en acier, usines et machines."
+                },
+                "decorative": {
+                    "title": "Peintures Décoratives & Texturées",
+                    "desc": "Finitions design, textures et revêtements artistiques."
+                },
+                "protective": {
+                    "title": "Revêtements de Protection",
+                    "desc": "Systèmes antirouille, anti-moisissure, imperméabilisants et de protection de surface."
+                },
+                "wood": {
+                    "title": "Finitions Bois & Meubles",
+                    "desc": "Revêtements durables pour portes, armoires et surfaces en bois."
+                },
+                "epoxy": {
+                    "title": "Revêtements Époxy",
+                    "desc": "Systèmes époxy sans joint pour sols, garages, showrooms et industries."
+                }
+            }
+        },
+        "why": {
+            "title": "Pourquoi la Peinture Surface Legend",
+            "items": {
+                "0": "Haute efficacité de couverture",
+                "1": "Durabilité longue durée",
+                "2": "Formulations adaptées au climat",
+                "3": "Application lisse (brosse, rouleau, pistolet)",
+                "4": "Approuvé par les professionnels",
+                "5": "Utilisé quotidiennement par Surface Legend Services",
+                "6": "Soutenu par une formation d'expert"
+            }
+        },
+        "ecosystem": {
+            "title": "Un Produit Intégré dans un Écosystème Complet",
+            "intro": "La Peinture Surface Legend est unique car elle est :",
+            "items": {
+                "manufactured": {
+                    "title": "Fabriquée par des experts",
+                    "desc": "Développée avec une connaissance approfondie de l'industrie et des normes de qualité."
+                },
+                "applied": {
+                    "title": "Appliquée par des professionnels formés",
+                    "desc": "Utilisée quotidiennement par les équipes de Surface Legend Services qui maîtrisent l'application."
+                },
+                "taught": {
+                    "title": "Enseignée dans notre Académie d'Art",
+                    "desc": "La connaissance des produits et les techniques d'application font partie de notre programme de formation."
+                }
+            },
+            "conclusion": "Cette intégration assure cohérence, responsabilité et qualité inégalée de la production à la finition finale."
+        },
+        "cta": {
+            "title": "Choisissez la Peinture en Laquelle les Pros ont Confiance",
+            "description": "Prêt à découvrir la qualité et la performance de la Peinture Surface Legend ? Contactez-nous pour des informations sur les produits, les prix et les services d'application professionnelle.",
+            "btn_contact": "Contactez-nous pour Commander",
+            "btn_whatsapp": "Discuter sur WhatsApp"
+        }
+    },
+    "portfolio_page": {
+        "meta": {
+            "title": "Surface Legend - Portfolio | Projets Réalisés",
+            "description": "Parcourez notre portfolio de projets de peinture résidentiels, commerciaux et industriels réalisés au Cameroun."
+        },
+        "hero": {
+            "label": "Nos Réalisations",
+            "title": "Portfolio",
+            "desc": "Explorez notre collection de projets achevés mettant en valeur l'artisanat professionnel, le souci du détail et la transformation des espaces à travers le Cameroun.",
+            "desc2": "Des maisons résidentielles aux bureaux commerciaux et installations industrielles, Surface Legend offre une qualité constante et des finitions légendaires sur chaque projet."
+        },
+        "filters": {
+            "all": "Tous les Projets",
+            "residential": "Résidentiel",
+            "commercial": "Commercial",
+            "epoxy": "Sol Époxy"
+        },
+        "projects": {
+            "1": {
+                "title": "Transformation Intérieure Résidentielle",
+                "desc": "Rafraîchissement complet de l'intérieur d'une maison avec des finitions élégantes"
+            },
+            "2": {
+                "title": "Rénovation Salon & Chambre",
+                "desc": "Peinture résidentielle professionnelle avec finitions premium"
+            },
+            "3": {
+                "title": "Design d'Espace de Bureau Moderne",
+                "desc": "Bureau commercial contemporain avec murs d'accent"
+            },
+            "4": {
+                "title": "Transformation de Bureau d'Entreprise",
+                "desc": "Environnement professionnel aux couleurs de la marque"
+            },
+            "5": {
+                "title": "Entrée de Bureau Créative",
+                "desc": "Design d'entrée audacieux avec application de peinture moderne"
+            },
+            "6": {
+                "title": "Installation de Sol Époxy Industriel",
+                "desc": "Revêtement de sol époxy haute performance pour entrepôt"
+            },
+            "7": {
+                "title": "Sol Époxy pour Entrepôt",
+                "desc": "Revêtement époxy sans joint pour espace industriel"
+            }
+        },
+        "stats": {
+            "projects": "Projets Réalisés",
+            "satisfaction": "Satisfaction Client",
+            "experience": "Années d'Expérience",
+            "clients": "Clients Satisfaits"
+        },
+        "cta": {
+            "title": "Prêt à Voir Votre Projet Transformé ?",
+            "description": "Laissez Surface Legend apporter la même qualité et le même savoir-faire à votre espace. Contactez-nous aujourd'hui pour une consultation gratuite.",
+            "btn_quote": "Demander un Devis Gratuit",
+            "btn_whatsapp": "Discuter sur WhatsApp"
+        }
+    },
+    "academy_page": {
+        "meta": {
+            "title": "Surface Legend - Académie d'Art | Formation Professionnelle",
+            "description": "Rejoignez l'Académie d'Art Surface Legend : Programmes de formation professionnelle pour peintres, artistes décorateurs et finisseurs de surfaces."
+        },
+        "hero": {
+            "label": "Développement Professionnel",
+            "title": "Académie d'Art Surface Legend",
+            "subtitle": "Former la Prochaine Génération de Peintres Professionnels & Artistes de Surface",
+            "description": "L'Académie d'Art Surface Legend est la branche formation et développement de talents de l'écosystème Surface Legend. L'académie équipe les apprentis et les professionnels de compétences pratiques, de techniques modernes et d'une expérience concrète — transformant la passion en capacité professionnelle.",
+            "cta_join": "Rejoindre l'Académie",
+            "cta_programs": "Voir les Programmes"
+        },
+        "purpose": {
+            "title": "Plus Qu'une Formation — Construire des Carrières",
+            "p1": "L'Académie d'Art a été créée pour élever les normes de l'industrie et donner aux individus des compétences qui créent des opportunités à long terme.",
+            "p2": "Notre objectif est de produire des peintres qui ne sont pas seulement qualifiés, mais professionnels, disciplinés et confiants."
+        },
+        "target": {
+            "title": "Qui Nous Formons",
+            "items": {
+                "beginners": {
+                    "title": "Débutants & Apprentis",
+                    "desc": "Commencer votre parcours dans la peinture professionnelle"
+                },
+                "painters": {
+                    "title": "Peintres en Activité",
+                    "desc": "Améliorer ses compétences et apprendre de nouvelles techniques"
+                },
+                "decorative": {
+                    "title": "Artistes Décorateurs",
+                    "desc": "Spécialisation en finitions artistiques et décoratives"
+                },
+                "contractors": {
+                    "title": "Entrepreneurs & Chefs d'Équipe",
+                    "desc": "Renforcer les compétences en gestion et leadership"
+                },
+                "creative": {
+                    "title": "Individus Créatifs cherchant un Métier",
+                    "desc": "Explorer la peinture comme carrière professionnelle"
+                }
+            }
+        },
+        "programs": {
+            "title": "Programmes de Formation",
+            "items": {
+                "0": "Peinture Basique & Professionnelle",
+                "1": "Préparation de Surface & Finition",
+                "2": "Finitions Décoratives & Texturées",
+                "3": "Design & Installation POP",
+                "4": "Application de Sol Époxy",
+                "5": "Opération de Machine à Pulvériser",
+                "6": "Sécurité & Gestion de Site",
+                "7": "Connaissance Produit (Peinture Surface Legend)",
+                "8": "Communication Client & Devis"
+            },
+            "note": "La formation combine théorie et expérience pratique sur projet."
+        },
+        "why": {
+            "title": "Pourquoi Se Former Avec Nous",
+            "items": {
+                "0": "Apprendre auprès de professionnels actifs",
+                "1": "Utiliser de vrais outils et produits premium",
+                "2": "Compétences pertinentes pour l'industrie",
+                "3": "Culture de formation axée sur la sécurité",
+                "4": "Résultats prêts pour la carrière",
+                "5": "Opportunités de certification (expansion future)"
+            }
+        },
+        "integration": {
+            "title": "Intégration Carrière & Marque",
+            "intro": "Les diplômés de l'Académie d'Art Surface Legend peuvent :",
+            "items": {
+                "join": {
+                    "title": "Rejoindre Surface Legend Services",
+                    "desc": "Travailler directement avec nos équipes de peinture professionnelles sur de vrais projets."
+                },
+                "partner": {
+                    "title": "Travailler avec des entrepreneurs partenaires",
+                    "desc": "Se connecter avec notre réseau d'entrepreneurs et partenaires de construction de confiance."
+                },
+                "independent": {
+                    "title": "Devenir professionnels indépendants",
+                    "desc": "Démarrer votre propre entreprise de peinture avec les compétences et la confiance acquises lors de la formation."
+                },
+                "ambassador": {
+                    "title": "Agir comme ambassadeurs de la marque",
+                    "desc": "Promouvoir et utiliser nos produits de peinture premium avec une connaissance experte."
+                }
+            },
+            "conclusion": "Cela crée un lien puissant entre la formation, l'emploi et la maîtrise du produit."
+        },
+        "cta": {
+            "title": "Commencez Votre Parcours Avec Surface Legend",
+            "description": "Prêt à transformer votre passion en capacité professionnelle ? Rejoignez l'Académie d'Art Surface Legend et apprenez des experts.",
+            "btn_enroll": "S'inscrire Maintenant",
+            "btn_contact": "Contacter l'Académie"
+        }
+    },
+    "contact_page": {
+        "meta": {
+            "title": "Surface Legend - Contactez-Nous | Obtenez un Devis Gratuit",
+            "description": "Contactez Surface Legend pour des demandes de peinture professionnelle, de revêtements et de formation. Devis gratuits disponibles."
+        },
+        "hero": {
+            "label": "Entrez en Contact",
+            "title": "Contactez-Nous",
+            "subtitle": "Vous avez un projet en tête ? Nous aimerions avoir de vos nouvelles. Contactez Surface Legend dès aujourd'hui pour une consultation et un devis gratuits."
+        },
+        "info": {
+            "title": "Informations de Contact",
+            "phone": "Téléphone",
+            "email": "Email",
+            "locations": "Emplacements",
+            "hours": {
+                "title": "Heures d'Ouverture",
+                "mon_thu": "Lundi - Jeudi : 8h00 - 18h00",
+                "fri": "Vendredi : Fermé",
+                "sat_sun": "Samedi - Dimanche : 8h00 - 18h00"
+            },
+            "cta_whatsapp": "Discuter sur WhatsApp"
+        },
+        "form": {
+            "title": "Envoyez-nous un Message",
+            "name_label": "Nom Complet *",
+            "name_placeholder": "Votre nom complet",
+            "email_label": "Adresse Email *",
+            "email_placeholder": "votre.email@exemple.com",
+            "phone_label": "Numéro de Téléphone *",
+            "phone_placeholder": "+237 XXX XXX XXX",
+            "type_label": "Type de Demande *",
+            "type_placeholder": "Sélectionnez le type de demande",
+            "service_label": "Service d'Intérêt *",
+            "service_placeholder": "Sélectionnez un service",
+            "product_label": "Produit d'Intérêt *",
+            "product_placeholder": "Sélectionnez un produit",
+            "program_label": "Programme de Formation *",
+            "program_placeholder": "Sélectionnez un programme",
+            "message_label": "Message Supplémentaire",
+            "message_placeholder": "Dites-nous en plus sur votre projet, les délais ou toute exigence spécifique...",
+            "btn_send": "Envoyer via WhatsApp",
+            "sending": "Envoi...",
+            "disclaimer": "En soumettant ce formulaire, vous acceptez d'être contacté au sujet de votre demande."
+        },
+        "inquiry_types": {
+            "services": "Demande de Services",
+            "products": "Demande de Produits",
+            "academy": "Demande pour l'Académie",
+            "general": "Demande Générale"
+        },
+        "areas": {
+            "title": "Zones de Service",
+            "desc": "Nous servons fièrement les grandes villes du Cameroun avec des services professionnels de peinture et de revêtement.",
+            "items": {
+                "douala": {
+                    "title": "Douala",
+                    "desc": "Siège Social & Principal Hub de Service"
+                },
+                "yaounde": {
+                    "title": "Yaoundé",
+                    "desc": "Opérations dans la Capitale"
+                },
+                "bamenda": {
+                    "title": "Bamenda",
+                    "desc": "Services Région Nord-Ouest"
+                },
+                "buea": {
+                    "title": "Buea & Limbe",
+                    "desc": "Services Région Sud-Ouest"
+                }
+            }
+        },
+        "faq": {
+            "title": "Questions Fréquentes",
+            "items": {
+                "0": {
+                    "q": "Combien de temps pour répondre à ma demande ?",
+                    "a": "Nous répondons généralement sous 24h les jours ouvrables. Pour les urgences, contactez-nous directement via WhatsApp."
+                },
+                "1": {
+                    "q": "Proposez-vous des consultations gratuites ?",
+                    "a": "Oui ! Nous offrons des consultations gratuites sur site pour évaluer votre projet et fournir des devis précis."
+                },
+                "2": {
+                    "q": "Quelles zones desservez-vous ?",
+                    "a": "Nous desservons Douala, Yaoundé, Bamenda, Buea, Limbe et les environs. Contactez-nous pour confirmer la disponibilité."
+                },
+                "3": {
+                    "q": "Comment obtenir un devis ?",
+                    "a": "Remplissez notre formulaire, appelez-nous ou discutez sur WhatsApp. Nous planifierons une consultation et fournirons un devis détaillé."
+                },
+                "4": {
+                    "q": "Travaillez-vous le week-end ?",
+                    "a": "Nous sommes disponibles le samedi matin. Le dimanche est généralement fermé, mais les projets d'urgence peuvent être discutés."
+                },
+                "5": {
+                    "q": "Quels modes de paiement acceptez-vous ?",
+                    "a": "Nous acceptons espèces, virements bancaires et mobile money. Les conditions de paiement peuvent être discutées selon l'envergure du projet."
+                }
+            }
+        },
+        "cta": {
+            "title": "Prêt à Commencer ?",
+            "description": "N'attendez pas pour transformer votre espace. Contactez Surface Legend aujourd'hui et donnons vie à votre vision.",
+            "btn_fill": "Remplir le Formulaire",
+            "btn_whatsapp": "Discuter sur WhatsApp"
+        }
+    },
+    "service_details_page": {
+        "hero": {
+            "cta_quote": "Demander un Devis",
+            "cta_whatsapp": "Discuter sur WhatsApp"
+        },
+        "overview": {
+            "title": "Ce Que Ce Service Inclut"
+        },
+        "benefits": {
+            "title": "Avantages Clés de Ce Service"
+        },
+        "process": {
+            "title": "À Quoi Vous Attendre"
+        },
+        "why_choose": {
+            "title": "Pourquoi Choisir Surface Legend ?"
+        },
+        "recent_projects": {
+            "title": "Projets Récents",
+            "description": "Voyez comment Surface Legend transforme les espaces avec un artisanat professionnel et des finitions premium.",
+            "placeholder_image": "Image du Projet"
+        },
+        "faq": {
+            "title": "Questions Fréquentes",
+            "items": {
+                "0": {
+                    "q": "Combien de temps prend ce service ?",
+                    "a": "La durée dépend de l'étendue des travaux, de l'état de la surface et de la complexité du projet. Nous fournirons un calendrier détaillé lors de la consultation."
+                },
+                "1": {
+                    "q": "Pouvez-vous m'aider à choisir les couleurs ou finitions ?",
+                    "a": "Absolument ! Surface Legend offre des conseils d'experts sur le choix des couleurs, les types de finition et les options de design adaptés à votre espace et à vos préférences."
+                },
+                "2": {
+                    "q": "Apportez-vous vos propres matériaux ?",
+                    "a": "Oui, nous utilisons la peinture premium Surface Legend et tous les outils professionnels nécessaires. Des matériaux de qualité garantissent des résultats supérieurs et une durabilité à long terme."
+                },
+                "3": {
+                    "q": "Quelles zones desservez-vous ?",
+                    "a": "Nous sommes basés à Douala et desservons les principales villes du Cameroun. Contactez-nous pour connaître la disponibilité dans votre région."
+                }
+            }
+        },
+        "cta_bottom": {
+            "title": "Prêt à Transformer Votre Espace ?",
+            "description": "Discutons de votre projet et créons une solution adaptée à vos besoins.",
+            "btn_estimate": "Obtenir un Devis Gratuit",
+            "btn_whatsapp": "Discuter sur WhatsApp"
+        }
+    }
+}

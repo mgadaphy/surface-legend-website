@@ -1,0 +1,1232 @@
+{
+    "general": {
+        "title": "Surface Legend",
+        "description": "Premium Painting & Coatings"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "academy": "Art Academy",
+        "products": "Paint Products"
+    },
+    "home": {
+        "hero_label": "Residential & Commercial Painting",
+        "hero_title": "Transforming Spaces With Legendary Finishes",
+        "hero_subtitle": "Experience the perfect blend of craftsmanship, innovation, and artistry. Surface Legend elevates homes, businesses, and architectural spaces with superior coatings and expertly trained professionals.",
+        "hero_cta_whatsapp": "Get a Free Quote on WhatsApp",
+        "hero_cta_services": "View Our Services",
+        "who_we_are": {
+            "label": "Our Ecosystem",
+            "title": "A Complete Ecosystem for Painting, Products & Training",
+            "description": "Surface Legend is Cameroon's premium painting and coatings brand — combining professional painting services, high-performance paint products, and a training academy that develops the next generation of skilled painters.",
+            "mission": "Our mission is simple: deliver excellence in every surface we touch.",
+            "cards": {
+                "services": "Premium Services",
+                "services_desc": "Professional painting across all sectors",
+                "products": "Paint Products",
+                "products_desc": "High-performance coatings engineered for Cameroon",
+                "academy": "Art Academy",
+                "academy_desc": "Training the next generation of professionals",
+                "innovation": "Innovation",
+                "innovation_desc": "Modern techniques and professional standards"
+            }
+        },
+        "services": {
+            "label": "What We Offer",
+            "title": "Our Painting & Finishing Services",
+            "description": "From residential transformations to industrial-scale coatings, our services are designed to meet the highest standards of durability, beauty, and professional performance.",
+            "items": {
+                "residential": "Residential Painting",
+                "residential_desc": "Make your home feel new again with beautiful, durable finishes.",
+                "commercial": "Commercial Painting",
+                "commercial_desc": "Enhance your business image with clean, professional coatings.",
+                "industrial": "Industrial Coatings",
+                "industrial_desc": "Protective, long-lasting coatings for factories, steel structures, and more.",
+                "waterproofing": "Waterproofing & Repairs",
+                "waterproofing_desc": "Stop leaks, moisture, and wall deterioration with expert waterproofing.",
+                "panels": "3D Panels & Special Projects",
+                "panels_desc": "Bring depth, creativity, and luxury to interior spaces.",
+                "epoxy": "Epoxy & Specialty Coatings",
+                "epoxy_desc": "Advanced protective coatings for specialized applications."
+            },
+            "cta": "Explore All Services"
+        },
+        "products": {
+            "label": "Premium Coatings",
+            "title": "Premium Coatings Engineered for Cameroon",
+            "description": "Our exclusive line of high-performance paints offers exceptional durability, strong coverage, vibrant color quality, and climate-adapted formulations — trusted by professionals and homeowners alike.",
+            "benefits": [
+                "Long-lasting color retention",
+                "Mold & moisture resistance",
+                "Smooth application",
+                "Durable finishes for interior & exterior",
+                "Professional-grade formulations"
+            ],
+            "cta": "Learn More About Our Products"
+        },
+        "academy": {
+            "label": "Professional Development",
+            "title": "Train With the Experts. Become a Professional Painter.",
+            "description": "Surface Legend Art Academy equips apprentices and working painters with modern techniques, product mastery, and industry-standard skills. The academy blends theory with real project experience — creating confident, job-ready professionals.",
+            "features_title": "Training Programs Include:",
+            "features": [
+                "Basic & Professional Painting",
+                "Surface Preparation & Finishing",
+                "Advanced Coating Techniques",
+                "Decorative & Texture Applications",
+                "Safety Standards & Professional Conduct"
+            ],
+            "cta": "Join the Training Program"
+        },
+        "why_us": {
+            "label": "Our Commitment",
+            "title": "Why Clients Trust Surface Legend",
+            "reasons": [
+                "Premium Quality & Professional Finishes",
+                "Skilled, Trained, Certified Teams",
+                "High-Performance Paint Products",
+                "Clean Worksites & Safety Standards",
+                "Transparent Pricing & Clear Communication",
+                "Nationwide Service Flexibility"
+            ]
+        },
+        "portfolio": {
+            "label": "Our Work",
+            "title": "See What We've Created",
+            "description": "From elegant interiors to complex industrial projects, our work speaks for itself. Explore real transformations carried out by our team.",
+            "cta": "View Full Portfolio"
+        },
+        "testimonials": {
+            "label": "Client Feedback",
+            "title": "What Clients Say About Us",
+            "items": [
+                {
+                    "text": "Surface Legend transformed our home completely. The attention to detail and professionalism was exceptional.",
+                    "name": "Amara Nkomo",
+                    "role": "Homeowner, Douala"
+                },
+                {
+                    "text": "The commercial painting work was completed on schedule and exceeded our expectations. Highly recommended!",
+                    "name": "Jean-Pierre Dubois",
+                    "role": "Business Owner, Yaoundé"
+                },
+                {
+                    "text": "Their industrial coatings have proven to be durable and high-quality. We trust them for all our facility needs.",
+                    "name": "Dr. Kwame Asante",
+                    "role": "Facility Manager, Limbe"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Let's Make Your Space Legendary",
+            "description": "Ready to transform your space? Get in touch with our team today and let's discuss your project.",
+            "whatsapp": "Chat With Us on WhatsApp",
+            "quote": "Request a Quote",
+            "call": "Call Us"
+        },
+        "contact_info": {
+            "title": "Contact Information",
+            "phone_label": "Phone",
+            "hours_label": "Business Hours",
+            "locations_label": "Locations",
+            "hours_week": "Mon - Thu: 8:00 AM - 6:00 PM",
+            "hours_fri": "Fri: Closed",
+            "hours_weekend": "Sat - Sun: 8:00 AM - 6:00 PM",
+            "locations_list": "Douala • Yaoundé • Bamenda • Buea & Limbe",
+            "call_us": "Call Us"
+        }
+    },
+    "about": {
+        "hero": {
+            "subtitle": "Our Story",
+            "title": "About Surface Legend",
+            "intro_bold": "A Complete Ecosystem for Painting, Premium Coatings & Professional Training",
+            "intro_text": "Surface Legend is more than a painting company — it is a visionary brand built on excellence, craftsmanship, and innovation. Through our integrated divisions of professional painting services, premium paint manufacturing, and painter training, we are shaping the future of Cameroon's surface finishing industry."
+        },
+        "story": {
+            "title": "Our Story: Built on Craftsmanship. Driven by Innovation.",
+            "p1": "Surface Legend began with a simple belief: every surface has the potential to be extraordinary. From transforming homes and offices to crafting protective coatings for industrial environments, we saw an opportunity to elevate the standards of painting, finishing, and surface care across Cameroon.",
+            "p2": "What started as a dedicated painting service gradually evolved into something much bigger — a complete ecosystem designed to deliver unmatched quality and empower professionals.",
+            "today_intro": "Today, Surface Legend is home to:",
+            "services_title": "Surface Legend Services",
+            "services_desc": "A professional painting and decorative finishing division.",
+            "products_title": "Surface Legend Paint",
+            "products_desc": "A premium line of high-performance coating products.",
+            "academy_title": "Surface Legend Art Academy",
+            "academy_desc": "A training institution empowering the next generation of skilled painters.",
+            "growth": "Our growth reflects the increasing demand for quality workmanship, modern coating solutions, and trained professionals who can execute at a higher standard.",
+            "conclusion": "Surface Legend stands as a leader in transforming spaces, elevating surfaces, and shaping talent."
+        },
+        "mission_vision": {
+            "mission_title": "Our Mission",
+            "mission_text": "To deliver exceptional painting services, develop premium paint products adapted to Cameroon's climate, and train skilled painters who uphold the highest professional standards.",
+            "vision_title": "Our Vision",
+            "vision_text": "To become the most trusted and influential ecosystem in the painting and coatings industry — transforming spaces, empowering people, and setting new benchmarks for quality across Africa.",
+            "promise_title": "Our Brand Promise",
+            "promise_text": "We promise legendary finishes — combining premium materials, skilled professionals, and a commitment to excellence that clients can depend on."
+        },
+        "divisions": {
+            "title": "A Brand Built on Three Powerful Divisions",
+            "subtitle": "Surface Legend operates through a unique and interconnected ecosystem. Each division reinforces the other — creating a cycle of quality, consistency, and trust.",
+            "services_title": "Surface Legend Services",
+            "services_subtitle": "Professional Painting & Surface Solutions",
+            "services_items": {
+                "residential": "Residential & Commercial Painting",
+                "industrial": "Industrial Coatings",
+                "pop": "POP & Decorative Finishes",
+                "epoxy": "Epoxy Floors",
+                "waterproofing": "Waterproofing",
+                "panels": "3D Wall Panels",
+                "spray": "Spray Machine Finishes"
+            },
+            "services_note": "We combine artistry with technical excellence to produce finishes that last and inspire.",
+            "products_title": "Surface Legend Paint",
+            "products_subtitle": "Premium Coating Products Engineered for Cameroon",
+            "products_items": {
+                "durability": "Long-lasting durability",
+                "application": "Smooth application",
+                "coverage": "High coverage efficiency",
+                "weather": "Weather resistance",
+                "mold": "Mold & moisture protection"
+            },
+            "products_note": "Professionals trust Surface Legend Paint for its consistent performance and premium-quality formulation.",
+            "academy_title": "Surface Legend Art Academy",
+            "academy_subtitle": "Training the Next Generation of Surface Professionals",
+            "academy_items": {
+                "techniques": "Painting techniques",
+                "coatings": "Advanced coatings",
+                "decorative": "Decorative finishes",
+                "spray": "Spray machine operation",
+                "epoxy": "Epoxy application",
+                "conduct": "Professional conduct & safety"
+            },
+            "academy_note": "We empower apprentices, creatives, and working painters to become confident, industry-ready professionals."
+        },
+        "unique": {
+            "title": "What Makes Us Unique?",
+            "items": {
+                "premium": {
+                    "title": "Premium Paint + Premium Skills",
+                    "desc": "We don't just apply paint — we produce it and train the people who use it."
+                },
+                "tools": {
+                    "title": "Advanced Tools & Techniques",
+                    "desc": "From spray machines to industrial coating systems, we use modern equipment for superior results."
+                },
+                "clean": {
+                    "title": "Clean, Safe & Professional Work",
+                    "desc": "Every project is executed with discipline, safety, and respect for client spaces."
+                },
+                "trained": {
+                    "title": "Trained & Certified Teams",
+                    "desc": "Our teams come from the Art Academy, ensuring consistent quality."
+                },
+                "nationwide": {
+                    "title": "Nationwide Service Reach",
+                    "desc": "Based in Douala, serving major cities and accepting projects across Cameroon."
+                },
+                "legacy": {
+                    "title": "A Legacy of Transformation",
+                    "desc": "Our work elevates environments and inspires confidence in every space we touch."
+                }
+            }
+        },
+        "leadership": {
+            "title": "Leadership & Expertise",
+            "subtitle": "Surface Legend is led by passionate professionals dedicated to excellence and innovation in the painting and coatings industry.",
+            "founder_name": "Njoya Iscadarou Mbipeh",
+            "founder_role": "Founder, Lead Trainer & Project Coordinator",
+            "founder_desc": "With years of dedicated practice and expertise in painting, coatings, and professional training, Njoya leads Surface Legend's mission to transform spaces and empower professionals across Cameroon."
+        },
+        "cta": {
+            "title": "Ready to Transform Your Space?",
+            "subtitle": "Whether you need professional painting services, premium paint products, or training opportunities, Surface Legend is here to deliver excellence.",
+            "whatsapp": "Chat With Us on WhatsApp",
+            "services": "Explore Our Services",
+            "join": "Join the Art Academy"
+        },
+        "contact_info": {
+            "phone": "Phone",
+            "email": "Email",
+            "business_hours": "Business Hours",
+            "mon_thu": "Mon - Thu: 8:00 AM - 6:00 PM",
+            "fri": "Fri: Closed",
+            "sat_sun": "Sat - Sun: 8:00 AM - 6:00 PM",
+            "locations": "Locations",
+            "locations_list": "Douala • Yaoundé • Bamenda • Buea & Limbe"
+        }
+    },
+    "services_page": {
+        "hero": {
+            "label": "Complete Solutions",
+            "title": "Our Services",
+            "subtitle": "Premium Painting, Decorative Finishes & Advanced Coating Solutions",
+            "description": "Surface Legend delivers a complete range of painting, coating, and surface transformation services powered by skilled professionals and our own premium paint products. Whether you're refreshing a home, upgrading commercial spaces, or protecting industrial structures, we bring artistry, durability, and technical expertise to every project."
+        },
+        "overview": {
+            "title": "A Full Ecosystem of Surface Solutions",
+            "description": "Our services are organized into three major categories, ensuring clarity and convenience for our clients. From simple painting jobs to advanced coatings and decorative installations, Surface Legend offers solutions for every space and every vision.",
+            "cards": {
+                "painting": {
+                    "title": "Painting Solutions",
+                    "desc": "Beautiful, durable, and professionally executed painting services for homes, offices, and commercial buildings."
+                },
+                "decorative": {
+                    "title": "Decorative & Specialized Finishes",
+                    "desc": "Sophisticated decorative solutions and modern artistic finishes that bring your design ideas to life."
+                },
+                "industrial": {
+                    "title": "Industrial & Protective Coatings",
+                    "desc": "High-performance surface protection engineered to endure demanding conditions."
+                }
+            }
+        },
+        "painting": {
+            "title": "Painting Solutions",
+            "description": "Beautiful, durable, and professionally executed painting services for homes, offices, and commercial buildings. Our team uses Surface Legend Paint for consistent quality, smooth finishing, and long-lasting color performance.",
+            "items": {
+                "residential": {
+                    "title": "Residential Painting",
+                    "desc": "Transform your home with rich, elegant colors and flawless finishing. We enhance living rooms, bedrooms, kitchens, halls, and full home interiors or exteriors."
+                },
+                "commercial": {
+                    "title": "Commercial Painting",
+                    "desc": "Professional-grade painting for offices, shops, hotels, restaurants, schools, and business environments that demand a clean, modern look."
+                },
+                "interior": {
+                    "title": "Interior Painting",
+                    "desc": "Fine interior wall finishing with smooth coats, accent walls, texture options, and premium decorative touches."
+                },
+                "exterior": {
+                    "title": "Exterior Painting",
+                    "desc": "Weather-resistant coatings designed to endure heat, rain, and humidity — keeping your building vibrant and protected for years."
+                },
+                "metal": {
+                    "title": "Metal Painting",
+                    "desc": "Anti-rust and protective coatings for gates, railings, balconies, and structural steel elements."
+                },
+                "roof": {
+                    "title": "Roof Painting",
+                    "desc": "Roof renewal services offering waterproof, UV-resistant coatings that restore appearance and extend roof lifespan."
+                },
+                "waterproofing": {
+                    "title": "Waterproofing Solutions",
+                    "desc": "Prevent and treat leaks, moisture intrusion, and wall dampness with professional waterproofing systems."
+                }
+            }
+        },
+        "decorative": {
+            "title": "Decorative & Specialized Finishes",
+            "description": "Enhance the beauty of your interiors with sophisticated decorative solutions and modern artistic finishes. From POP ceilings to textured walls, Surface Legend blends creativity and technique to bring your design ideas to life.",
+            "items": {
+                "pop": {
+                    "title": "POP (Plaster of Paris) Design & Installation",
+                    "desc": "Artistic ceiling and wall designs that add depth, elegance, and character to interiors."
+                },
+                "texture": {
+                    "title": "Texture & Decorative Finishes",
+                    "desc": "Premium texture coatings, designer effects, and artistic finishes tailored to your preferred style."
+                },
+                "panels": {
+                    "title": "3D Wall Panels",
+                    "desc": "Stylish 3D installations for luxury interiors, adding dimension and modern appeal."
+                },
+                "wallpaper": {
+                    "title": "Wallpaper Installation",
+                    "desc": "Perfectly aligned, bubble-free wallpaper installation that elevates your space instantly."
+                },
+                "furniture": {
+                    "title": "Furniture Refinishing & Wood Coating",
+                    "desc": "Restore wooden doors, tables, cabinets, and furniture with beautiful, protective coatings."
+                },
+                "artistic": {
+                    "title": "Artistic Wall Effects",
+                    "desc": "Custom finishes including metallic textures, marble effects, color washes, and more."
+                }
+            }
+        },
+        "industrial": {
+            "title": "Industrial & Protective Coatings",
+            "description": "High-performance surface protection for factories, warehouses, steel structures, and commercial environments. Our coatings are engineered to endure demanding conditions.",
+            "items": {
+                "epoxy": {
+                    "title": "Epoxy Floor Coating",
+                    "desc": "Seamless, strong, and visually appealing epoxy floors ideal for homes, showrooms, offices, garages, and industrial environments."
+                },
+                "steel": {
+                    "title": "Industrial Steel Coating",
+                    "desc": "Corrosion-resistant systems that protect steel structures from rust and environmental damage."
+                },
+                "mold": {
+                    "title": "Mold Remediation Painting",
+                    "desc": "Coatings designed to treat and prevent mold growth in moisture-prone areas."
+                },
+                "highrise": {
+                    "title": "High-Rise Building Painting",
+                    "desc": "Specialized exterior painting for multi-story buildings — using proper safety equipment and trained personnel."
+                },
+                "protective": {
+                    "title": "Protective Coatings",
+                    "desc": "Coatings designed to protect surfaces from chemicals, impact, UV light, and harsh weather."
+                }
+            }
+        },
+        "why_choose": {
+            "title": "Why Clients Choose Us",
+            "items": {
+                "materials": {
+                    "title": "Premium Materials",
+                    "desc": "We use our own Surface Legend Paint for all projects — ensuring consistent quality and long-term durability."
+                },
+                "team": {
+                    "title": "Skilled Professionals",
+                    "desc": "Our team is composed of trained and certified painters from Surface Legend Art Academy."
+                },
+                "tools": {
+                    "title": "Advanced Tools & Techniques",
+                    "desc": "From spray machines to epoxy systems, we use modern equipment for refined finishing."
+                },
+                "safety": {
+                    "title": "Safety-First Approach",
+                    "desc": "Every project follows strong safety standards for both our team and your property."
+                },
+                "transparent": {
+                    "title": "Transparent Processes",
+                    "desc": "Clear quotations, honest timelines, and reliable communication throughout the project."
+                },
+                "nationwide": {
+                    "title": "Nationwide Flexibility",
+                    "desc": "We deploy teams across Cameroon for projects of all sizes."
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to Start Your Project?",
+            "description": "Let's discuss your surface transformation needs and create a solution tailored to your vision.",
+            "view_details": "View Service Details",
+            "whatsapp": "Chat With Us on WhatsApp",
+            "quote": "Request a Free Quote"
+        }
+    },
+    "service_details": {
+        "residential": {
+            "title": "Residential Painting",
+            "subtitle": "Transform your home with elegant, long-lasting finishes.",
+            "overview": "Your home deserves a finish that reflects comfort, beauty, and care. Surface Legend's residential painting service brings warmth, elegance, and premium protection to every part of your home — from bedrooms and living areas to exterior walls and detailed trim. Our team prepares every surface meticulously and applies premium Surface Legend Paint for a smooth, consistent, and long-lasting finish. Whether you're refreshing a single room or redesigning your entire home, we deliver a transformation you'll love.",
+            "benefits": {
+                "0": "Premium, climate-resistant coatings",
+                "1": "Smooth, clean finish with no paint splatter",
+                "2": "Customized color and finish guidance",
+                "3": "Professional surface preparation",
+                "4": "Protection from stains, moisture, and fading",
+                "5": "Friendly and respectful in-home team",
+                "6": "Fast and clean project completion"
+            },
+            "process": {
+                "0": "Inspection: We assess your space and discuss your goals.",
+                "1": "Preparation: Filling cracks, sanding, smoothing, and priming.",
+                "2": "Application: Brush, roller, or spray — depending on the finish.",
+                "3": "Detailing: Clean edges, even coats, perfect lines.",
+                "4": "Quality Control: Every project is checked thoroughly.",
+                "5": "Handover: Your refreshed home is spotless and complete."
+            },
+            "why_us": {
+                "0": "Highly trained and certified painters",
+                "1": "Premium Surface Legend Paint products",
+                "2": "Clean and respectful work environment",
+                "3": "Straightforward pricing and no hidden costs",
+                "4": "Guaranteed satisfaction",
+                "5": "Nationwide availability"
+            }
+        },
+        "commercial": {
+            "title": "Commercial Painting",
+            "subtitle": "Professional finishes that enhance your business image.",
+            "overview": "Commercial spaces require durability, style, and efficiency. Surface Legend delivers painting services that elevate offices, hotels, restaurants, and retail environments while minimizing disruption to daily operations. Our experienced team understands the unique demands of commercial projects — from coordinating schedules to maintaining professional standards throughout. We use premium Surface Legend Paint and advanced techniques to create finishes that reflect your brand's quality and professionalism.",
+            "benefits": {
+                "0": "Fast, efficient turnaround",
+                "1": "Premium coatings for high-traffic areas",
+                "2": "Clean, professional appearance",
+                "3": "Flexible scheduling (weekends, evenings)",
+                "4": "Safety-compliant work practices",
+                "5": "Minimal disruption to business operations",
+                "6": "Durable finishes that withstand heavy use"
+            },
+            "process": {
+                "0": "Consultation: Understanding your business needs and timeline.",
+                "1": "Planning: Scheduling work during off-hours to minimize disruption.",
+                "2": "Surface Preparation: Professional cleaning and priming.",
+                "3": "Application: High-quality coating application with precision.",
+                "4": "Quality Assurance: Thorough inspection for consistency and durability.",
+                "5": "Final Walkthrough: Ensuring complete satisfaction and professional handover."
+            },
+            "why_us": {
+                "0": "Experience with commercial projects",
+                "1": "Flexible scheduling for business operations",
+                "2": "Premium industrial-grade materials",
+                "3": "Professional, certified team",
+                "4": "Transparent project management",
+                "5": "Warranty on all work"
+            }
+        },
+        "interior": {
+            "title": "Interior Painting",
+            "subtitle": "Create the perfect atmosphere with flawless interior finishes.",
+            "overview": "Your interior walls set the tone for your entire space. From calming bedrooms to vibrant living areas and professional workspaces, Surface Legend's interior painting service delivers smooth, rich, and lasting results. We specialize in precision execution — clean lines, even coats, and careful protection of your furniture and floors. Using low-odor, premium Surface Legend Paint, we ensure a fresh look without the hassle.",
+            "benefits": {
+                "0": "Flawless smooth finish",
+                "1": "Vibrant, long-lasting color",
+                "2": "Low-odor, eco-friendly paints",
+                "3": "Furniture and floor protection",
+                "4": "Expert color consultation",
+                "5": "Clean and tidy execution",
+                "6": "Detail-oriented trim and ceiling work"
+            },
+            "process": {
+                "0": "Consultation: Choosing colors and finishes.",
+                "1": "Protection: Covering furniture and floors.",
+                "2": "Preparation: Patching holes and sanding surfaces.",
+                "3": "Priming: Ensuring good adhesion and color consistency.",
+                "4": "Painting: Applying premium topcoats with precision.",
+                "5": "Cleanup: Removing all materials and dust.",
+                "6": "Inspection: Final check with you."
+            },
+            "why_us": {
+                "0": "Attention to detail",
+                "1": "Premium low-odor paints",
+                "2": "Respect for your property",
+                "3": "Professional color advice",
+                "4": "Clean workspace policy",
+                "5": "Satisfaction guarantee"
+            }
+        },
+        "waterproofing": {
+            "title": "Waterproofing Solutions",
+            "subtitle": "Protect your property from moisture, leaks, and damage.",
+            "overview": "Water damage is a silent destroyer of buildings. Surface Legend offers comprehensive waterproofing solutions to seal roofs, walls, basements, and foundations against moisture intrusion. Our expert team identifies leak sources and applies advanced waterproof coatings and membranes that provide a durable shield against rain, humidity, and rising damp. Protect your investment with our professional waterproofing services.",
+            "benefits": {
+                "0": "Stops leaks and moisture intrusion",
+                "1": "Prevents mold and mildew growth",
+                "2": "Protects structural integrity",
+                "3": "Long-lasting rubberized or cementitious coatings",
+                "4": "Reduces maintenance costs",
+                "5": "Improves indoor air quality",
+                "6": "Weather-resistant barrier"
+            },
+            "process": {
+                "0": "Inspection: Identifying leak sources and moisture levels.",
+                "1": "Cleaning: Removing debris, moss, and loose material.",
+                "2": "Repair: Filling cracks and sealing joints.",
+                "3": "Priming: Applying specialized bonding agents.",
+                "4": "Coating: Applying multiple layers of waterproofing material.",
+                "5": "Testing: Verifying the seal (flood test if applicable).",
+                "6": "Handover: Maintenance advice and warranty."
+            },
+            "why_us": {
+                "0": "Specialized waterproofing expertise",
+                "1": "High-performance materials",
+                "2": "Comprehensive moisture diagnosis",
+                "3": "Long-term warranty protection",
+                "4": "Preventative solutions",
+                "5": "Experienced technical team"
+            }
+        },
+        "metal": {
+            "title": "Metal Painting",
+            "subtitle": "Advanced protection and finishing for all metal surfaces.",
+            "overview": "Metal surfaces require specialized care to prevent rust, corrosion, and wear. Surface Legend provides expert metal painting services for gates, railings, structural steel, and industrial machinery. We use high-performance anti-rust primers and durable topcoats to ensure your metal assets look great and last longer, even in Cameroon's humid climate.",
+            "benefits": {
+                "0": "Superior rust and corrosion protection",
+                "1": "High-gloss or matte finishes available",
+                "2": "Extends the lifespan of metal structures",
+                "3": "Weather-resistant coatings",
+                "4": "Professional preparation (sanding/derusting)",
+                "5": "Spray or brush application for perfect coverage",
+                "6": "Restores old, weathered metal to new"
+            },
+            "process": {
+                "0": "Assessment: Checking for rust and structural integrity.",
+                "1": "Preparation: Sanding, wire brushing, and removing old rust.",
+                "2": "Cleaning: Using solvents to remove grease and dust.",
+                "3": "Priming: Applying specialized anti-rust primers.",
+                "4": "Painting: Applying durable metal-grade topcoats.",
+                "5": "Inspection: Ensuring full coverage and smooth finish.",
+                "6": "Cleanup: Leaving the site spotless."
+            },
+            "why_us": {
+                "0": "Expertise in metal protection",
+                "1": "High-quality anti-rust products",
+                "2": "Detailed preparation work",
+                "3": "Long-lasting results",
+                "4": "Professional spray equipment",
+                "5": "Satisfaction guaranteed"
+            }
+        },
+        "roof": {
+            "title": "Roof Painting",
+            "subtitle": "Restore your roof's beauty and protection.",
+            "overview": "Your roof is your property's first line of defense. Surface Legend's roof painting service not only improves the aesthetic appeal of your home or building but also adds a layer of protection against UV rays, rain, and leaks. We use specialized roof coatings that reflect heat, resist fading, and seal minor cracks, extending the life of your roof and keeping your interior cooler.",
+            "benefits": {
+                "0": "Restores faded roof color",
+                "1": "Heat-reflective coatings reduce indoor temperature",
+                "2": "Seals minor hairline cracks",
+                "3": "Prevents algae and moss growth",
+                "4": "Extends roof lifespan",
+                "5": "Cheaper than full roof replacement",
+                "6": "Waterproof protection"
+            },
+            "process": {
+                "0": "Inspection: Checking roof condition and safety.",
+                "1": "Cleaning: High-pressure washing to remove dirt and mold.",
+                "2": "Repair: Sealing nails and small leaks.",
+                "3": "Priming: Ensuring strong paint adhesion.",
+                "4": "Coating: Applying multiple layers of roof paint.",
+                "5": "Final Check: Verifying coverage and seal.",
+                "6": "Cleanup: Removing debris from gutters and grounds."
+            },
+            "why_us": {
+                "0": "Safety-trained roof specialists",
+                "1": "Premium weather-resistant roof paints",
+                "2": "Thorough cleaning and prep",
+                "3": "Heat-reflective options available",
+                "4": "Long-term warranty",
+                "5": "Efficient project completion"
+            }
+        },
+        "exterior": {
+            "title": "Exterior Painting",
+            "subtitle": "Weather-resistant finishes built to endure.",
+            "overview": "Exterior surfaces face sunlight, rain, humidity, and dust. Surface Legend uses premium weather-proof coatings to protect and beautify your building exterior. Our exterior painting service combines protective durability with aesthetic excellence, ensuring your property looks stunning while remaining protected from Cameroon's challenging climate. From residential homes to commercial buildings, we deliver finishes that last.",
+            "benefits": {
+                "0": "UV-resistant coatings",
+                "1": "Mold & moisture protection",
+                "2": "Durable against harsh weather",
+                "3": "Long-lasting color vibrancy",
+                "4": "Climate-adapted formulations",
+                "5": "Professional surface preparation",
+                "6": "Enhanced property curb appeal"
+            },
+            "process": {
+                "0": "Property Assessment: Evaluating exterior condition and weather exposure.",
+                "1": "Surface Cleaning: Removing dirt, mold, and old paint.",
+                "2": "Repair & Preparation: Filling cracks and priming surfaces.",
+                "3": "Primer Application: Applying weather-resistant primer.",
+                "4": "Topcoat Application: Professional application of premium exterior paint.",
+                "5": "Quality Inspection: Ensuring even coverage and durability."
+            },
+            "why_us": {
+                "0": "Expertise in weather-resistant coatings",
+                "1": "Premium exterior-grade materials",
+                "2": "Climate-adapted paint formulations",
+                "3": "Professional surface preparation",
+                "4": "Long-lasting color protection",
+                "5": "Comprehensive warranty"
+            }
+        },
+        "pop_decorative": {
+            "title": "POP & Decorative Finishes",
+            "subtitle": "Bring creativity, depth, and artistry to your interiors.",
+            "overview": "From POP ceilings to textured walls and artistic coatings, Surface Legend transforms ordinary spaces into expressive, beautiful interiors. Our skilled artisans combine traditional craftsmanship with modern design trends to create unique finishes that reflect your personal style. Whether you want elegant POP designs, textured effects, or custom artistic finishes, we deliver creativity and quality in every project.",
+            "benefits": {
+                "0": "Premium decorative options",
+                "1": "Skilled artisans and designers",
+                "2": "Modern design finishes",
+                "3": "Custom patterns and effects",
+                "4": "Adds depth and dimension to spaces",
+                "5": "Personalized design consultation",
+                "6": "Durable artistic finishes"
+            },
+            "process": {
+                "0": "Design Consultation: Discussing your vision and style preferences.",
+                "1": "Concept Development: Creating design sketches and samples.",
+                "2": "Material Selection: Choosing premium POP and decorative products.",
+                "3": "Installation: Expert application of POP designs and finishes.",
+                "4": "Artistic Detailing: Adding custom patterns, textures, and effects.",
+                "5": "Final Presentation: Showcasing your transformed space."
+            },
+            "why_us": {
+                "0": "Experienced decorative artisans",
+                "1": "Creative design expertise",
+                "2": "Premium materials and products",
+                "3": "Custom design solutions",
+                "4": "Attention to artistic detail",
+                "5": "Personalized consultation"
+            }
+        },
+        "epoxy": {
+            "title": "Epoxy Floor Coating",
+            "subtitle": "Strong, seamless, and visually stunning flooring solutions.",
+            "overview": "Epoxy floors are ideal for homes, offices, showrooms, garages, and industrial sites. Surface Legend applies high-quality epoxy systems designed for durability, hygiene, and aesthetic appeal. Our epoxy flooring transforms ordinary concrete into a sleek, professional surface that's both beautiful and functional. Whether you need a glossy showroom finish or a durable industrial floor, our expert application ensures a seamless, long-lasting result.",
+            "benefits": {
+                "0": "Glossy, modern finish",
+                "1": "Highly durable & impact-resistant",
+                "2": "Easy to clean and maintain",
+                "3": "Water-resistant and moisture-proof",
+                "4": "Perfect for commercial and residential spaces",
+                "5": "Chemical-resistant surface",
+                "6": "Enhanced safety with non-slip options"
+            },
+            "process": {
+                "0": "Surface Assessment: Evaluating concrete condition and requirements.",
+                "1": "Concrete Preparation: Grinding, cleaning, and priming the surface.",
+                "2": "Epoxy Application: Professional application of epoxy coating layers.",
+                "3": "Curing: Allowing proper time for epoxy to set and cure.",
+                "4": "Final Inspection: Checking for consistency, smoothness, and quality.",
+                "5": "Project Completion: Handover with care instructions for maintenance."
+            },
+            "why_us": {
+                "0": "Professional epoxy application expertise",
+                "1": "Premium epoxy products",
+                "2": "Seamless, high-quality finishes",
+                "3": "Durable and long-lasting results",
+                "4": "Competitive pricing",
+                "5": "Comprehensive warranty coverage"
+            }
+        },
+        "steel_structure": {
+            "title": "Steel Structure Painting",
+            "subtitle": "Industrial-grade coatings for long-lasting metal protection.",
+            "overview": "Steel structures in factories, warehouses, bridges, and industrial facilities require specialized coatings to prevent corrosion and ensure structural longevity. Surface Legend provides professional steel structure painting with anti-rust primers, high-performance topcoats, and safety-compliant application methods. Our experienced team handles everything from surface blasting to final finishing, delivering durable protection that withstands harsh industrial environments.",
+            "benefits": {
+                "0": "Superior corrosion and rust protection",
+                "1": "Extends structural lifespan significantly",
+                "2": "Industrial-grade coating systems",
+                "3": "Weather and chemical resistance",
+                "4": "Professional surface preparation",
+                "5": "Safety-certified application methods",
+                "6": "Compliance with industrial standards"
+            },
+            "process": {
+                "0": "Structural Assessment: Evaluating steel condition, rust levels, and coating requirements.",
+                "1": "Surface Preparation: Sandblasting or wire brushing to remove rust and old coatings.",
+                "2": "Cleaning: Removing dust, grease, and contaminants for proper adhesion.",
+                "3": "Anti-Rust Priming: Applying specialized zinc-rich or epoxy primers.",
+                "4": "Topcoat Application: Professional spray application of industrial-grade paint.",
+                "5": "Quality Inspection: Ensuring complete coverage and coating thickness.",
+                "6": "Site Cleanup: Removing all materials and debris from the work area."
+            },
+            "why_us": {
+                "0": "Industrial painting specialists",
+                "1": "Heavy-duty equipment and scaffolding",
+                "2": "Safety-certified team",
+                "3": "Premium anti-corrosion products",
+                "4": "Experience with large-scale projects",
+                "5": "Comprehensive project insurance"
+            }
+        },
+        "mold_resistant": {
+            "title": "Mold-Resistant Coatings",
+            "subtitle": "Protect your health with advanced anti-fungal solutions.",
+            "overview": "Mold and mildew thrive in humid environments like bathrooms, kitchens, basements, and poorly ventilated areas. Surface Legend's mold-resistant coating service uses specialized anti-fungal paints and treatments that prevent mold growth, improve indoor air quality, and create healthier living spaces. Our expert team identifies mold-prone areas and applies long-lasting protective coatings designed specifically for Cameroon's humid climate.",
+            "benefits": {
+                "0": "Prevents mold and mildew growth",
+                "1": "Improves indoor air quality",
+                "2": "Health-focused formulations",
+                "3": "Long-lasting anti-fungal protection",
+                "4": "Ideal for bathrooms and kitchens",
+                "5": "Reduces maintenance and repainting",
+                "6": "Climate-adapted for humid environments"
+            },
+            "process": {
+                "0": "Mold Assessment: Identifying existing mold and high-risk areas.",
+                "1": "Mold Removal: Professional cleaning and treatment of affected surfaces.",
+                "2": "Surface Preparation: Ensuring clean, dry, mold-free surfaces.",
+                "3": "Anti-Fungal Primer: Applying specialized mold-blocking primer.",
+                "4": "Mold-Resistant Paint: Professional application of anti-fungal topcoat.",
+                "5": "Ventilation Advice: Providing recommendations for ongoing mold prevention.",
+                "6": "Warranty Coverage: Guaranteeing long-term mold resistance."
+            },
+            "why_us": {
+                "0": "Health and safety certified",
+                "1": "Specialized anti-mold products",
+                "2": "Experience with humid climates",
+                "3": "Professional mold remediation",
+                "4": "Preventative approach",
+                "5": "Long-term warranty protection"
+            }
+        },
+        "highrise": {
+            "title": "High-Rise Building Painting",
+            "subtitle": "Professional exterior finishing for tall structures.",
+            "overview": "Painting high-rise buildings requires specialized equipment, safety expertise, and experienced professionals. Surface Legend provides comprehensive high-rise painting services for commercial towers, apartment complexes, and institutional buildings. Our height-trained team uses rope access, scaffolding, and lift systems to deliver flawless exterior finishes while maintaining the highest safety standards. We minimize disruption and ensure professional results on every project.",
+            "benefits": {
+                "0": "Height-certified professional team",
+                "1": "Advanced safety equipment and protocols",
+                "2": "Rope access and scaffolding expertise",
+                "3": "Weather-resistant exterior coatings",
+                "4": "Minimal disruption to occupants",
+                "5": "Comprehensive project insurance",
+                "6": "Professional exterior transformation"
+            },
+            "process": {
+                "0": "Safety Assessment: Evaluating building height, access, and safety requirements.",
+                "1": "Equipment Setup: Installing scaffolding, rope access, or lift systems.",
+                "2": "Surface Preparation: Cleaning, repairing, and priming exterior surfaces.",
+                "3": "Systematic Application: Floor-by-floor professional painting approach.",
+                "4": "Quality Control: Regular inspection at each level for consistency.",
+                "5": "Safety Compliance: Adhering to all safety regulations throughout.",
+                "6": "Project Handover: Final walkthrough and completion documentation."
+            },
+            "why_us": {
+                "0": "Specialized high-rise experience",
+                "1": "Safety-certified rope access team",
+                "2": "Professional scaffolding systems",
+                "3": "Full project insurance coverage",
+                "4": "Weather-monitoring and planning",
+                "5": "Proven track record on tall buildings"
+            }
+        },
+        "protective_industrial": {
+            "title": "Protective Industrial Coatings",
+            "subtitle": "Heavy-duty protection for demanding industrial environments.",
+            "overview": "Industrial facilities, chemical plants, oil installations, and manufacturing sites face extreme conditions that require specialized protective coatings. Surface Legend delivers advanced industrial coating solutions designed for chemical resistance, extreme temperatures, and harsh operational environments. Our technical team applies epoxy systems, polyurethane coatings, and chemical-resistant finishes that meet international standards and ensure long-term asset protection.",
+            "benefits": {
+                "0": "Chemical and solvent resistance",
+                "1": "Extreme temperature tolerance",
+                "2": "Abrasion and impact resistance",
+                "3": "Compliance with industrial standards",
+                "4": "Extended equipment lifespan",
+                "5": "Reduces maintenance downtime",
+                "6": "Technical specification adherence"
+            },
+            "process": {
+                "0": "Environmental Assessment: Understanding chemical exposure and operational conditions.",
+                "1": "Technical Specification: Selecting appropriate coating systems for the environment.",
+                "2": "Surface Preparation: Industrial-grade blasting and cleaning procedures.",
+                "3": "Primer Application: Applying specialized industrial primers.",
+                "4": "Protective Coating: Multi-layer application of protective systems.",
+                "5": "Quality Testing: Verifying coating thickness and adhesion.",
+                "6": "Compliance Documentation: Providing technical reports and certifications."
+            },
+            "why_us": {
+                "0": "Industrial coating specialists",
+                "1": "Technical certifications",
+                "2": "Premium protective products",
+                "3": "Experience with harsh environments",
+                "4": "Safety and compliance focused",
+                "5": "Comprehensive technical support"
+            }
+        }
+    },
+    "footer": {
+        "brand_desc": "Premium coatings. Professional craftsmanship. Legendary finishes.",
+        "tagline": "Premium coatings. Professional craftsmanship. Legendary finishes.",
+        "contact": "Contact",
+        "locations": "Locations",
+        "follow_us": "Follow Us",
+        "get_quote": "Get a Quote",
+        "rights": "© 2025 Surface Legend. All rights reserved.",
+        "developer_credit": "Built by"
+    },
+    "products_page": {
+        "meta": {
+            "title": "Surface Legend - Paint Products | Premium Coatings & Paints",
+            "description": "Discover Surface Legend Paint: Premium, high-performance coatings engineered for Cameroon's climate."
+        },
+        "hero": {
+            "label": "Premium Coatings",
+            "title": "Surface Legend Paint",
+            "subtitle": "Premium Paints & High-Performance Coatings Engineered for Excellence",
+            "description": "Surface Legend Paint is our premium paint manufacturing division, created to deliver durable, beautiful, and high-performance coatings for homes, businesses, and industrial environments. Designed for local climate conditions and professional application, our products set a new standard for quality and reliability.",
+            "cta_categories": "View Product Categories",
+            "cta_info": "Request Product Info"
+        },
+        "philosophy": {
+            "title": "More Than Paint — A Performance Standard",
+            "p1": "Surface Legend Paint is developed with one goal in mind: exceptional performance.",
+            "p2": "Every formulation is designed to provide strong coverage, long-lasting color, smooth application, and resistance to weather, moisture, and wear.",
+            "p3": "Our paints are not experimental — they are field-tested daily by our professional painting teams and refined through real-world application."
+        },
+        "categories": {
+            "title": "Our Paint & Coating Range",
+            "items": {
+                "interior": {
+                    "title": "Interior Paints",
+                    "desc": "Smooth, washable, and vibrant finishes for walls and ceilings."
+                },
+                "exterior": {
+                    "title": "Exterior Paints",
+                    "desc": "Weather-resistant coatings built for sun, rain, and humidity."
+                },
+                "industrial": {
+                    "title": "Industrial Coatings",
+                    "desc": "Heavy-duty protection for steel structures, factories, and machinery."
+                },
+                "decorative": {
+                    "title": "Decorative & Texture Paints",
+                    "desc": "Designer finishes, textures, and artistic coatings."
+                },
+                "protective": {
+                    "title": "Protective Coatings",
+                    "desc": "Anti-rust, anti-mold, waterproofing, and surface protection systems."
+                },
+                "wood": {
+                    "title": "Wood & Furniture Finishes",
+                    "desc": "Durable coatings for doors, cabinets, and wooden surfaces."
+                },
+                "epoxy": {
+                    "title": "Epoxy Coatings",
+                    "desc": "Seamless epoxy systems for floors, garages, showrooms, and industries."
+                }
+            }
+        },
+        "why": {
+            "title": "Why Surface Legend Paint",
+            "items": {
+                "0": "High coverage efficiency",
+                "1": "Long-lasting durability",
+                "2": "Climate-adapted formulations",
+                "3": "Smooth application (brush, roller, spray)",
+                "4": "Trusted by professionals",
+                "5": "Used daily by Surface Legend Services",
+                "6": "Supported by expert training"
+            }
+        },
+        "ecosystem": {
+            "title": "A Product Built Into a Complete Ecosystem",
+            "intro": "Surface Legend Paint is unique because it is:",
+            "items": {
+                "manufactured": {
+                    "title": "Manufactured by experts",
+                    "desc": "Developed with deep industry knowledge and quality standards."
+                },
+                "applied": {
+                    "title": "Applied by trained professionals",
+                    "desc": "Used daily by Surface Legend Services teams who understand proper application."
+                },
+                "taught": {
+                    "title": "Taught in our Art Academy",
+                    "desc": "Product knowledge and application techniques are part of our training curriculum."
+                }
+            },
+            "conclusion": "This integration ensures consistency, accountability, and unmatched quality from production to final finish."
+        },
+        "cta": {
+            "title": "Choose Paint That Professionals Trust",
+            "description": "Ready to experience the quality and performance of Surface Legend Paint? Contact us for product information, pricing, and professional application services.",
+            "btn_contact": "Contact Us for Product Orders",
+            "btn_whatsapp": "Chat With Us on WhatsApp"
+        }
+    },
+    "portfolio_page": {
+        "meta": {
+            "title": "Surface Legend - Portfolio | Our Completed Projects",
+            "description": "Browse our portfolio of completed residential, commercial, and industrial painting projects across Cameroon."
+        },
+        "hero": {
+            "label": "Our Work",
+            "title": "Portfolio",
+            "desc": "Explore our collection of completed projects showcasing professional craftsmanship, attention to detail, and transformation of spaces across Cameroon.",
+            "desc2": "From residential homes to commercial offices and industrial facilities, Surface Legend delivers consistent quality and legendary finishes on every project."
+        },
+        "filters": {
+            "all": "All Projects",
+            "residential": "Residential",
+            "commercial": "Commercial",
+            "epoxy": "Epoxy Flooring"
+        },
+        "projects": {
+            "1": {
+                "title": "Residential Interior Transformation",
+                "desc": "Complete home interior refresh with elegant finishes"
+            },
+            "2": {
+                "title": "Living Room & Bedroom Renovation",
+                "desc": "Professional residential painting with premium finishes"
+            },
+            "3": {
+                "title": "Modern Office Space Design",
+                "desc": "Contemporary commercial office with accent walls"
+            },
+            "4": {
+                "title": "Corporate Office Transformation",
+                "desc": "Professional business environment with brand colors"
+            },
+            "5": {
+                "title": "Creative Office Entrance",
+                "desc": "Bold entrance design with modern paint application"
+            },
+            "6": {
+                "title": "Industrial Epoxy Floor Installation",
+                "desc": "High-performance epoxy flooring for warehouse"
+            },
+            "7": {
+                "title": "Warehouse Epoxy Flooring",
+                "desc": "Seamless epoxy coating for industrial space"
+            }
+        },
+        "stats": {
+            "projects": "Projects Completed",
+            "satisfaction": "Client Satisfaction",
+            "experience": "Years Experience",
+            "clients": "Happy Clients"
+        },
+        "cta": {
+            "title": "Ready to See Your Project Transform?",
+            "description": "Let Surface Legend bring the same quality and craftsmanship to your space. Contact us today for a free consultation.",
+            "btn_quote": "Request a Free Quote",
+            "btn_whatsapp": "Chat on WhatsApp"
+        }
+    },
+    "academy_page": {
+        "meta": {
+            "title": "Surface Legend - Art Academy | Professional Painting Training",
+            "description": "Join Surface Legend Art Academy: Professional training programs for painters, decorative artists, and surface finishers."
+        },
+        "hero": {
+            "label": "Professional Development",
+            "title": "Surface Legend Art Academy",
+            "subtitle": "Training the Next Generation of Professional Painters & Surface Artists",
+            "description": "Surface Legend Art Academy is the training and talent-development arm of the Surface Legend ecosystem. The academy equips apprentices and professionals with practical skills, modern techniques, and real-world experience — transforming passion into professional capability.",
+            "cta_join": "Join the Academy",
+            "cta_programs": "View Training Programs"
+        },
+        "purpose": {
+            "title": "More Than Training — Building Careers",
+            "p1": "The Art Academy was created to raise industry standards and empower individuals with skills that create long-term opportunities.",
+            "p2": "Our goal is to produce painters who are not only skilled, but professional, disciplined, and confident."
+        },
+        "target": {
+            "title": "Who We Train",
+            "items": {
+                "beginners": {
+                    "title": "Beginners & Apprentices",
+                    "desc": "Starting your journey in professional painting"
+                },
+                "painters": {
+                    "title": "Working Painters",
+                    "desc": "Enhancing skills and learning new techniques"
+                },
+                "decorative": {
+                    "title": "Decorative Artists",
+                    "desc": "Specializing in artistic and decorative finishes"
+                },
+                "contractors": {
+                    "title": "Contractors & Team Leaders",
+                    "desc": "Building management and leadership skills"
+                },
+                "creative": {
+                    "title": "Creative Individuals Seeking a Trade",
+                    "desc": "Exploring painting as a professional career"
+                }
+            }
+        },
+        "programs": {
+            "title": "Training Programs",
+            "items": {
+                "0": "Basic & Professional Painting",
+                "1": "Surface Preparation & Finishing",
+                "2": "Decorative & Texture Finishes",
+                "3": "POP Design & Installation",
+                "4": "Epoxy Floor Application",
+                "5": "Spray Machine Operation",
+                "6": "Safety & Site Management",
+                "7": "Product Knowledge (Surface Legend Paint)",
+                "8": "Client Communication & Quotation"
+            },
+            "note": "Training combines theory with hands-on project experience."
+        },
+        "why": {
+            "title": "Why Train With Us",
+            "items": {
+                "0": "Learn from active professionals",
+                "1": "Use real tools and premium products",
+                "2": "Industry-relevant skills",
+                "3": "Safety-first training culture",
+                "4": "Career-ready outcomes",
+                "5": "Certification opportunities (future expansion)"
+            }
+        },
+        "integration": {
+            "title": "Career & Brand Integration",
+            "intro": "Graduates of Surface Legend Art Academy may:",
+            "items": {
+                "join": {
+                    "title": "Join Surface Legend Services",
+                    "desc": "Work directly with our professional painting teams on real projects."
+                },
+                "partner": {
+                    "title": "Work with partner contractors",
+                    "desc": "Connect with our network of trusted contractors and construction partners."
+                },
+                "independent": {
+                    "title": "Become independent professionals",
+                    "desc": "Start your own painting business with the skills and confidence gained from training."
+                },
+                "ambassador": {
+                    "title": "Act as brand ambassadors for Surface Legend Paint",
+                    "desc": "Promote and use our premium paint products with expert knowledge."
+                }
+            },
+            "conclusion": "This creates a powerful link between training, employment, and product mastery."
+        },
+        "cta": {
+            "title": "Start Your Journey With Surface Legend",
+            "description": "Ready to transform your passion into professional capability? Join Surface Legend Art Academy and learn from the experts.",
+            "btn_enroll": "Enroll Now",
+            "btn_contact": "Contact the Academy"
+        }
+    },
+    "contact_page": {
+        "meta": {
+            "title": "Surface Legend - Contact Us | Get a Free Quote",
+            "description": "Get in touch with Surface Legend for professional painting, coatings, and training inquiries. Free quotes available."
+        },
+        "hero": {
+            "label": "Get in Touch",
+            "title": "Contact Us",
+            "subtitle": "Have a project in mind? We'd love to hear from you. Reach out to Surface Legend today for a free consultation and quote."
+        },
+        "info": {
+            "title": "Contact Information",
+            "phone": "Phone",
+            "email": "Email",
+            "locations": "Locations",
+            "hours": {
+                "title": "Business Hours",
+                "mon_thu": "Monday - Thursday: 8:00 AM - 6:00 PM",
+                "fri": "Friday: Closed",
+                "sat_sun": "Saturday - Sunday: 8:00 AM - 6:00 PM"
+            },
+            "cta_whatsapp": "Chat on WhatsApp"
+        },
+        "form": {
+            "title": "Send us a Message",
+            "name_label": "Full Name *",
+            "name_placeholder": "Your full name",
+            "email_label": "Email Address *",
+            "email_placeholder": "your.email@example.com",
+            "phone_label": "Phone Number *",
+            "phone_placeholder": "+237 XXX XXX XXX",
+            "type_label": "Inquiry Type *",
+            "type_placeholder": "Select inquiry type",
+            "service_label": "Service of Interest *",
+            "service_placeholder": "Select a service",
+            "product_label": "Product of Interest *",
+            "product_placeholder": "Select a product",
+            "program_label": "Training Program of Interest *",
+            "program_placeholder": "Select a program",
+            "message_label": "Additional Message",
+            "message_placeholder": "Tell us more about your project, timeline, or any specific requirements...",
+            "btn_send": "Send Inquiry via WhatsApp",
+            "sending": "Sending...",
+            "disclaimer": "By submitting this form, you agree to be contacted about your inquiry."
+        },
+        "inquiry_types": {
+            "services": "Services Inquiry",
+            "products": "Paint Products Inquiry",
+            "academy": "Art Academy Inquiry",
+            "general": "General Inquiry"
+        },
+        "areas": {
+            "title": "Service Areas",
+            "desc": "We proudly serve major cities across Cameroon with professional painting and coating services.",
+            "items": {
+                "douala": {
+                    "title": "Douala",
+                    "desc": "Head Office & Main Service Hub"
+                },
+                "yaounde": {
+                    "title": "Yaoundé",
+                    "desc": "Capital City Operations"
+                },
+                "bamenda": {
+                    "title": "Bamenda",
+                    "desc": "Northwest Region Services"
+                },
+                "buea": {
+                    "title": "Buea & Limbe",
+                    "desc": "Southwest Region Services"
+                }
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": {
+                "0": {
+                    "q": "How quickly can you respond to my inquiry?",
+                    "a": "We typically respond to inquiries within 24 hours during business days. For urgent matters, contact us directly via WhatsApp for immediate assistance."
+                },
+                "1": {
+                    "q": "Do you offer free consultations?",
+                    "a": "Yes! We provide free on-site consultations to assess your project, discuss your needs, and provide accurate quotes."
+                },
+                "2": {
+                    "q": "What areas do you service?",
+                    "a": "We serve Douala, Yaoundé, Bamenda, Buea, Limbe, and surrounding areas. Contact us to confirm service availability in your location."
+                },
+                "3": {
+                    "q": "How do I get a quote?",
+                    "a": "Fill out our contact form, call us directly, or chat with us on WhatsApp. We'll schedule a consultation and provide a detailed quote."
+                },
+                "4": {
+                    "q": "Do you work on weekends?",
+                    "a": "We're available Saturday mornings. Sunday is typically closed, but emergency projects can be discussed."
+                },
+                "5": {
+                    "q": "What payment methods do you accept?",
+                    "a": "We accept cash, bank transfers, and mobile money. Payment terms can be discussed based on project scope."
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to Get Started?",
+            "description": "Don't wait to transform your space. Contact Surface Legend today and let's bring your vision to life.",
+            "btn_fill": "Fill Out the Form Above",
+            "btn_whatsapp": "Chat on WhatsApp"
+        }
+    },
+    "service_details_page": {
+        "hero": {
+            "cta_quote": "Request a Quote",
+            "cta_whatsapp": "Chat on WhatsApp"
+        },
+        "overview": {
+            "title": "What This Service Includes"
+        },
+        "benefits": {
+            "title": "Key Benefits of This Service"
+        },
+        "process": {
+            "title": "What You Can Expect"
+        },
+        "why_choose": {
+            "title": "Why Choose Surface Legend?"
+        },
+        "recent_projects": {
+            "title": "Recent Projects",
+            "description": "See how Surface Legend transforms spaces with professional craftsmanship and premium finishes.",
+            "placeholder_image": "Project Image"
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": {
+                "0": {
+                    "q": "How long does this service take?",
+                    "a": "Duration depends on the scope of work, surface condition, and project complexity. We'll provide a detailed timeline during the consultation."
+                },
+                "1": {
+                    "q": "Can you help me choose colors or finishes?",
+                    "a": "Absolutely! Surface Legend provides expert guidance on color selection, finish types, and design options tailored to your space and preferences."
+                },
+                "2": {
+                    "q": "Do you bring your own materials?",
+                    "a": "Yes, we use premium Surface Legend Paint and all necessary professional tools. Quality materials ensure superior results and long-term durability."
+                },
+                "3": {
+                    "q": "What areas do you serve?",
+                    "a": "We're based in Douala and serve major cities across Cameroon. Contact us for availability in your area."
+                }
+            }
+        },
+        "cta_bottom": {
+            "title": "Ready to Transform Your Space?",
+            "description": "Let's discuss your project and create a solution tailored to your needs.",
+            "btn_estimate": "Get a Free Estimate",
+            "btn_whatsapp": "Chat on WhatsApp"
+        }
+    }
+}
