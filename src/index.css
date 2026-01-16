@@ -226,10 +226,17 @@
 }
 
 @layer components {
-  /* Craftsmanship Modernism Custom Components */
+  /* Craftsmanship Modernism v2.0 - Logo-Aligned Components */
 
   .btn-primary {
-    @apply px-8 py-3 bg-accent text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg;
+    @apply px-8 py-3 text-white font-semibold rounded-lg transition-all duration-300;
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(20, 184, 166, 0.3);
   }
 
   .btn-secondary {
@@ -237,11 +244,16 @@
   }
 
   .section-divider {
-    @apply h-1 bg-gradient-to-r from-transparent via-accent to-transparent my-12;
+    @apply h-1 my-12;
+    background: linear-gradient(90deg, transparent 0%, #14B8A6 50%, transparent 100%);
   }
 
   .service-card {
     @apply bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-muted;
+  }
+
+  .service-card:hover {
+    border-color: #14B8A6;
   }
 
   .fade-in-up {

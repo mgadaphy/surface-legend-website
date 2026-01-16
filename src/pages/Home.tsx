@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle2, Palette, Shield, MessageCircle, Briefcase, Award, Zap } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
 
 /**
@@ -62,6 +63,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* S-Curve Divider - Logo-inspired visual element */}
+      <SCurveDivider variant="default" className="my-0" />
 
       {/* SECTION 2: WHO WE ARE */}
       <section className="container py-20 md:py-28">
