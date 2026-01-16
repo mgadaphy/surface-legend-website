@@ -133,7 +133,10 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section >
+      </section>
+
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 3: CORE SERVICES */}
       <section id="services" className="bg-secondary py-20 md:py-28" >
@@ -201,6 +204,9 @@ export default function Home() {
         </div>
       </section >
 
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="reverse" className="my-0" />
+
       {/* SECTION 4: PRODUCTS */}
       < section id="products" className="container py-20 md:py-28" >
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -236,7 +242,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section >
+      </section>
+
+      {/* S-Curve Divider */}
+      <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 5: ACADEMY */}
       < section id="academy" className="bg-secondary py-20 md:py-28" >
