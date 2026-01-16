@@ -3,15 +3,16 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle2, Lightbulb, Target, Heart, Palette, Briefcase, Award } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 
 /**
  * Surface Legend About Us Page
- * Design System: Craftsmanship Modernism
+ * Design System: Craftsmanship Modernism v2.0
  * - Typography: Playfair Display (headers), Lato (body), Montserrat (accents)
- * - Colors: Deep Charcoal (#2C3E50), Warm Terracotta (#C85A3A), Soft Cream (#F5F1E8)
- * - Layout: Asymmetric, generous whitespace, restrained animations
+ * - Colors: Surface Navy (#1E3A5F), Legend Teal (#14B8A6)
+ * - Layout: Split-layout heroes, S-curve dividers, generous whitespace
  */
 
 export default function About() {
@@ -25,21 +26,62 @@ export default function About() {
       />
       <Navigation currentPage="about" />
 
-      {/* SECTION 1: HERO / INTRODUCTION */}
-      <section className="container py-20 md:py-28">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="text-accent-label mb-4">{t('about.hero.subtitle')}</div>
-          <h1 className="mb-6 font-display">
-            {t('about.hero.title')}
-          </h1>
-          <p className="text-lg text-gray-700 mb-8">
-            {t('about.hero.intro_bold')}
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            {t('about.hero.intro_text')}
-          </p>
+      {/* SECTION 1: HERO - Split Layout with S-Curve Division */}
+      <section className="relative bg-primary overflow-hidden">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-0 min-h-[600px]">
+            {/* Left Side - Content */}
+            <div className="flex flex-col justify-center py-16 md:py-24 lg:py-32 pr-0 lg:pr-12 relative z-10">
+              <div className="text-accent-label mb-4 text-accent-light">{t('about.hero.subtitle')}</div>
+              <h1 className="text-white mb-6 font-display">
+                {t('about.hero.title')}
+              </h1>
+              <p className="text-white/90 text-lg mb-6 font-semibold">
+                {t('about.hero.intro_bold')}
+              </p>
+              <p className="text-white/80 text-base mb-8 max-w-xl leading-relaxed">
+                {t('about.hero.intro_text')}
+              </p>
+            </div>
+
+            {/* Right Side - Team/Workshop Image */}
+            <div className="relative h-[400px] lg:h-auto">
+              <img
+                src="/images/about-team-workshop.jpg"
+                alt="Surface Legend team and workshop"
+                className="w-full h-full object-cover"
+              />
+              {/* Subtle gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-transparent"></div>
+            </div>
+
+            {/* Vertical S-Curve Divider */}
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-24 -ml-12 pointer-events-none z-20">
+              <svg
+                className="w-full h-full"
+                viewBox="0 0 100 800"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient id="about-scurve-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#1E3A5F" stopOpacity="1" />
+                    <stop offset="50%" stopColor="#14B8A6" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="transparent" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M 0,0 Q 40,200 50,400 T 100,800 L 0,800 Z"
+                  fill="url(#about-scurve-gradient)"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Horizontal S-Curve Divider */}
+      <SCurveDivider variant="reverse" className="my-0" />
 
       {/* CONTACT INFORMATION SECTION */}
       <section className="bg-secondary py-16 md:py-20">
