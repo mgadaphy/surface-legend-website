@@ -57,7 +57,7 @@ Professional bilingual (English/French) website for Surface Legend, a premium pa
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/surface-legend-website.git
+git clone https://github.com/mgadaphy/surface-legend-website.git
 
 # Navigate to project directory
 cd surface-legend-website
