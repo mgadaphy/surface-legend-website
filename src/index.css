@@ -48,93 +48,122 @@
   --font-body: "Lato", sans-serif;
   --font-accent: "Montserrat", sans-serif;
 
-  /* Craftsmanship Modernism Design System */
-  --primary: #2C3E50;
+  /* Surface Legend v2.0 - Logo-Aligned Color System */
+  /* Primary Colors */
+  --primary: #1E3A5F;
+  /* Surface Navy - durability, trust, mastery */
+  --primary-light: #2C5A7F;
+  /* Navy Light - hover states, accents */
   --primary-foreground: #FFFFFF;
-  --accent: #C85A3A;
+
+  /* Accent Colors */
+  --accent: #14B8A6;
+  /* Legend Teal - creativity, transformation */
+  --accent-dark: #0D9488;
+  /* Teal Dark - hover states */
+  --accent-light: #5EEAD4;
+  /* Teal Light - subtle highlights */
   --accent-foreground: #FFFFFF;
-  --sidebar-primary: #2C3E50;
+
+  /* Supporting Colors */
+  --secondary: #F8FAFC;
+  /* Soft Off-White - backgrounds, breathing room */
+  --secondary-foreground: #1E3A5F;
+  --muted: #E2E8F0;
+  /* Cool Border Gray - dividers, borders */
+  --muted-foreground: #64748B;
+  /* Cool Gray - secondary text */
+
+  /* Gradients (NEW) */
+  --gradient-primary: linear-gradient(135deg, #1E3A5F 0%, #14B8A6 100%);
+  --gradient-hero: linear-gradient(135deg, #1E3A5F 0%, #2C5A7F 50%, #14B8A6 100%);
+  --gradient-subtle: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+
+  /* System Colors */
+  --sidebar-primary: #1E3A5F;
   --sidebar-primary-foreground: #FFFFFF;
-  --chart-1: #C85A3A;
-  --chart-2: #2C3E50;
-  --chart-3: #E8E3DB;
-  --chart-4: #F5F1E8;
+  --chart-1: #14B8A6;
+  --chart-2: #1E3A5F;
+  --chart-3: #E2E8F0;
+  --chart-4: #F8FAFC;
   --chart-5: #FFFFFF;
   --radius: 0.65rem;
   --background: #FFFFFF;
-  --foreground: #2C3E50;
+  --foreground: #1E3A5F;
   --card: #FFFFFF;
-  --card-foreground: #2C3E50;
+  --card-foreground: #1E3A5F;
   --popover: #FFFFFF;
-  --popover-foreground: #2C3E50;
-  --secondary: #F5F1E8;
-  --secondary-foreground: #2C3E50;
-  --muted: #E8E3DB;
-  --muted-foreground: #6B7280;
-  --accent-light: #F5F1E8;
-  --accent-light-foreground: #2C3E50;
+  --popover-foreground: #1E3A5F;
+  --accent-light-foreground: #1E3A5F;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: #E8E3DB;
-  --input: #F5F1E8;
-  --ring: #C85A3A;
+  --border: #E2E8F0;
+  --input: #F8FAFC;
+  --ring: #14B8A6;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #2C3E50;
-  --sidebar-accent: #C85A3A;
+  --sidebar-foreground: #1E3A5F;
+  --sidebar-accent: #14B8A6;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E8E3DB;
-  --sidebar-ring: #C85A3A;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #14B8A6;
 }
 
 .dark {
-  /* Dark mode not used for this design */
-  --primary: #2C3E50;
+  /* Dark mode not used for this design - maintaining light theme only */
+  --primary: #1E3A5F;
   --primary-foreground: #FFFFFF;
-  --accent: #C85A3A;
+  --accent: #14B8A6;
   --accent-foreground: #FFFFFF;
   --background: #FFFFFF;
-  --foreground: #2C3E50;
+  --foreground: #1E3A5F;
   --card: #FFFFFF;
-  --card-foreground: #2C3E50;
-  --border: #E8E3DB;
+  --card-foreground: #1E3A5F;
+  --border: #E2E8F0;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     font-weight: 700;
     line-height: 1.2;
   }
-  
+
   h1 {
     @apply text-5xl md:text-6xl tracking-tight;
   }
-  
+
   h2 {
     @apply text-4xl md:text-5xl;
   }
-  
+
   h3 {
     @apply text-2xl md:text-3xl;
   }
-  
+
   p {
     @apply text-base leading-relaxed;
   }
-  
+
   .text-accent-label {
     @apply text-sm font-medium uppercase tracking-widest;
-    color: #C85A3A;
+    color: #14B8A6;
+    /* Legend Teal */
   }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -149,6 +178,7 @@
 }
 
 @layer components {
+
   /**
    * Custom container utility that centers content and adds responsive padding.
    *
@@ -166,7 +196,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
+    /* 16px - mobile padding */
     padding-right: 1rem;
   }
 
@@ -177,38 +208,42 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
+      /* 24px - tablet padding */
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
+      /* 32px - desktop padding */
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
+      /* Standard content width */
     }
   }
 }
+
 @layer components {
   /* Craftsmanship Modernism Custom Components */
-  
+
   .btn-primary {
     @apply px-8 py-3 bg-accent text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg;
   }
-  
+
   .btn-secondary {
     @apply px-8 py-3 bg-transparent border-2 border-primary text-primary font-semibold rounded-lg transition-all duration-300 hover:bg-primary hover:text-white;
   }
-  
+
   .section-divider {
     @apply h-1 bg-gradient-to-r from-transparent via-accent to-transparent my-12;
   }
-  
+
   .service-card {
     @apply bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-muted;
   }
-  
+
   .fade-in-up {
     @apply opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-700;
   }

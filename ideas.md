@@ -12,19 +12,21 @@ Craftsmanship Modernism—blending industrial heritage with contemporary minimal
 3. **Functional Beauty**: Every design element serves a purpose; no decorative excess
 4. **Artisanal Quality**: Handcrafted feel despite digital medium—imperfect grids, organic spacing
 
-### Color Philosophy
-- **Primary**: Deep charcoal (#2C3E50) representing durability and professionalism
-- **Accent**: Warm terracotta (#C85A3A) reflecting paint pigments and earth tones
-- **Supporting**: Soft cream (#F5F1E8) as breathing room, suggesting primer and base coats
-- **Reasoning**: Colors evoke the physical materials of painting while maintaining sophistication
+### Color Philosophy (v2.0 - Logo-Aligned)
+- **Primary**: Surface Navy (#1E3A5F) - durability, trust, professional mastery
+- **Accent**: Legend Teal (#14B8A6) - creativity, transformation, innovation
+- **Supporting**: Soft Off-White (#F8FAFC) - premium clarity, breathing space
+- **Neutral**: Cool Gray (#64748B) - balance, readability, structure
+- **Reasoning**: Colors directly derived from Surface Legend logo, ensuring perfect brand consistency across digital and physical touchpoints
 
 ### Layout Paradigm
 Asymmetric grid with generous whitespace. Content flows in staggered blocks—text on left, imagery on right, then reversed. Breaks conventional centered layouts to feel intentional and curated.
 
 ### Signature Elements
-1. **Textured Dividers**: Hand-drawn SVG brushstroke dividers between sections
-2. **Material Swatches**: Small paint color samples integrated into section headers
-3. **Layered Typography**: Oversized headings paired with delicate subtext
+1. **S-Curve Dividers**: Flowing SVG dividers inspired by the logo's "S" shape, reinforcing brand memory
+2. **Paint Finish Indicators**: Navy-teal gradients representing matte, satin, gloss finishes
+3. **Gradient Accents**: Subtle navy-to-teal transitions in headers and CTAs
+4. **Layered Typography**: Oversized headings paired with delicate subtext
 
 ### Interaction Philosophy
 Subtle, purposeful interactions. Hover states reveal texture details. Scroll triggers gentle reveals of before/after imagery. No flashy animations—restraint is premium.
@@ -140,11 +142,12 @@ This approach positions Surface Legend as a **premium, thoughtful brand** that r
 
 ### Implementation Details
 
-**Color Palette**:
-- Deep Charcoal: #2C3E50 (primary text, headers)
-- Warm Terracotta: #C85A3A (accents, CTAs, highlights)
-- Soft Cream: #F5F1E8 (backgrounds, breathing room)
-- Light Gray: #E8E3DB (subtle dividers, borders)
+**Color Palette (v2.0)**:
+- Surface Navy: #1E3A5F (primary text, headers, navigation)
+- Legend Teal: #14B8A6 (accents, CTAs, highlights, interactive elements)
+- Soft Off-White: #F8FAFC (backgrounds, cards, breathing room)
+- Cool Gray: #64748B (body text, secondary content)
+- Border Gray: #E2E8F0 (dividers, borders, subtle separations)
 - White: #FFFFFF (card backgrounds, contrast)
 
 **Typography**:
@@ -154,11 +157,13 @@ This approach positions Surface Legend as a **premium, thoughtful brand** that r
 
 **Key Design Elements**:
 - Asymmetric grid with staggered content blocks
-- Textured SVG brushstroke dividers
+- S-curve SVG dividers inspired by logo
+- Navy-to-teal gradient accents on CTAs and headers
 - Before/after sliders for portfolio showcase
 - Generous whitespace and breathing room
 - Subtle shadows and depth
 - Restrained animations (fade-in, scale on hover)
+- Logo-aligned color transitions throughout
 
 **Visual Assets**:
 - Hero background: Custom generated image of paint texture or abstract surface
