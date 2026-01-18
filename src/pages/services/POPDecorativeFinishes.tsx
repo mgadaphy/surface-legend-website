@@ -44,6 +44,7 @@ export default function POPDecorativeFinishes() {
         "/assets/images/services/pop_decorative_cornice.png",
         "/assets/images/services/residential_painting_living_room.png"
       ]}
+      heroImage="/assets/images/services/pop_ceiling_design.png"
     />
   );
 }

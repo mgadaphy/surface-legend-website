@@ -44,6 +44,7 @@ export default function EpoxyFloorCoating() {
         "/assets/images/services/commercial_painting_warehouse.png",
         "/assets/images/services/industrial_painting_pipes.png"
       ]}
+      heroImage="/assets/images/services/industrial_painting_floor.png"
     />
   );
 }

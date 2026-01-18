@@ -45,6 +45,7 @@ export default function SteelStructurePainting() {
                 "/assets/images/services/steel_structure_beams.png",
                 "/assets/images/services/steel_structure_industrial.png"
             ]}
+            heroImage="/assets/images/services/steel_structure_factory.png"
         />
     );
 }

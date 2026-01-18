@@ -45,6 +45,7 @@ export default function ProtectiveIndustrialCoatings() {
                 "/assets/images/services/protective_industrial_equipment.png",
                 "/assets/images/services/protective_industrial_coating.png"
             ]}
+            heroImage="/assets/images/services/protective_industrial_tank.png"
         />
     );
 }

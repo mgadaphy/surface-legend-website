@@ -39,6 +39,7 @@ export default function Waterproofing() {
                 "/assets/images/services/exterior_painting_villa.png",
                 "/assets/images/services/industrial_painting_floor.png"
             ]}
+            heroImage="/assets/images/services/waterproofing_terrace.png"
         />
     );
 }

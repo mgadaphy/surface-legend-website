@@ -40,6 +40,7 @@ export default function RoofPainting() {
                 "/assets/images/services/exterior_painting_house.png",
                 "/assets/images/services/commercial_painting_exterior.png"
             ]}
+            heroImage="/assets/images/services/roof_painting_red.png"
         />
     );
 }

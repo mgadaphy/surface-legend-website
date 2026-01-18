@@ -45,6 +45,7 @@ export default function MoldResistantCoatings() {
                 "/assets/images/services/mold_resistant_kitchen.png",
                 "/assets/images/services/mold_resistant_application.png"
             ]}
+            heroImage="/assets/images/services/mold_resistant_bathroom.png"
         />
     );
 }

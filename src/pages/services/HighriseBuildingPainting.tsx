@@ -45,6 +45,7 @@ export default function HighriseBuildingPainting() {
                 "/assets/images/services/highrise_building.png",
                 "/assets/images/services/highrise_workers.png"
             ]}
+            heroImage="/assets/images/services/highrise_scaffolding.png"
         />
     );
 }

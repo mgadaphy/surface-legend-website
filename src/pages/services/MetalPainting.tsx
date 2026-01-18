@@ -40,6 +40,7 @@ export default function MetalPainting() {
                 "/assets/images/services/industrial_painting_pipes.png",
                 "/assets/images/services/roof_painting_red.png"
             ]}
+            heroImage="/assets/images/services/metal_gate_painting.png"
         />
     );
 }
