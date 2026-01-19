@@ -248,12 +248,23 @@
     background: linear-gradient(90deg, transparent 0%, #14B8A6 50%, transparent 100%);
   }
 
+  /* Enhanced Service Card - v2.1 Interactive */
   .service-card {
-    @apply bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-muted;
+    @apply bg-white p-8 rounded-lg shadow-md border-2 border-muted;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
   }
 
   .service-card:hover {
     border-color: #14B8A6;
+    box-shadow: 0 20px 40px rgba(30, 58, 95, 0.15),
+      0 0 0 1px rgba(20, 184, 166, 0.1);
+    transform: translateY(-8px) scale(1.02);
+  }
+
+  .service-card:active {
+    transform: translateY(-6px) scale(1.01);
   }
 
   .fade-in-up {
