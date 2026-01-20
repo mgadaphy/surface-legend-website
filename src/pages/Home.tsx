@@ -1,3 +1,4 @@
+```
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Palette, Shield, MessageCircle, Briefcase, Award, Zap } from "lucide-react";
@@ -5,6 +6,8 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
  * Surface Legend Home Page
@@ -15,10 +18,14 @@ import SEO from "@/components/SEO";
  * - Mobile: Responsive hamburger menu for navigation
  */
 
-import { useTranslation } from "react-i18next";
-
 export default function Home() {
   const { t } = useTranslation();
+  
+  // Scroll animation refs
+  const whoWeAreRef = useScrollAnimation();
+  const servicesRef = useScrollAnimation();
+  const productsRef = useScrollAnimation();
+  const academyRef = useScrollAnimation();
   return (
     <div className="min-h-screen bg-white">
       <SEO

@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
  * Surface Legend Services Page
@@ -16,6 +17,13 @@ import { useTranslation } from "react-i18next";
 
 export default function Services() {
   const { t } = useTranslation();
+
+  // Scroll animation refs
+  const overviewRef = useScrollAnimation();
+  const paintingRef = useScrollAnimation();
+  const decorativeRef = useScrollAnimation();
+  const industrialRef = useScrollAnimation();
+  const whyChooseRef = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -84,7 +92,7 @@ export default function Services() {
 
       {/* SECTION 2: SERVICE OVERVIEW */}
       <section id="service-details" className="bg-secondary py-20 md:py-28">
-        <div className="container">
+        <div ref={overviewRef} className="container animate-on-scroll">
           <div className="text-center mb-16">
             <h2 className="mb-6">
               {t('services_page.overview.title')}
@@ -126,7 +134,7 @@ export default function Services() {
       <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 3: PAINTING SOLUTIONS */}
-      <section className="container py-20 md:py-28">
+      <section ref={paintingRef} className="container py-20 md:py-28 animate-on-scroll">
         <h2 className="mb-4">
           {t('services_page.painting.title')}
         </h2>
@@ -189,7 +197,7 @@ export default function Services() {
       <SCurveDivider variant="default" className="my-0" />
 
       {/* SECTION 4: DECORATIVE & SPECIALIZED FINISHES */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={decorativeRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container">
           <h2 className="mb-4">
             {t('services_page.decorative.title')}
