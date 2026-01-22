@@ -254,7 +254,7 @@ export default function Services() {
       </section>
 
       {/* SECTION 5: INDUSTRIAL & PROTECTIVE COATINGS */}
-      <section className="container py-20 md:py-28">
+      <section ref={industrialRef} className="container py-20 md:py-28 animate-on-scroll">
         <h2 className="mb-4">
           {t('services_page.industrial.title')}
         </h2>

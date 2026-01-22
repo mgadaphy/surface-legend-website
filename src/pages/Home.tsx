@@ -1,4 +1,3 @@
-```
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Palette, Shield, MessageCircle, Briefcase, Award, Zap } from "lucide-react";
@@ -20,7 +19,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Home() {
   const { t } = useTranslation();
-  
+
   // Scroll animation refs
   const whoWeAreRef = useScrollAnimation();
   const servicesRef = useScrollAnimation();
@@ -103,7 +102,7 @@ export default function Home() {
       <SCurveDivider variant="default" className="my-0" />
 
       {/* SECTION 2: WHO WE ARE */}
-      <section className="container py-20 md:py-28">
+      <section ref={whoWeAreRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="text-accent-label mb-4">{t('home.who_we_are.label')}</div>
@@ -146,7 +145,7 @@ export default function Home() {
       <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 3: CORE SERVICES */}
-      <section id="services" className="bg-secondary py-20 md:py-28" >
+      <section ref={servicesRef} id="services" className="bg-secondary py-20 md:py-28 animate-on-scroll" >
         <div className="container">
           <div className="text-center mb-16">
             <div className="text-center mb-16">
@@ -215,7 +214,7 @@ export default function Home() {
       <SCurveDivider variant="reverse" className="my-0" />
 
       {/* SECTION 4: PRODUCTS */}
-      < section id="products" className="container py-20 md:py-28" >
+      <section ref={productsRef} id="products" className="container py-20 md:py-28 animate-on-scroll">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
@@ -255,7 +254,7 @@ export default function Home() {
       <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 5: ACADEMY */}
-      < section id="academy" className="bg-secondary py-20 md:py-28" >
+      <section ref={academyRef} id="academy" className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
