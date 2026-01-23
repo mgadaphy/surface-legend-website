@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
  * Surface Legend Portfolio Page
@@ -60,12 +61,16 @@ const projects: PortfolioProject[] = [
 
 export default function Portfolio() {
   const { t } = useTranslation();
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [filter, setFilter] = useState("all");
+
+  // Scroll animation refs
+  const projectsRef = useScrollAnimation();
+  const statsRef = useScrollAnimation();
 
   const filteredProjects =
-    activeFilter === "all"
+    filter === "all"
       ? projects
-      : projects.filter((p) => p.category === activeFilter);
+      : projects.filter((p) => p.category === filter);
 
   const categories = [
     { id: "all", label: "all" },
@@ -145,23 +150,23 @@ export default function Portfolio() {
           <div className="flex flex-wrap gap-4 justify-center items-center">
             <Filter className="w-5 h-5 text-primary" />
             {categories.map((cat) => (
-              <button
+              <Button
                 key={cat.id}
-                onClick={() => setActiveFilter(cat.id)}
-                className={`px-6 py-2 rounded-full font-medium transition-all ${activeFilter === cat.id
-                  ? "bg-accent text-white"
-                  : "bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white"
-                  }`}
+                onClick={() => setFilter(cat.id)}
+                className={`${filter === cat.id
+                    ? "bg-accent text-white"
+                    : "bg-white text-primary border border-muted hover:border-accent"
+                  } transition-colors`}
               >
                 {t(`portfolio_page.filters.${cat.label}`)}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
       </section>
 
       {/* PORTFOLIO GRID */}
-      <section className="container py-20 md:py-28">
+      <section ref={projectsRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <Card
@@ -202,7 +207,7 @@ export default function Portfolio() {
       <SCurveDivider variant="default" className="my-0" />
 
       {/* STATS SECTION */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={statsRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[

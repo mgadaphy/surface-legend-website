@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, Lightbulb, Target, Heart, Palette, Briefcase, Award } from "lucide-react";
+import { CheckCircle2, Award, Users, Target, Heart, Lightbulb, Palette, Briefcase } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
  * Surface Legend About Us Page
@@ -17,6 +18,12 @@ import { useTranslation } from "react-i18next";
 
 export default function About() {
   const { t } = useTranslation();
+
+  // Scroll animation refs
+  const storyRef = useScrollAnimation();
+  const missionRef = useScrollAnimation();
+  const ecosystemRef = useScrollAnimation();
+  const uniqueRef = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -133,7 +140,7 @@ export default function About() {
       <SCurveDivider variant="default" className="my-0" />
 
       {/* SECTION 3: MISSION, VISION & PROMISE */}
-      <section className="container py-20 md:py-28">
+      <section ref={missionRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="p-8 border-t-4 border-accent">
             <h3 className="text-xl font-semibold text-primary mb-4 font-display">
@@ -168,7 +175,7 @@ export default function About() {
       <SCurveDivider variant="subtle" className="my-0" />
 
       {/* SECTION 4: BRAND ECOSYSTEM */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={ecosystemRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="mb-6 font-display">
@@ -280,7 +287,7 @@ export default function About() {
       <SCurveDivider variant="reverse" className="my-0" />
 
       {/* SECTION 5: WHAT MAKES US UNIQUE */}
-      <section className="container py-20 md:py-28">
+      <section ref={uniqueRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="text-center mb-16">
           <h2 className="mb-6 font-display">
             {t('about.unique.title')}
