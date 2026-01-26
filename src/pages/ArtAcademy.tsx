@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
  * Surface Legend Art Academy Page
@@ -13,6 +14,16 @@ import { useTranslation } from "react-i18next";
 
 export default function ArtAcademy() {
   const { t } = useTranslation();
+
+  // Scroll animation refs
+  const heroRef = useScrollAnimation();
+  const purposeRef = useScrollAnimation();
+  const targetRef = useScrollAnimation();
+  const programsRef = useScrollAnimation();
+  const whyRef = useScrollAnimation();
+  const videoRef = useScrollAnimation();
+  const careerRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
 
   const targetAudience = [
     { id: "beginners", icon: BookOpen },
@@ -41,7 +52,7 @@ export default function ArtAcademy() {
       <Navigation currentPage="academy" />
 
       {/* HERO SECTION */}
-      <section className="container py-20 md:py-28">
+      <section ref={heroRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="max-w-3xl mx-auto text-center">
           <div className="text-accent-label mb-4">{t('academy_page.hero.label')}</div>
           <h1 className="mb-6">
@@ -69,7 +80,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* PURPOSE SECTION */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={purposeRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container max-w-3xl mx-auto text-center">
           <h2 className="mb-6">
             {t('academy_page.purpose.title')}
@@ -84,7 +95,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* WHO WE TRAIN */}
-      <section className="container py-20 md:py-28">
+      <section ref={targetRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="text-center mb-16">
           <h2 className="mb-4">{t('academy_page.target.title')}</h2>
         </div>
@@ -107,7 +118,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* PROGRAMS SECTION */}
-      <section id="programs" className="bg-primary text-white py-20 md:py-28">
+      <section ref={programsRef} id="programs" className="bg-primary text-white py-20 md:py-28 animate-on-scroll">
         <div className="container max-w-4xl mx-auto">
           <h2 className="mb-12 text-center text-white">
             {t('academy_page.programs.title')}
@@ -127,7 +138,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* WHY TRAIN WITH US */}
-      <section className="container py-20 md:py-28">
+      <section ref={whyRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="max-w-4xl mx-auto">
           <h2 className="mb-12 text-center">{t('academy_page.why.title')}</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -142,7 +153,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* TRAINING IN ACTION VIDEO */}
-      <section className="bg-white py-20 md:py-28">
+      <section ref={videoRef} className="bg-white py-20 md:py-28 animate-on-scroll">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="mb-6 font-display">
@@ -163,7 +174,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* CAREER INTEGRATION */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={careerRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container max-w-4xl mx-auto">
           <h2 className="mb-6 text-center">{t('academy_page.integration.title')}</h2>
           <p className="text-center text-gray-700 mb-12">
@@ -195,7 +206,7 @@ export default function ArtAcademy() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="container py-20 md:py-28 text-center">
+      <section ref={ctaRef} className="container py-20 md:py-28 text-center animate-on-scroll">
         <h2 className="mb-6 font-display">
           {t('academy_page.cta.title')}
         </h2>

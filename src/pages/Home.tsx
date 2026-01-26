@@ -25,6 +25,11 @@ export default function Home() {
   const servicesRef = useScrollAnimation();
   const productsRef = useScrollAnimation();
   const academyRef = useScrollAnimation();
+  const whyChooseRef = useScrollAnimation();
+  const portfolioRef = useScrollAnimation();
+  const testimonialsRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
+  const contactRef = useScrollAnimation();
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -293,7 +298,7 @@ export default function Home() {
       </section >
 
       {/* SECTION 6: WHY CHOOSE US */}
-      < section className="container py-20 md:py-28" >
+      <section ref={whyChooseRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="text-center mb-16">
           <div className="text-accent-label mb-4">{t('home.why_us.label')}</div>
           <h2 className="mb-6 font-display">
@@ -312,7 +317,7 @@ export default function Home() {
       </section >
 
       {/* SECTION 7: PORTFOLIO PREVIEW */}
-      < section className="bg-secondary py-20 md:py-28" >
+      <section ref={portfolioRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container">
           <div className="text-center mb-16">
             <div className="text-accent-label mb-4">{t('home.portfolio.label')}</div>
@@ -354,7 +359,7 @@ export default function Home() {
       </section >
 
       {/* SECTION 8: TESTIMONIALS */}
-      < section className="container py-20 md:py-28" >
+      <section ref={testimonialsRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="text-center mb-16">
           <div className="text-accent-label mb-4">{t('home.testimonials.label')}</div>
           <h2 className="mb-6 font-display">
@@ -374,7 +379,7 @@ export default function Home() {
       </section >
 
       {/* SECTION 9: CONTACT & CTA */}
-      < section id="contact" className="bg-primary text-white py-20 md:py-28" >
+      <section ref={ctaRef} id="contact" className="bg-primary text-white py-20 md:py-28 animate-on-scroll">
         <div className="container text-center">
           <h2 className="mb-6 font-display text-white">
             {t('home.cta.title')}
@@ -414,7 +419,7 @@ export default function Home() {
       </section >
 
       {/* CONTACT INFORMATION SECTION */}
-      < section className="bg-secondary py-16 md:py-20" >
+      <section ref={contactRef} className="bg-secondary py-16 md:py-20 animate-on-scroll">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">

@@ -8,6 +8,7 @@ import { SCurveDivider } from "@/components/SCurveDivider";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { CounterStat } from "@/components/CounterStat";
 
 /**
  * Surface Legend Portfolio Page
@@ -154,8 +155,8 @@ export default function Portfolio() {
                 key={cat.id}
                 onClick={() => setFilter(cat.id)}
                 className={`${filter === cat.id
-                    ? "bg-accent text-white"
-                    : "bg-white text-primary border border-muted hover:border-accent"
+                  ? "bg-accent text-white"
+                  : "bg-white text-primary border border-muted hover:border-accent"
                   } transition-colors`}
               >
                 {t(`portfolio_page.filters.${cat.label}`)}
@@ -209,20 +210,11 @@ export default function Portfolio() {
       {/* STATS SECTION */}
       <section ref={statsRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: "150+", id: "projects" },
-              { number: "98%", id: "satisfaction" },
-              { number: "10+", id: "experience" },
-              { number: "500+", id: "clients" }
-            ].map((stat, idx) => (
-              <div key={idx}>
-                <div className="text-4xl font-bold text-accent mb-2">
-                  {stat.number}
-                </div>
-                <p className="text-gray-700 font-medium">{t(`portfolio_page.stats.${stat.id}`)}</p>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-4 gap-8">
+            <CounterStat value={150} suffix="+" label={t('portfolio_page.stats.projects')} delay={0} />
+            <CounterStat value={98} suffix="%" label={t('portfolio_page.stats.satisfaction')} delay={100} />
+            <CounterStat value={10} suffix="+" label={t('portfolio_page.stats.experience')} delay={200} />
+            <CounterStat value={500} suffix="+" label={t('portfolio_page.stats.clients')} delay={300} />
           </div>
         </div>
       </section>

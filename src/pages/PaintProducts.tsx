@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { useTranslation } from "react-i18next";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
  * Surface Legend Paint Products Page
@@ -13,6 +14,14 @@ import { useTranslation } from "react-i18next";
 
 export default function PaintProducts() {
   const { t } = useTranslation();
+
+  // Scroll animation refs
+  const heroRef = useScrollAnimation();
+  const philosophyRef = useScrollAnimation();
+  const categoriesRef = useScrollAnimation();
+  const whyRef = useScrollAnimation();
+  const ecosystemRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
 
   const categories = [
     { id: "interior", icon: Palette },
@@ -35,7 +44,7 @@ export default function PaintProducts() {
       <Navigation currentPage="products" />
 
       {/* SECTION 1: HERO */}
-      <section className="container py-20 md:py-28">
+      <section ref={heroRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="max-w-3xl mx-auto text-center">
           <div className="text-accent-label mb-4">{t('products_page.hero.label')}</div>
           <h1 className="mb-6">
@@ -63,7 +72,7 @@ export default function PaintProducts() {
       </section>
 
       {/* SECTION 2: OUR PRODUCT PHILOSOPHY */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={philosophyRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container max-w-3xl mx-auto">
           <h2 className="mb-6 text-center">
             {t('products_page.philosophy.title')}
@@ -79,7 +88,7 @@ export default function PaintProducts() {
       </section>
 
       {/* SECTION 3: PRODUCT CATEGORIES */}
-      <section id="product-categories" className="container py-20 md:py-28">
+      <section ref={categoriesRef} id="product-categories" className="container py-20 md:py-28 animate-on-scroll">
         <div className="text-center mb-16">
           <h2 className="mb-4">
             {t('products_page.categories.title')}
@@ -102,7 +111,7 @@ export default function PaintProducts() {
       </section>
 
       {/* SECTION 4: WHY SURFACE LEGEND PAINT */}
-      <section className="bg-secondary py-20 md:py-28">
+      <section ref={whyRef} className="bg-secondary py-20 md:py-28 animate-on-scroll">
         <div className="container max-w-4xl mx-auto">
           <h2 className="mb-8 text-center">
             {t('products_page.why.title')}
@@ -120,7 +129,7 @@ export default function PaintProducts() {
       </section>
 
       {/* SECTION 5: INTEGRATED BRAND ADVANTAGE */}
-      <section className="container py-20 md:py-28">
+      <section ref={ecosystemRef} className="container py-20 md:py-28 animate-on-scroll">
         <div className="max-w-3xl mx-auto">
           <h2 className="mb-6 text-center">
             {t('products_page.ecosystem.title')}
@@ -160,7 +169,7 @@ export default function PaintProducts() {
       </section>
 
       {/* SECTION 6: CALL TO ACTION */}
-      <section className="bg-primary text-white py-20 md:py-28">
+      <section ref={ctaRef} className="bg-primary text-white py-20 md:py-28 animate-on-scroll">
         <div className="container text-center">
           <h2 className="mb-6 font-display text-white">
             {t('products_page.cta.title')}
