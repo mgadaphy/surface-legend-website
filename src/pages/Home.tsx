@@ -122,21 +122,27 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <Palette className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.services')}</h3>
-              <p className="text-sm text-gray-600">{t('home.who_we_are.cards.services_desc')}</p>
-            </Card>
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <Briefcase className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.products')}</h3>
-              <p className="text-sm text-gray-600">{t('home.who_we_are.cards.products_desc')}</p>
-            </Card>
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <Award className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.academy')}</h3>
-              <p className="text-sm text-gray-600">{t('home.who_we_are.cards.academy_desc')}</p>
-            </Card>
+            <a href="/services" className="block">
+              <Card className="p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
+                <Palette className="w-12 h-12 text-accent mx-auto mb-4" />
+                <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.services')}</h3>
+                <p className="text-sm text-gray-600">{t('home.who_we_are.cards.services_desc')}</p>
+              </Card>
+            </a>
+            <a href="/products" className="block">
+              <Card className="p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
+                <Briefcase className="w-12 h-12 text-accent mx-auto mb-4" />
+                <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.products')}</h3>
+                <p className="text-sm text-gray-600">{t('home.who_we_are.cards.products_desc')}</p>
+              </Card>
+            </a>
+            <a href="/academy" className="block">
+              <Card className="p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
+                <Award className="w-12 h-12 text-accent mx-auto mb-4" />
+                <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.academy')}</h3>
+                <p className="text-sm text-gray-600">{t('home.who_we_are.cards.academy_desc')}</p>
+              </Card>
+            </a>
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
               <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="font-semibold text-primary mb-2">{t('home.who_we_are.cards.innovation')}</h3>
