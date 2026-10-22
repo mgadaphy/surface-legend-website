@@ -1,0 +1,9 @@
+# Surface Legend website: static files served by Caddy. The host Caddy terminates HTTPS and proxies here.
+services:
+  web:
+    build: .
+    container_name: surface-legend-website
+    restart: unless-stopped
+    ports:
+      # Loopback only: Docker's published ports bypass ufw.
+      - "127.0.0.1:3021:80"
