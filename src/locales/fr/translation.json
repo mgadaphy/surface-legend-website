@@ -1110,7 +1110,11 @@
             "program_placeholder": "Sélectionnez un programme",
             "message_label": "Message Supplémentaire",
             "message_placeholder": "Dites-nous en plus sur votre projet, les délais ou toute exigence spécifique...",
-            "btn_send": "Envoyer via WhatsApp",
+            "btn_send": "Envoyer la demande",
+            "consent": "J’accepte que Surface Legend conserve ces informations et me contacte au sujet de ma demande.",
+            "success_title": "Votre demande a bien été envoyée",
+            "success_body": "Merci. Nous répondons généralement sous 24 heures les jours ouvrables. En cas d’urgence, continuez sur WhatsApp.",
+            "success_whatsapp": "Continuer sur WhatsApp",
             "sending": "Envoi...",
             "disclaimer": "En soumettant ce formulaire, vous acceptez d'être contacté au sujet de votre demande."
         },

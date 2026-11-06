@@ -37,3 +37,11 @@ coverage
 
 # Misc
 .gemini
+
+# Admin
+admin/.next
+admin/media
+admin/tsconfig.tsbuildinfo
+# Deploy state on the server
+scripts/.last-deployed
+scripts/.last-failed

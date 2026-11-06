@@ -1,3 +1,4 @@
+import { useContact, useTestimonials } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Palette, Shield, MessageCircle, Briefcase, Award, Zap } from "lucide-react";
@@ -19,6 +20,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Home() {
   const { t } = useTranslation();
+  const contact = useContact();
+  const testimonials = useTestimonials() ?? (t('home.testimonials.items', { returnObjects: true }) as any[]);
 
   // Scroll animation refs
   const whoWeAreRef = useScrollAnimation();
@@ -52,7 +55,7 @@ export default function Home() {
                 {t('home.hero_subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
                   <Button className="btn-primary">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     {t('home.hero_cta_whatsapp')}
@@ -286,8 +289,8 @@ export default function Home() {
                 </ul>
               </div>
 
-              <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%2C%20I%20am%20interested%20in%20joining%20the%20Surface%20Legend%20Art%20Academy%20training%20program.%20Please%20provide%20more%20information%20about%20the%20training%20courses%20and%20enrollment%20process." target="_blank" rel="noopener noreferrer">
-                <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%2C%20I%20am%20interested%20in%20joining%20the%20Surface%20Legend%20Art%20Academy%20training%20program.%20Please%20provide%20more%20information%20about%20the%20training%20courses%20and%20enrollment%20process." target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%2C%20I%20am%20interested%20in%20joining%20the%20Surface%20Legend%20Art%20Academy%20training%20program.%20Please%20provide%20more%20information%20about%20the%20training%20courses%20and%20enrollment%20process.`} target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%2C%20I%20am%20interested%20in%20joining%20the%20Surface%20Legend%20Art%20Academy%20training%20program.%20Please%20provide%20more%20information%20about%20the%20training%20courses%20and%20enrollment%20process.`} target="_blank" rel="noopener noreferrer">
                   <Button className="btn-primary">{t('home.academy.cta')}</Button>
                 </a>
               </a>
@@ -374,7 +377,7 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {(t('home.testimonials.items', { returnObjects: true }) as any[]).map((testimonial, idx) => (
+          {testimonials.map((testimonial, idx) => (
             <Card key={idx} className="p-8 border-l-4 border-accent">
               <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
               <p className="font-semibold text-primary">{testimonial.name}</p>
@@ -395,7 +398,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
               <Button className="bg-accent hover:bg-opacity-90 text-white px-8 py-3">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 {t('home.cta.whatsapp')}
@@ -411,15 +414,15 @@ export default function Home() {
           <div className="border-t border-white/20 pt-8">
             <p className="text-white/80 mb-4">
               {t('home.cta.call')}:{" "}
-              <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors underline" target="_blank" rel="noopener noreferrer">
-                679 235 879
+              <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors underline" target="_blank" rel="noopener noreferrer">
+                {contact.whatsappDisplay}
               </a>
               {" | "}
-              <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors underline" target="_blank" rel="noopener noreferrer">
-                692 015 866
+              <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors underline" target="_blank" rel="noopener noreferrer">
+                {contact.whatsapp2Display}
               </a>
             </p>
-            <p className="text-white/80">info@surfacelegend.com</p>
+            <p className="text-white/80">{contact.email}</p>
           </div>
         </div>
       </section >
@@ -431,13 +434,13 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-semibold text-primary mb-2">{t('home.contact_info.phone_label')}</h3>
               <p className="text-gray-700">
-                <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  679 235 879
+                <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsappDisplay}
                 </a>
               </p>
               <p className="text-gray-700">
-                <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  692 015 866
+                <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsapp2Display}
                 </a>
               </p>
             </div>

@@ -1,8 +1,10 @@
 
+import { useContact } from "@/lib/content";
 import { useTranslation } from "react-i18next";
 
 export function Footer() {
     const { t } = useTranslation();
+    const contact = useContact();
 
     return (
         <footer className="bg-primary/95 text-white py-12">
@@ -18,16 +20,16 @@ export function Footer() {
                         <h4 className="font-semibold mb-4">{t('footer.contact')}</h4>
                         <ul className="space-y-2 text-sm text-white/70">
                             <li>
-                                <a href="https://wa.me/237679235879" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                                    679 235 879
+                                <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                                    {contact.whatsappDisplay}
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wa.me/237692015866" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                                    692 015 866
+                                <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                                    {contact.whatsapp2Display}
                                 </a>
                             </li>
-                            <li>info@surfacelegend.com</li>
+                            <li>{contact.email}</li>
                             <li><a href="/contact" className="hover:text-white transition-colors">{t('footer.get_quote')}</a></li>
                         </ul>
                     </div>

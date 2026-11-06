@@ -1,5 +1,42 @@
-# Surface Legend website: static files served by Caddy. The host Caddy terminates HTTPS and proxies here.
+# Surface Legend website and its admin. The host Caddy terminates HTTPS and proxies to the web container,
+# which serves the static site and passes /admin and /api to the admin container.
 services:
+  db:
+    image: postgres:17-alpine
+    container_name: surface-legend-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: surfacelegend
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: surfacelegend
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U surfacelegend -d surfacelegend"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    # No published port: only the admin container can reach the database.
+
+  admin:
+    build:
+      context: ./admin
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://surfacelegend.com}
+    container_name: surface-legend-admin
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgres://surfacelegend:${POSTGRES_PASSWORD}@db:5432/surfacelegend
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - media:/app/media
+    # No published port: only the web container can reach it.
+
   web:
     build: .
     container_name: surface-legend-website
@@ -7,3 +44,7 @@ services:
     ports:
       # Loopback only: Docker's published ports bypass ufw.
       - "127.0.0.1:3021:80"
+
+volumes:
+  pg_data:
+  media:

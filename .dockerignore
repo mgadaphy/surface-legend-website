@@ -7,3 +7,5 @@ Assets
 *.docx
 *.pdf
 .env*
+admin
+docs

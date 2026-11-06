@@ -1,3 +1,4 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, MessageCircle } from "lucide-react";
@@ -28,6 +29,7 @@ export function ServiceDetail({
   heroImage
 }: ServiceDetailProps) {
   const { t } = useTranslation();
+  const contact = useContact();
 
   return (
     <div className="min-h-screen bg-white">
@@ -52,7 +54,7 @@ export function ServiceDetail({
                     {t('service_details_page.hero.cta_quote')}
                   </Button>
                 </a>
-                <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
                   <Button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     {t('service_details_page.hero.cta_whatsapp')}
@@ -263,7 +265,7 @@ export function ServiceDetail({
                 {t('service_details_page.cta_bottom.btn_estimate')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
               <Button className="bg-white text-primary hover:bg-gray-100 px-8 py-3 font-semibold">
                 {t('service_details_page.cta_bottom.btn_whatsapp')}
               </Button>

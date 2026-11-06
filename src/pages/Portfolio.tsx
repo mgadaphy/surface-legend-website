@@ -1,3 +1,4 @@
+import { useContact, useProjects } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Filter } from "lucide-react";
@@ -21,6 +22,8 @@ interface PortfolioProject {
   image: string;
   beforeAfter?: boolean;
 }
+
+type ShownProject = PortfolioProject & { title: string; desc: string };
 
 const projects: PortfolioProject[] = [
   {
@@ -62,16 +65,22 @@ const projects: PortfolioProject[] = [
 
 export default function Portfolio() {
   const { t } = useTranslation();
+  const contact = useContact();
+  const fromAdmin = useProjects();
   const [filter, setFilter] = useState("all");
 
   // Scroll animation refs
   const projectsRef = useScrollAnimation();
   const statsRef = useScrollAnimation();
 
+  // The built-in projects until the admin answers, and for good if it cannot be reached.
+  const allProjects: ShownProject[] =
+    fromAdmin ?? projects.map((p) => ({ ...p, title: t(`portfolio_page.projects.${p.id}.title`), desc: t(`portfolio_page.projects.${p.id}.desc`) }));
+
   const filteredProjects =
     filter === "all"
-      ? projects
-      : projects.filter((p) => p.category === filter);
+      ? allProjects
+      : allProjects.filter((p) => p.category === filter);
 
   const categories = [
     { id: "all", label: "all" },
@@ -177,7 +186,7 @@ export default function Portfolio() {
               <div className="relative overflow-hidden h-64 bg-gray-200">
                 <img
                   src={project.image}
-                  alt={t(`portfolio_page.projects.${project.id}.title`)}
+                  alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {project.beforeAfter && (
@@ -190,8 +199,8 @@ export default function Portfolio() {
                 <div className="text-sm text-accent font-semibold mb-2 uppercase">
                   {t(`portfolio_page.filters.${project.category === 'epoxy' ? 'epoxy' : project.category}`)}
                 </div>
-                <h3 className="text-lg font-semibold text-primary mb-2">{t(`portfolio_page.projects.${project.id}.title`)}</h3>
-                <p className="text-gray-700 text-sm">{t(`portfolio_page.projects.${project.id}.desc`)}</p>
+                <h3 className="text-lg font-semibold text-primary mb-2">{project.title}</h3>
+                <p className="text-gray-700 text-sm">{project.desc}</p>
               </div>
             </Card>
           ))}
@@ -235,7 +244,7 @@ export default function Portfolio() {
                 {t('portfolio_page.cta.btn_quote')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
               <Button className="bg-white text-primary hover:bg-gray-100 px-8 py-3 font-semibold">
                 {t('portfolio_page.cta.btn_whatsapp')}
               </Button>
@@ -251,13 +260,13 @@ export default function Portfolio() {
             <div className="text-center">
               <h3 className="font-semibold text-primary mb-2">{t('contact_page.info.phone')}</h3>
               <p className="text-gray-700">
-                <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  679 235 879
+                <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsappDisplay}
                 </a>
               </p>
               <p className="text-gray-700">
-                <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  692 015 866
+                <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsapp2Display}
                 </a>
               </p>
             </div>

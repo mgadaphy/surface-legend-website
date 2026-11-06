@@ -1,3 +1,4 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
@@ -16,6 +17,7 @@ interface NavigationProps {
 export function Navigation({ currentPage = "home" }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { i18n } = useTranslation();
+  const contact = useContact();
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'fr' ? 'en' : 'fr';
@@ -89,7 +91,7 @@ export function Navigation({ currentPage = "home" }: NavigationProps) {
             <Globe className="w-4 h-4" />
             {i18n.language === 'fr' ? 'EN' : 'FR'}
           </Button>
-          <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+          <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
             <Button className="btn-primary text-sm whitespace-nowrap">WhatsApp</Button>
           </a>
         </div>
@@ -122,7 +124,7 @@ export function Navigation({ currentPage = "home" }: NavigationProps) {
                   {i18n.exists(link.label) ? i18n.t(link.label) : link.label}
                 </a>
               ))}
-              <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer" className="block">
+              <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block">
                 <Button className="w-full btn-primary text-sm mt-2">WhatsApp</Button>
               </a>
               <Button

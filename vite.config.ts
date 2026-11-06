@@ -34,6 +34,8 @@ export default defineConfig({
       "localhost",
       "127.0.0.1",
     ],
+    // The admin in development (npm run dev in admin/).
+    proxy: Object.fromEntries(["/api", "/admin", "/cms-api", "/_next", "/brand"].map((p) => [p, "http://localhost:3022"])),
     fs: {
       strict: true,
       deny: ["**/.*"],

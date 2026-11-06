@@ -1,3 +1,4 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Award, Users, Target, Heart, Lightbulb, Palette, Briefcase } from "lucide-react";
@@ -18,6 +19,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function About() {
   const { t } = useTranslation();
+  const contact = useContact();
 
   // Scroll animation refs
   const storyRef = useScrollAnimation();
@@ -346,16 +348,16 @@ export default function About() {
               </p>
               <div className="border-t border-muted pt-4 space-y-2">
                 <p className="text-sm text-gray-600">
-                  <span className="font-semibold text-primary">{t('about.contact_info.email')}:</span> info@surfacelegend.com
+                  <span className="font-semibold text-primary">{t('about.contact_info.email')}:</span> {contact.email}
                 </p>
                 <p className="text-sm text-gray-600">
                   <span className="font-semibold text-primary">{t('about.contact_info.phone')}:</span>{" "}
-                  <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                    679 235 879
+                  <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                    {contact.whatsappDisplay}
                   </a>
                   {" | "}
-                  <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                    692 015 866
+                  <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                    {contact.whatsapp2Display}
                   </a>
                 </p>
               </div>
@@ -392,7 +394,7 @@ export default function About() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-            <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
               <Button className="bg-accent hover:bg-opacity-90 text-white px-8 py-3 font-semibold">
                 {t('about.cta.whatsapp')}
               </Button>
@@ -402,7 +404,7 @@ export default function About() {
                 {t('about.cta.services')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%2C%20I%20am%20interested%20in%20joining%20the%20Surface%20Legend%20Art%20Academy%20training%20program.%20Please%20provide%20more%20information%20about%20the%20training%20courses%20and%20enrollment%20process." target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%2C%20I%20am%20interested%20in%20joining%20the%20Surface%20Legend%20Art%20Academy%20training%20program.%20Please%20provide%20more%20information%20about%20the%20training%20courses%20and%20enrollment%20process.`} target="_blank" rel="noopener noreferrer">
               <Button className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 font-semibold">
                 {t('about.cta.join')}
               </Button>
@@ -416,13 +418,13 @@ export default function About() {
             <div className="text-center">
               <h3 className="font-semibold text-primary mb-2">{t('about.contact_info.phone')}</h3>
               <p className="text-gray-700">
-                <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  679 235 879
+                <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsappDisplay}
                 </a>
               </p>
               <p className="text-gray-700">
-                <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  692 015 866
+                <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsapp2Display}
                 </a>
               </p>
             </div>

@@ -1111,7 +1111,11 @@
             "program_placeholder": "Select a program",
             "message_label": "Additional Message",
             "message_placeholder": "Tell us more about your project, timeline, or any specific requirements...",
-            "btn_send": "Send Inquiry via WhatsApp",
+            "btn_send": "Send Inquiry",
+            "consent": "I agree that Surface Legend may keep these details and contact me about my inquiry.",
+            "success_title": "Your inquiry has been sent",
+            "success_body": "Thank you. We typically respond within 24 hours during business days. For anything urgent, continue on WhatsApp.",
+            "success_whatsapp": "Continue on WhatsApp",
             "sending": "Sending...",
             "disclaimer": "By submitting this form, you agree to be contacted about your inquiry."
         },

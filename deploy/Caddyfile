@@ -2,6 +2,10 @@
 {
 	admin off
 	auto_https off
+	servers {
+		# Requests come from the host's Caddy: keep the visitor's address it passes on (contact form rate limit).
+		trusted_proxies static private_ranges
+	}
 }
 
 :80 {
@@ -9,6 +13,12 @@
 
 	handle /healthz {
 		respond "ok" 200
+	}
+
+	# The admin, its data and the contact form live in the admin container.
+	@admin path /admin /admin/* /cms-api /cms-api/* /api/* /_next/* /brand/*
+	handle @admin {
+		reverse_proxy admin:3000
 	}
 
 	handle {

@@ -1,3 +1,4 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Palette, Shield, Droplets, Brush, Factory, Sparkles, Wrench, MessageCircle } from "lucide-react";
@@ -14,6 +15,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function PaintProducts() {
   const { t } = useTranslation();
+  const contact = useContact();
 
   // Scroll animation refs
   const heroRef = useScrollAnimation();
@@ -62,7 +64,7 @@ export default function PaintProducts() {
                 {t('products_page.hero.cta_categories')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%2C%20I%20would%20like%20to%20request%20more%20information%20about%20your%20paint%20products%20and%20pricing." target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%2C%20I%20would%20like%20to%20request%20more%20information%20about%20your%20paint%20products%20and%20pricing.`} target="_blank" rel="noopener noreferrer">
               <Button className="border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white px-8 py-3 font-semibold">
                 {t('products_page.hero.cta_info')}
               </Button>
@@ -184,7 +186,7 @@ export default function PaintProducts() {
                 {t('products_page.cta.btn_contact')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%2C%20I%20would%20like%20to%20inquire%20about%20your%20paint%20products." target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%2C%20I%20would%20like%20to%20inquire%20about%20your%20paint%20products.`} target="_blank" rel="noopener noreferrer">
               <Button className="bg-white text-primary hover:bg-gray-100 px-8 py-3 font-semibold flex items-center justify-center gap-2">
                 <MessageCircle className="w-4 h-4" />
                 {t('products_page.cta.btn_whatsapp')}

@@ -1,3 +1,4 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { GraduationCap, BookOpen, Users, Paintbrush, Award, Briefcase, CheckCircle2 } from "lucide-react";
@@ -14,6 +15,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function ArtAcademy() {
   const { t } = useTranslation();
+  const contact = useContact();
 
   // Scroll animation refs
   const heroRef = useScrollAnimation();
@@ -70,7 +72,7 @@ export default function ArtAcademy() {
                 {t('academy_page.hero.cta_programs')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%20Academy%2C%20I%20would%20like%20to%20enroll%20in%20your%20training%20programs." target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%20Academy%2C%20I%20would%20like%20to%20enroll%20in%20your%20training%20programs.`} target="_blank" rel="noopener noreferrer">
               <Button className="border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white px-8 py-3 font-semibold">
                 {t('academy_page.hero.cta_join')}
               </Button>
@@ -215,7 +217,7 @@ export default function ArtAcademy() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://wa.me/237679235879?text=Hello%20Surface%20Legend%20Academy%2C%20I%20would%20like%20to%20enroll." target="_blank" rel="noopener noreferrer">
+          <a href={`https://wa.me/${contact.whatsapp}?text=Hello%20Surface%20Legend%20Academy%2C%20I%20would%20like%20to%20enroll.`} target="_blank" rel="noopener noreferrer">
             <Button className="btn-primary">
               {t('academy_page.cta.btn_enroll')}
             </Button>

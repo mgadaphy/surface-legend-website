@@ -1,10 +1,11 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -16,7 +17,8 @@ import { useTranslation } from "react-i18next";
  */
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const contact = useContact();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,34 +29,84 @@ export default function Contact() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [sent, setSent] = useState(false);
+  // Bots fill the hidden field or submit within seconds; the server ignores those.
+  const honeypot = useRef<HTMLInputElement>(null);
+  const openedAt = useRef(Date.now());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSelectChange = (value: string, name: string) => {
-    setFormData({ ...formData, [name]: value });
+    // A new inquiry type starts its own second question.
+    if (name === "type") setFormData({ ...formData, type: value, specificInterest: value === "services" ? "residential" : "" });
+    else setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const detailLabels: Record<string, Record<string, string>> = {
+    services: {
+      residential: t('services_page.painting.items.residential.title'),
+      commercial: t('services_page.painting.items.commercial.title'),
+      interior: t('service_details.interior.title'),
+      exterior: t('service_details.exterior.title'),
+      roof: t('service_details.roof.title'),
+      metal: t('service_details.metal.title'),
+      waterproofing: t('service_details.waterproofing.title'),
+      epoxy: t('services_page.industrial.items.epoxy.title'),
+      decorative: t('services_page.decorative.title'),
+    },
+    products: { interior: "Interior Paint", exterior: "Exterior Paint", epoxy: "Epoxy Coatings", decorative: "Decorative Paint", bulk: "Bulk Order" },
+    academy: { beginner: "Beginner Training", professional: "Professional Upskilling", decorative: "Decorative Arts" },
+  };
+
+  const typeLabel = t(`contact_page.inquiry_types.${formData.type}`);
+  const detailLabel = detailLabels[formData.type]?.[formData.specificInterest] ?? "";
+
+  // The same inquiry as a WhatsApp message.
+  const whatsappUrl = `https://wa.me/${contact.whatsapp}?text=` + encodeURIComponent(
+    `*New Inquiry from Website Contact Form*\n\n` +
+    `*Name:* ${formData.name}\n` +
+    `*Email:* ${formData.email}\n` +
+    `*Phone:* ${formData.phone}\n` +
+    `*Type:* ${typeLabel}\n` +
+    `*Detail:* ${detailLabel}\n` +
+    `*Message:* ${formData.message}`
+  );
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Prepare WhatsApp Message
-    const text =
-      `*New Inquiry from Website Contact Form*%0A%0A` +
-      `*Name:* ${formData.name}%0A` +
-      `*Email:* ${formData.email}%0A` +
-      `*Phone:* ${formData.phone}%0A` +
-      `*Type:* ${formData.type}%0A` +
-      `*Detail:* ${formData.specificInterest}%0A` +
-      `*Message:* ${formData.message}`;
-
-    // Simulate slight delay for UX
-    setTimeout(() => {
-      window.open(`https://wa.me/237679235879?text=${text}`, '_blank');
-      setIsSubmitting(false);
-    }, 1000);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          type: typeLabel,
+          detail: detailLabel,
+          message: formData.message,
+          consent: "yes",
+          locale: i18n.language?.startsWith("fr") ? "fr" : "en",
+          page: window.location.pathname,
+          website: honeypot.current?.value ?? "",
+          elapsed: Date.now() - openedAt.current,
+        }),
+        signal: AbortSignal.timeout(15000),
+      });
+      if (res.ok) {
+        setSent(true);
+        setIsSubmitting(false);
+        return;
+      }
+    } catch {
+      // Handled below.
+    }
+    // The inquiry could not be saved: WhatsApp, as before, so it still reaches the team.
+    if (!window.open(whatsappUrl, "_blank")) window.location.href = whatsappUrl;
+    setIsSubmitting(false);
   };
 
   const locations = [
@@ -98,10 +150,10 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-primary mb-1">{t('contact_page.info.phone')}</h3>
                     <p className="text-gray-700 font-medium">
-                      <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">679 235 879</a>
+                      <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">{contact.whatsappDisplay}</a>
                     </p>
                     <p className="text-gray-700 font-medium">
-                      <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">692 015 866</a>
+                      <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">{contact.whatsapp2Display}</a>
                     </p>
                     <p className="text-sm text-gray-500 mt-1">{t('contact_page.info.cta_whatsapp')}</p>
                   </div>
@@ -111,8 +163,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-accent mt-1" />
                   <div>
                     <h3 className="font-semibold text-primary mb-1">{t('contact_page.info.email')}</h3>
-                    <p className="text-gray-700">info@surfacelegend.com</p>
-                    <p className="text-gray-700">quotes@surfacelegend.com</p>
+                    <p className="text-gray-700">{contact.email}</p>
+                    <p className="text-gray-700">{contact.quotesEmail}</p>
                   </div>
                 </Card>
 
@@ -147,7 +199,17 @@ export default function Contact() {
               {t('contact_page.form.disclaimer')}
             </p>
 
+            {sent ? (
+              <div className="space-y-5" role="status">
+                <h3 className="text-xl font-semibold text-primary">{t('contact_page.form.success_title')}</h3>
+                <p className="text-gray-700">{t('contact_page.form.success_body')}</p>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block">
+                  <Button type="button" className="w-full btn-primary py-6 text-lg">{t('contact_page.form.success_whatsapp')}</Button>
+                </a>
+              </div>
+            ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              <input ref={honeypot} type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-gray-700">{t('contact_page.form.name_label')}</label>
@@ -270,6 +332,11 @@ export default function Contact() {
                 />
               </div>
 
+              <label className="flex items-start gap-3 text-sm text-gray-700">
+                <input type="checkbox" name="consent" required className="mt-1 h-4 w-4 accent-[var(--accent-dark)]" />
+                <span>{t('contact_page.form.consent')}</span>
+              </label>
+
               <Button type="submit" className="w-full btn-primary py-6 text-lg" disabled={isSubmitting}>
                 {isSubmitting ? t('contact_page.form.sending') : (
                   <span className="flex items-center gap-2">
@@ -279,6 +346,7 @@ export default function Contact() {
                 )}
               </Button>
             </form>
+            )}
           </div>
         </div>
       </section>

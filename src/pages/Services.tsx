@@ -1,3 +1,4 @@
+import { useContact } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Palette, Shield, Wrench } from "lucide-react";
@@ -17,6 +18,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Services() {
   const { t } = useTranslation();
+  const contact = useContact();
 
   // Scroll animation refs
   const overviewRef = useScrollAnimation();
@@ -371,7 +373,7 @@ export default function Services() {
                 {t('services_page.cta.view_details')}
               </Button>
             </a>
-            <a href="https://wa.me/237679235879" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
               <Button className="bg-white text-primary hover:bg-gray-100 px-8 py-3 font-semibold">
                 {t('services_page.cta.whatsapp')}
               </Button>
@@ -392,13 +394,13 @@ export default function Services() {
             <div className="text-center">
               <h3 className="font-semibold text-primary mb-2">{t('about.contact_info.phone')}</h3>
               <p className="text-gray-700">
-                <a href="https://wa.me/237679235879" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  679 235 879
+                <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsappDisplay}
                 </a>
               </p>
               <p className="text-gray-700">
-                <a href="https://wa.me/237692015866" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
-                  692 015 866
+                <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+                  {contact.whatsapp2Display}
                 </a>
               </p>
             </div>
@@ -429,16 +431,16 @@ export default function Services() {
               <h4 className="font-semibold mb-4">{t('footer.contact')}</h4>
               <ul className="space-y-2 text-sm text-white/70">
                 <li>
-                  <a href="https://wa.me/237679235879" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                    679 235 879
+                  <a href={`https://wa.me/${contact.whatsapp}`} className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                    {contact.whatsappDisplay}
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/237692015866" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                    692 015 866
+                  <a href={`https://wa.me/${contact.whatsapp2}`} className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                    {contact.whatsapp2Display}
                   </a>
                 </li>
-                <li>info@surfacelegend.com</li>
+                <li>{contact.email}</li>
                 <li><a href="/contact" className="hover:text-white transition-colors">{t('services_page.cta.quote')}</a></li>
                 <li><a href="/contact" className="hover:text-white transition-colors">{t('footer.contact')}</a></li>
               </ul>
