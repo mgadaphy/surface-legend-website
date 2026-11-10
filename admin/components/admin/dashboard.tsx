@@ -58,13 +58,16 @@ export async function Dashboard({ payload, user, i18n, permissions }: AdminViewS
   const can = (slug: string) => Boolean((permissions?.collections as any)?.[slug]?.read);
   const pick = (pair: [string, string] | undefined, fallback: string) => (pair ? pair[lang === "fr" ? 1 : 0] : fallback);
 
-  const [enquiriesNew, enquiriesLatest, projects, testimonials, emailConfig] = await Promise.all([
+  const [enquiriesNew, enquiriesLatest, projects, testimonials, emailConfig, articles] = await Promise.all([
     payload.count({ collection: "enquiries", where: { status: { equals: "new" } }, overrideAccess: true }),
     payload.find({ collection: "enquiries", sort: "-createdAt", limit: 5, depth: 0, overrideAccess: true }),
     payload.find({ collection: "projects", sort: "-updatedAt", limit: 300, depth: 0, locale: lang, overrideAccess: true }),
     payload.find({ collection: "testimonials", limit: 200, depth: 0, overrideAccess: true }),
     getEmailConfig(payload),
+    payload.find({ collection: "articles", limit: 500, depth: 0, overrideAccess: true }),
   ]);
+  const articleDocs = articles.docs as any[];
+  const publishedArticles = articleDocs.filter((a) => a.published).length;
 
   const projectDocs = projects.docs as any[];
   const shownProjects = projectDocs.filter((p) => p.show);
@@ -99,9 +102,10 @@ export async function Dashboard({ payload, user, i18n, permissions }: AdminViewS
     {
       title: t("Content", "Contenu"),
       items: [
+        { icon: "pen", slug: "articles", label: t("Blog", "Blog"), note: t(`${publishedArticles} published, ${articleDocs.length - publishedArticles} hidden`, `${publishedArticles} publiés, ${articleDocs.length - publishedArticles} masqués`), href: "/admin/collections/articles" },
         { icon: "image", slug: "projects", label: t("Portfolio", "Réalisations"), note: t(`${shownProjects.length} on the website`, `${shownProjects.length} sur le site`), href: "/admin/collections/projects" },
-        { icon: "quote", slug: "testimonials", label: t("Testimonials", "Témoignages"), note: t(`${shownTestimonials.length} on the home page`, `${shownTestimonials.length} en page d’accueil`), href: "/admin/collections/testimonials" },
-        { icon: "document", slug: "media", label: t("Images", "Images"), note: t("Uploaded photos", "Photos téléversées"), href: "/admin/collections/media" },
+        { icon: "quote", slug: "testimonials", label: t("Testimonials", "Témoignages"), note: shownTestimonials.length ? t(`${shownTestimonials.length} on the home page`, `${shownTestimonials.length} en page d’accueil`) : t("None yet: the home page section appears with the first one", "Aucun : la rubrique apparaît en page d’accueil avec le premier"), href: "/admin/collections/testimonials" },
+        { icon: "image", slug: "media", label: t("Images", "Images"), note: t("Uploaded photos", "Photos téléversées"), href: "/admin/collections/media" },
       ],
     },
     {
@@ -114,7 +118,7 @@ export async function Dashboard({ payload, user, i18n, permissions }: AdminViewS
     {
       title: t("Settings", "Paramètres"),
       items: [
-        { icon: "building", slug: "site-settings", global: true, label: t("Business details", "Informations de l’entreprise"), note: t("WhatsApp numbers and emails", "Numéros WhatsApp et e-mails"), href: "/admin/globals/site-settings" },
+        { icon: "building", slug: "site-settings", global: true, label: t("Business details", "Informations de l’entreprise"), note: t("WhatsApp numbers, emails and social profiles", "Numéros WhatsApp, e-mails et réseaux sociaux"), href: "/admin/globals/site-settings" },
         { icon: "send", slug: "email-settings", global: true, label: t("Email settings", "Paramètres e-mail"), note: emailOff ? t("Sending is off", "Envoi désactivé") : t("Sending is on", "Envoi activé"), href: "/admin/globals/email-settings" },
         { icon: "user", slug: "users", label: t("Users", "Utilisateurs"), note: t("Accounts and roles", "Comptes et rôles"), href: "/admin/collections/users" },
       ],

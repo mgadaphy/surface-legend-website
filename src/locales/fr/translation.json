@@ -10,7 +10,8 @@
         "portfolio": "Réalisations",
         "contact": "Contact",
         "academy": "Académie d'Art",
-        "products": "Peintures"
+        "products": "Peintures",
+        "blog": "Blog"
     },
     "home": {
         "hero_title": "Transformer les Espaces avec des Finitions Légendaires",
@@ -100,24 +101,7 @@
         },
         "testimonials": {
             "label": "Avis Clients",
-            "title": "Ce Que Disent Nos Clients",
-            "items": [
-                {
-                    "text": "Surface Legend a complètement transformé notre maison. Le souci du détail était exceptionnel.",
-                    "name": "Amara Nkomo",
-                    "role": "Propriétaire, Douala"
-                },
-                {
-                    "text": "Les travaux de peinture commerciale ont été terminés à temps et ont dépassé nos attentes.",
-                    "name": "Jean-Pierre Dubois",
-                    "role": "Chef d'Entreprise, Yaoundé"
-                },
-                {
-                    "text": "Leurs revêtements industriels se sont révélés durables et de haute qualité.",
-                    "name": "Dr. Kwame Asante",
-                    "role": "Facility Manager, Limbe"
-                }
-            ]
+            "title": "Ce Que Disent Nos Clients"
         },
         "cta": {
             "title": "Rendons Votre Espace Légendaire",
@@ -818,7 +802,8 @@
         "follow_us": "Suivez-nous",
         "get_quote": "Obtenir un Devis",
         "rights": "© 2025 Surface Legend. Tous droits réservés.",
-        "developer_credit": "Créé par"
+        "developer_credit": "Créé par",
+        "privacy": "Politique de confidentialité"
     },
     "products_page": {
         "meta": {
@@ -1231,5 +1216,45 @@
             "btn_estimate": "Obtenir un Devis Gratuit",
             "btn_whatsapp": "Discuter sur WhatsApp"
         }
+    },
+    "blog_page": {
+        "meta": {
+            "title": "Blog | Conseils peinture, étanchéité et revêtements | Surface Legend",
+            "description": "Conseils pratiques sur les peintures, l’étanchéité, les sols époxy, les murs humides et la protection contre la rouille au Cameroun."
+        },
+        "hero": {
+            "label": "Conseils et actualités",
+            "title": "Blog",
+            "subtitle": "Des conseils pratiques sur les peintures, l’étanchéité, les sols et les revêtements de protection pour les maisons et bâtiments au Cameroun."
+        },
+        "read": "Lire l’article",
+        "back": "Tous les articles",
+        "loading": "Chargement des articles...",
+        "empty": "Aucun article pour l’instant.",
+        "unavailable": "Le blog ne peut pas être chargé pour le moment. Réessayez dans un instant.",
+        "not_found": "Cet article n’existe pas ou n’est plus publié.",
+        "minutes_one": "{{count}} minute de lecture",
+        "minutes_other": "{{count}} minutes de lecture",
+        "categories": {
+            "painting-tips": "Conseils peinture",
+            "waterproofing": "Étanchéité",
+            "floors-and-coatings": "Sols et revêtements",
+            "maintenance": "Entretien",
+            "projects": "Réalisations",
+            "academy": "Académie"
+        },
+        "cta": {
+            "title": "Un projet en tête ?",
+            "text": "Parlez-nous-en : nous organisons une visite et un devis gratuit.",
+            "quote": "Demander un devis gratuit"
+        }
+    },
+    "privacy_page": {
+        "meta": {
+            "title": "Politique de confidentialité | Surface Legend",
+            "description": "Comment Surface Legend collecte, utilise et protège les données à caractère personnel envoyées par ce site."
+        },
+        "title": "Politique de confidentialité",
+        "updated": "Dernière mise à jour : {{date}}"
     }
 }

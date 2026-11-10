@@ -16,7 +16,7 @@
 	}
 
 	# The admin, its data and the contact form live in the admin container.
-	@admin path /admin /admin/* /cms-api /cms-api/* /api/* /_next/* /brand/*
+	@admin path /admin /admin/* /cms-api /cms-api/* /api/* /_next/* /brand/* /sitemap.xml
 	handle @admin {
 		reverse_proxy admin:3000
 	}

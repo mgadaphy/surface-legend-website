@@ -21,7 +21,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 export default function Home() {
   const { t } = useTranslation();
   const contact = useContact();
-  const testimonials = useTestimonials() ?? (t('home.testimonials.items', { returnObjects: true }) as any[]);
+  const testimonials = useTestimonials();
 
   // Scroll animation refs
   const whoWeAreRef = useScrollAnimation();
@@ -30,7 +30,6 @@ export default function Home() {
   const academyRef = useScrollAnimation();
   const whyChooseRef = useScrollAnimation();
   const portfolioRef = useScrollAnimation();
-  const testimonialsRef = useScrollAnimation();
   const ctaRef = useScrollAnimation();
   const contactRef = useScrollAnimation();
   return (
@@ -367,8 +366,9 @@ export default function Home() {
         </div>
       </section >
 
-      {/* SECTION 8: TESTIMONIALS */}
-      <section ref={testimonialsRef} className="container py-20 md:py-28 animate-on-scroll">
+      {/* SECTION 8: TESTIMONIALS, shown once real ones are added in the admin */}
+      {testimonials.length > 0 && (
+      <section className="container py-20 md:py-28">
         <div className="text-center mb-16">
           <div className="text-accent-label mb-4">{t('home.testimonials.label')}</div>
           <h2 className="mb-6 font-display">
@@ -385,7 +385,8 @@ export default function Home() {
             </Card>
           ))}
         </div>
-      </section >
+      </section>
+      )}
 
       {/* SECTION 9: CONTACT & CTA */}
       <section ref={ctaRef} id="contact" className="bg-primary text-white py-20 md:py-28 animate-on-scroll">

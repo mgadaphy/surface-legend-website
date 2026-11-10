@@ -1,10 +1,12 @@
 import type { Payload } from "payload";
 import { seedEmailTemplates } from "./email-templates";
 import { importSiteContent } from "./site-content";
+import { importArticles } from "./articles";
 
 const STEPS = {
   emailTemplates: (payload: Payload) => seedEmailTemplates(payload),
   siteContent: (payload: Payload) => importSiteContent(payload),
+  articles: (payload: Payload) => importArticles(payload),
 } as const;
 
 /**

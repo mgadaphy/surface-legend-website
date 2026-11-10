@@ -7,6 +7,7 @@ import sharp from "sharp";
 import { Users } from "./payload/collections/Users";
 import { Media } from "./payload/collections/Media";
 import { Projects } from "./payload/collections/Projects";
+import { Articles } from "./payload/collections/Articles";
 import { Testimonials } from "./payload/collections/Testimonials";
 import { EmailTemplates } from "./payload/collections/EmailTemplates";
 import { Enquiries } from "./payload/collections/Enquiries";
@@ -77,9 +78,9 @@ export default buildConfig({
     defaultLocale: "en",
     fallback: true,
   },
-  collections: [Projects, Testimonials, Media, Enquiries, EmailTemplates, Users],
+  collections: [Articles, Projects, Testimonials, Media, Enquiries, EmailTemplates, Users],
   globals: [SiteSettings, EmailSettings, SetupState],
-  // After migrations: one-time import of email templates, portfolio, testimonials and business details.
+  // After migrations: one-time import of email templates, blog articles, portfolio and business details.
   onInit: runSetup,
   // Payload's own emails (password resets) go through the service chosen in Email settings.
   // The sender is read from Email settings at send time; these defaults are only labels.

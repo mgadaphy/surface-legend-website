@@ -334,7 +334,7 @@ export default function Contact() {
 
               <label className="flex items-start gap-3 text-sm text-gray-700">
                 <input type="checkbox" name="consent" required className="mt-1 h-4 w-4 accent-[var(--accent-dark)]" />
-                <span>{t('contact_page.form.consent')}</span>
+                <span>{t('contact_page.form.consent')} <a href="/privacy" target="_blank" className="underline underline-offset-2 hover:text-primary">{t('footer.privacy')}</a></span>
               </label>
 
               <Button type="submit" className="w-full btn-primary py-6 text-lg" disabled={isSubmitting}>

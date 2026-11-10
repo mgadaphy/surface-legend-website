@@ -1,5 +1,5 @@
 import type { Payload } from "payload";
-import { PROJECTS_FR, TESTIMONIALS } from "./site-content-data";
+import { PROJECTS_FR } from "./site-content-data";
 
 /** The website's content as it was when the admin arrived, copied from src/locales and src/pages/Portfolio.tsx. */
 const PROJECTS = [
@@ -12,10 +12,11 @@ const PROJECTS = [
   { category: "epoxy", image: "/images/rmKjIQn4TZ3j.jpg", en: ["Warehouse Epoxy Flooring", "Seamless epoxy coating for industrial space"] },
 ] as const;
 
-/** Fills the admin with what the website already shows, so nothing changes for visitors. Skips anything already there. */
+/** Fills the admin with what the website already shows, so nothing changes for visitors. Skips anything already there.
+ * The site's three sample testimonials were placeholders, so they are not imported: real ones are added in the admin. */
 export async function importSiteContent(payload: Payload) {
   const opts = { overrideAccess: true } as const;
-  const report = { settings: false, projects: 0, testimonials: 0 };
+  const report = { settings: false, projects: 0 };
 
   const current = await payload.findGlobal({ slug: "site-settings", depth: 0, ...opts });
   if (!current?.updatedAt) {
@@ -41,12 +42,5 @@ export async function importSiteContent(payload: Payload) {
     }
   }
 
-  if ((await payload.count({ collection: "testimonials", ...opts })).totalDocs === 0) {
-    for (const [i, t] of TESTIMONIALS.entries()) {
-      const doc = await payload.create({ collection: "testimonials", locale: "en", data: { name: t.name, role: t.en.role, quote: t.en.text, show: true, order: (i + 1) * 10 }, ...opts });
-      await payload.update({ collection: "testimonials", id: doc.id, locale: "fr", data: { role: t.fr.role, quote: t.fr.text }, ...opts });
-      report.testimonials++;
-    }
-  }
   return report;
 }

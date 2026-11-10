@@ -30,6 +30,7 @@ export function Navigation({ currentPage = "home" }: NavigationProps) {
     { href: "/products", label: "nav.products" },
     { href: "/academy", label: "nav.academy" },
     { href: "/portfolio", label: "nav.portfolio" },
+    { href: "/blog", label: "nav.blog" },
     { href: "/contact", label: "nav.contact" }
   ];
 

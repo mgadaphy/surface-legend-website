@@ -1,4 +1,4 @@
-/** The French portfolio wording and the testimonials, copied unchanged from the website's translation files. */
+/** The French portfolio wording, copied unchanged from the website's translation file. */
 export const PROJECTS_FR: readonly (readonly [string, string])[] = [
   [
     "Transformation Intérieure Résidentielle",
@@ -30,38 +30,3 @@ export const PROJECTS_FR: readonly (readonly [string, string])[] = [
   ]
 ];
 
-export const TESTIMONIALS = [
-  {
-    "name": "Amara Nkomo",
-    "en": {
-      "role": "Homeowner, Douala",
-      "text": "Surface Legend transformed our home completely. The attention to detail and professionalism was exceptional."
-    },
-    "fr": {
-      "role": "Propriétaire, Douala",
-      "text": "Surface Legend a complètement transformé notre maison. Le souci du détail était exceptionnel."
-    }
-  },
-  {
-    "name": "Jean-Pierre Dubois",
-    "en": {
-      "role": "Business Owner, Yaoundé",
-      "text": "The commercial painting work was completed on schedule and exceeded our expectations. Highly recommended!"
-    },
-    "fr": {
-      "role": "Chef d'Entreprise, Yaoundé",
-      "text": "Les travaux de peinture commerciale ont été terminés à temps et ont dépassé nos attentes."
-    }
-  },
-  {
-    "name": "Dr. Kwame Asante",
-    "en": {
-      "role": "Facility Manager, Limbe",
-      "text": "Their industrial coatings have proven to be durable and high-quality. We trust them for all our facility needs."
-    },
-    "fr": {
-      "role": "Facility Manager, Limbe",
-      "text": "Leurs revêtements industriels se sont révélés durables et de haute qualité."
-    }
-  }
-];

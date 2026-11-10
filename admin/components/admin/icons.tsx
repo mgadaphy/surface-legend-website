@@ -66,9 +66,10 @@ export type AdminIconName = keyof typeof ICONS | keyof typeof ADMIN_ICONS;
 
 /** Which icon each admin menu entry shows (by Payload's nav link id). */
 export const NAV_ICONS: Record<string, AdminIconName> = {
-  "nav-projects": "image",
+  "nav-articles": "pen",
+  "nav-projects": "building",
   "nav-testimonials": "quote",
-  "nav-media": "document",
+  "nav-media": "image",
   "nav-enquiries": "inbox",
   "nav-email-templates": "template",
   "nav-users": "user",

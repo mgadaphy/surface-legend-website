@@ -67,6 +67,7 @@ export interface Config {
   };
   blocks: {};
   collections: {
+    articles: Article;
     projects: Project;
     testimonials: Testimonial;
     media: Media;
@@ -80,6 +81,7 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
+    articles: ArticlesSelect<false> | ArticlesSelect<true>;
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
     testimonials: TestimonialsSelect<false> | TestimonialsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
@@ -134,23 +136,37 @@ export interface UserAuthOperations {
   };
 }
 /**
- * The projects on the Portfolio page. Write the title and description in English and French (Editing language, top right).
+ * Articles on the Blog page. Write the English version, then switch Editing language (top right) to French.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "projects".
+ * via the `definition` "articles".
  */
-export interface Project {
+export interface Article {
   id: number;
   title: string;
-  description?: string | null;
-  image?: (number | null) | Media;
   /**
-   * Used until you choose a photo above.
+   * One or two sentences, shown on the Blog page and in Google results (about 150 characters).
    */
-  staticImage?: string | null;
-  category: 'residential' | 'commercial' | 'epoxy';
-  show?: boolean | null;
-  order?: number | null;
+  excerpt: string;
+  /**
+   * Blank line = new paragraph. Start a line with ## for a heading, ### for a subheading, - for a bullet, 1. for a numbered step. **bold** and [link text](/contact) also work.
+   */
+  body: string;
+  cover?: (number | null) | Media;
+  /**
+   * Used until you choose a cover photo above.
+   */
+  staticCover?: string | null;
+  /**
+   * Filled from the English title. Do not change it after publishing: links to the old address would break.
+   */
+  slug?: string | null;
+  category: 'painting-tips' | 'waterproofing' | 'floors-and-coatings' | 'maintenance' | 'projects' | 'academy';
+  /**
+   * Untick to hide it from the website.
+   */
+  published?: boolean | null;
+  publishedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -205,7 +221,28 @@ export interface Media {
   };
 }
 /**
- * Only publish words the client has approved. The home page shows them three to a row.
+ * The projects on the Portfolio page. Write the title and description in English and French (Editing language, top right).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects".
+ */
+export interface Project {
+  id: number;
+  title: string;
+  description?: string | null;
+  image?: (number | null) | Media;
+  /**
+   * Used until you choose a photo above.
+   */
+  staticImage?: string | null;
+  category: 'residential' | 'commercial' | 'epoxy';
+  show?: boolean | null;
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Only publish words the client has approved. The home page shows its testimonials section as soon as one is shown, three to a row.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "testimonials".
@@ -329,6 +366,10 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
+        relationTo: 'articles';
+        value: number | Article;
+      } | null)
+    | ({
         relationTo: 'projects';
         value: number | Project;
       } | null)
@@ -393,6 +434,23 @@ export interface PayloadMigration {
   batch?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles_select".
+ */
+export interface ArticlesSelect<T extends boolean = true> {
+  title?: T;
+  excerpt?: T;
+  body?: T;
+  cover?: T;
+  staticCover?: T;
+  slug?: T;
+  category?: T;
+  published?: T;
+  publishedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -589,7 +647,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   createdAt?: T;
 }
 /**
- * The phone numbers and email addresses shown on every page of the website, and used by its WhatsApp buttons.
+ * The phone numbers, email addresses and social profiles shown on every page of the website, and used by its WhatsApp buttons.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "site-settings".
@@ -606,6 +664,17 @@ export interface SiteSetting {
   whatsapp2: string;
   email: string;
   quotesEmail: string;
+  /**
+   * Full addresses starting with https://. The footer shows only the ones filled in.
+   */
+  social?: {
+    facebook?: string | null;
+    instagram?: string | null;
+    tiktok?: string | null;
+    youtube?: string | null;
+    linkedin?: string | null;
+    google?: string | null;
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -676,6 +745,7 @@ export interface EmailSetting {
 export interface SetupState {
   id: number;
   emailTemplates?: boolean | null;
+  articles?: boolean | null;
   siteContent?: boolean | null;
   updatedAt?: string | null;
   createdAt?: string | null;
@@ -689,6 +759,16 @@ export interface SiteSettingsSelect<T extends boolean = true> {
   whatsapp2?: T;
   email?: T;
   quotesEmail?: T;
+  social?:
+    | T
+    | {
+        facebook?: T;
+        instagram?: T;
+        tiktok?: T;
+        youtube?: T;
+        linkedin?: T;
+        google?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
@@ -739,6 +819,7 @@ export interface EmailSettingsSelect<T extends boolean = true> {
  */
 export interface SetupStateSelect<T extends boolean = true> {
   emailTemplates?: T;
+  articles?: T;
   siteContent?: T;
   updatedAt?: T;
   createdAt?: T;

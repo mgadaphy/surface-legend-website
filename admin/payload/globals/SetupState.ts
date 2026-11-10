@@ -11,6 +11,7 @@ export const SetupState: GlobalConfig = {
   access: { read: ({ req }) => isSuperAdmin(req), update: () => false },
   fields: [
     { name: "emailTemplates", type: "checkbox", defaultValue: false },
+    { name: "articles", type: "checkbox", defaultValue: false },
     { name: "siteContent", type: "checkbox", defaultValue: false },
   ],
 };

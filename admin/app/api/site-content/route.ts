@@ -9,7 +9,7 @@ const both = (v: any) => (v && typeof v === "object" ? { en: v.en ?? "", fr: v.f
 const pathOf = (url: unknown) => String(url ?? "").replace(/^https?:\/\/[^/]+/, "");
 
 /**
- * What the static website reads when a page opens: contact details, testimonials and portfolio.
+ * What the static website reads when a page opens: contact details, social profiles, testimonials and portfolio.
  * The website has the original content built in, and keeps using it if this fails.
  */
 export async function GET() {
@@ -23,6 +23,7 @@ export async function GET() {
     return Response.json(
       {
         contact: { whatsapp: s.whatsapp, whatsapp2: s.whatsapp2, email: s.email, quotesEmail: s.quotesEmail },
+        social: Object.fromEntries(Object.entries(s.social ?? {}).filter(([k, v]) => k !== "id" && typeof v === "string" && v)),
         testimonials: (testimonials.docs as any[]).map((t) => ({ id: t.id, name: t.name, role: both(t.role), quote: both(t.quote) })),
         projects: (projects.docs as any[]).map((p) => ({
           id: p.id,

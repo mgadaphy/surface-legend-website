@@ -3,6 +3,7 @@ import { MigrateUpArgs, MigrateDownArgs, sql } from '@payloadcms/db-postgres'
 export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.execute(sql`
    CREATE TYPE "public"."_locales" AS ENUM('en', 'fr');
+  CREATE TYPE "public"."enum_articles_category" AS ENUM('painting-tips', 'waterproofing', 'floors-and-coatings', 'maintenance', 'projects', 'academy');
   CREATE TYPE "public"."enum_projects_category" AS ENUM('residential', 'commercial', 'epoxy');
   CREATE TYPE "public"."enum_enquiries_status" AS ENUM('new', 'in-progress', 'replied', 'won', 'lost', 'spam');
   CREATE TYPE "public"."enum_enquiries_locale" AS ENUM('en', 'fr');
@@ -10,6 +11,27 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   CREATE TYPE "public"."enum_users_role" AS ENUM('superadmin', 'admin', 'editor');
   CREATE TYPE "public"."enum_email_settings_backups_kind" AS ENUM('smtp', 'resend');
   CREATE TYPE "public"."enum_email_settings_provider" AS ENUM('resend', 'smtp', 'off');
+  CREATE TABLE "articles" (
+  	"id" serial PRIMARY KEY NOT NULL,
+  	"cover_id" integer,
+  	"static_cover" varchar,
+  	"slug" varchar,
+  	"category" "enum_articles_category" DEFAULT 'painting-tips' NOT NULL,
+  	"published" boolean DEFAULT false,
+  	"published_at" timestamp(3) with time zone,
+  	"updated_at" timestamp(3) with time zone DEFAULT now() NOT NULL,
+  	"created_at" timestamp(3) with time zone DEFAULT now() NOT NULL
+  );
+  
+  CREATE TABLE "articles_locales" (
+  	"title" varchar NOT NULL,
+  	"excerpt" varchar NOT NULL,
+  	"body" varchar NOT NULL,
+  	"id" serial PRIMARY KEY NOT NULL,
+  	"_locale" "_locales" NOT NULL,
+  	"_parent_id" integer NOT NULL
+  );
+  
   CREATE TABLE "projects" (
   	"id" serial PRIMARY KEY NOT NULL,
   	"image_id" integer,
@@ -176,6 +198,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	"order" integer,
   	"parent_id" integer NOT NULL,
   	"path" varchar NOT NULL,
+  	"articles_id" integer,
   	"projects_id" integer,
   	"testimonials_id" integer,
   	"media_id" integer,
@@ -214,6 +237,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	"whatsapp2" varchar DEFAULT '237692015866' NOT NULL,
   	"email" varchar DEFAULT 'info@surfacelegend.com' NOT NULL,
   	"quotes_email" varchar DEFAULT 'quotes@surfacelegend.com' NOT NULL,
+  	"social_facebook" varchar,
+  	"social_instagram" varchar,
+  	"social_tiktok" varchar,
+  	"social_youtube" varchar,
+  	"social_linkedin" varchar,
+  	"social_google" varchar,
   	"updated_at" timestamp(3) with time zone,
   	"created_at" timestamp(3) with time zone
   );
@@ -260,11 +289,14 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   CREATE TABLE "setup_state" (
   	"id" serial PRIMARY KEY NOT NULL,
   	"email_templates" boolean DEFAULT false,
+  	"articles" boolean DEFAULT false,
   	"site_content" boolean DEFAULT false,
   	"updated_at" timestamp(3) with time zone,
   	"created_at" timestamp(3) with time zone
   );
   
+  ALTER TABLE "articles" ADD CONSTRAINT "articles_cover_id_media_id_fk" FOREIGN KEY ("cover_id") REFERENCES "public"."media"("id") ON DELETE set null ON UPDATE no action;
+  ALTER TABLE "articles_locales" ADD CONSTRAINT "articles_locales_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."articles"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "projects" ADD CONSTRAINT "projects_image_id_media_id_fk" FOREIGN KEY ("image_id") REFERENCES "public"."media"("id") ON DELETE set null ON UPDATE no action;
   ALTER TABLE "projects_locales" ADD CONSTRAINT "projects_locales_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."projects"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "testimonials_locales" ADD CONSTRAINT "testimonials_locales_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."testimonials"("id") ON DELETE cascade ON UPDATE no action;
@@ -275,6 +307,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   ALTER TABLE "email_templates_locales" ADD CONSTRAINT "email_templates_locales_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."email_templates"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "users_sessions" ADD CONSTRAINT "users_sessions_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."users"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "payload_locked_documents_rels" ADD CONSTRAINT "payload_locked_documents_rels_parent_fk" FOREIGN KEY ("parent_id") REFERENCES "public"."payload_locked_documents"("id") ON DELETE cascade ON UPDATE no action;
+  ALTER TABLE "payload_locked_documents_rels" ADD CONSTRAINT "payload_locked_documents_rels_articles_fk" FOREIGN KEY ("articles_id") REFERENCES "public"."articles"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "payload_locked_documents_rels" ADD CONSTRAINT "payload_locked_documents_rels_projects_fk" FOREIGN KEY ("projects_id") REFERENCES "public"."projects"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "payload_locked_documents_rels" ADD CONSTRAINT "payload_locked_documents_rels_testimonials_fk" FOREIGN KEY ("testimonials_id") REFERENCES "public"."testimonials"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "payload_locked_documents_rels" ADD CONSTRAINT "payload_locked_documents_rels_media_fk" FOREIGN KEY ("media_id") REFERENCES "public"."media"("id") ON DELETE cascade ON UPDATE no action;
@@ -285,6 +318,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   ALTER TABLE "payload_preferences_rels" ADD CONSTRAINT "payload_preferences_rels_users_fk" FOREIGN KEY ("users_id") REFERENCES "public"."users"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "email_settings_backups" ADD CONSTRAINT "email_settings_backups_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."email_settings"("id") ON DELETE cascade ON UPDATE no action;
   ALTER TABLE "email_settings_notify_to" ADD CONSTRAINT "email_settings_notify_to_parent_id_fk" FOREIGN KEY ("_parent_id") REFERENCES "public"."email_settings"("id") ON DELETE cascade ON UPDATE no action;
+  CREATE INDEX "articles_cover_idx" ON "articles" USING btree ("cover_id");
+  CREATE UNIQUE INDEX "articles_slug_idx" ON "articles" USING btree ("slug");
+  CREATE INDEX "articles_updated_at_idx" ON "articles" USING btree ("updated_at");
+  CREATE INDEX "articles_created_at_idx" ON "articles" USING btree ("created_at");
+  CREATE UNIQUE INDEX "articles_locales_locale_parent_id_unique" ON "articles_locales" USING btree ("_locale","_parent_id");
+  CREATE INDEX "articles_locales_parent_id_idx" ON "articles_locales" USING btree ("_parent_id");
   CREATE INDEX "projects_image_idx" ON "projects" USING btree ("image_id");
   CREATE INDEX "projects_updated_at_idx" ON "projects" USING btree ("updated_at");
   CREATE INDEX "projects_created_at_idx" ON "projects" USING btree ("created_at");
@@ -326,6 +365,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   CREATE INDEX "payload_locked_documents_rels_order_idx" ON "payload_locked_documents_rels" USING btree ("order");
   CREATE INDEX "payload_locked_documents_rels_parent_idx" ON "payload_locked_documents_rels" USING btree ("parent_id");
   CREATE INDEX "payload_locked_documents_rels_path_idx" ON "payload_locked_documents_rels" USING btree ("path");
+  CREATE INDEX "payload_locked_documents_rels_articles_id_idx" ON "payload_locked_documents_rels" USING btree ("articles_id");
   CREATE INDEX "payload_locked_documents_rels_projects_id_idx" ON "payload_locked_documents_rels" USING btree ("projects_id");
   CREATE INDEX "payload_locked_documents_rels_testimonials_id_idx" ON "payload_locked_documents_rels" USING btree ("testimonials_id");
   CREATE INDEX "payload_locked_documents_rels_media_id_idx" ON "payload_locked_documents_rels" USING btree ("media_id");
@@ -349,7 +389,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
   await db.execute(sql`
-   DROP TABLE "projects" CASCADE;
+   DROP TABLE "articles" CASCADE;
+  DROP TABLE "articles_locales" CASCADE;
+  DROP TABLE "projects" CASCADE;
   DROP TABLE "projects_locales" CASCADE;
   DROP TABLE "testimonials" CASCADE;
   DROP TABLE "testimonials_locales" CASCADE;
@@ -373,6 +415,7 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   DROP TABLE "email_settings" CASCADE;
   DROP TABLE "setup_state" CASCADE;
   DROP TYPE "public"."_locales";
+  DROP TYPE "public"."enum_articles_category";
   DROP TYPE "public"."enum_projects_category";
   DROP TYPE "public"."enum_enquiries_status";
   DROP TYPE "public"."enum_enquiries_locale";

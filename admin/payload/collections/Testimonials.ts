@@ -11,8 +11,8 @@ export const Testimonials: CollectionConfig = {
     defaultColumns: ["name", "role", "show", "order"],
     group: { en: "Content", fr: "Contenu" },
     description: {
-      en: "Only publish words the client has approved. The home page shows them three to a row.",
-      fr: "Ne publiez que des propos validés par le client. La page d’accueil les affiche par rangées de trois.",
+      en: "Only publish words the client has approved. The home page shows its testimonials section as soon as one is shown, three to a row.",
+      fr: "Ne publiez que des propos validés par le client. La page d’accueil affiche la rubrique dès qu’un témoignage est affiché, par rangées de trois.",
     },
   },
   defaultSort: "order",

@@ -10,7 +10,8 @@
         "portfolio": "Portfolio",
         "contact": "Contact",
         "academy": "Art Academy",
-        "products": "Paint Products"
+        "products": "Paint Products",
+        "blog": "Blog"
     },
     "home": {
         "hero_label": "Residential & Commercial Painting",
@@ -101,24 +102,7 @@
         },
         "testimonials": {
             "label": "Client Feedback",
-            "title": "What Clients Say About Us",
-            "items": [
-                {
-                    "text": "Surface Legend transformed our home completely. The attention to detail and professionalism was exceptional.",
-                    "name": "Amara Nkomo",
-                    "role": "Homeowner, Douala"
-                },
-                {
-                    "text": "The commercial painting work was completed on schedule and exceeded our expectations. Highly recommended!",
-                    "name": "Jean-Pierre Dubois",
-                    "role": "Business Owner, Yaoundé"
-                },
-                {
-                    "text": "Their industrial coatings have proven to be durable and high-quality. We trust them for all our facility needs.",
-                    "name": "Dr. Kwame Asante",
-                    "role": "Facility Manager, Limbe"
-                }
-            ]
+            "title": "What Clients Say About Us"
         },
         "cta": {
             "title": "Let's Make Your Space Legendary",
@@ -819,7 +803,8 @@
         "follow_us": "Follow Us",
         "get_quote": "Get a Quote",
         "rights": "© 2025 Surface Legend. All rights reserved.",
-        "developer_credit": "Built by"
+        "developer_credit": "Built by",
+        "privacy": "Privacy policy"
     },
     "products_page": {
         "meta": {
@@ -1232,5 +1217,45 @@
             "btn_estimate": "Get a Free Estimate",
             "btn_whatsapp": "Chat on WhatsApp"
         }
+    },
+    "blog_page": {
+        "meta": {
+            "title": "Blog | Painting, waterproofing and coating advice | Surface Legend",
+            "description": "Practical advice on paints, waterproofing, epoxy floors, damp walls and rust protection for homes and buildings in Cameroon."
+        },
+        "hero": {
+            "label": "Advice and news",
+            "title": "Blog",
+            "subtitle": "Practical advice on paints, waterproofing, floors and protective coatings for homes and buildings in Cameroon."
+        },
+        "read": "Read the article",
+        "back": "All articles",
+        "loading": "Loading articles...",
+        "empty": "No articles yet.",
+        "unavailable": "The blog cannot be loaded right now. Please try again in a moment.",
+        "not_found": "This article does not exist or is no longer published.",
+        "minutes_one": "{{count}} minute read",
+        "minutes_other": "{{count}} minute read",
+        "categories": {
+            "painting-tips": "Painting tips",
+            "waterproofing": "Waterproofing",
+            "floors-and-coatings": "Floors and coatings",
+            "maintenance": "Maintenance",
+            "projects": "Projects",
+            "academy": "Academy"
+        },
+        "cta": {
+            "title": "Have a project in mind?",
+            "text": "Tell us about it and we will arrange a visit and a free quote.",
+            "quote": "Request a free quote"
+        }
+    },
+    "privacy_page": {
+        "meta": {
+            "title": "Privacy policy | Surface Legend",
+            "description": "How Surface Legend collects, uses and protects personal data sent through this website."
+        },
+        "title": "Privacy policy",
+        "updated": "Last updated: {{date}}"
     }
 }

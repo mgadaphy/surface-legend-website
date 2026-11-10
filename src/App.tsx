@@ -10,6 +10,9 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import Privacy from "./pages/Privacy";
 import PaintProducts from "./pages/PaintProducts";
 import ArtAcademy from "./pages/ArtAcademy";
 import ResidentialPainting from "./pages/services/ResidentialPainting";
@@ -37,6 +40,9 @@ function Router() {
       <Route path={"/academy"} component={ArtAcademy} />
       <Route path={"/portfolio"} component={Portfolio} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/blog"} component={Blog} />
+      <Route path={"/blog/:slug"} component={BlogPost} />
+      <Route path={"/privacy"} component={Privacy} />
       <Route path={"/services/residential-painting"} component={ResidentialPainting} />
       <Route path={"/services/commercial-painting"} component={CommercialPainting} />
       <Route path={"/services/interior-painting"} component={InteriorPainting} />
