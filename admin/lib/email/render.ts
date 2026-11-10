@@ -86,7 +86,7 @@ export function renderEmail(tpl: TemplateContent, vars: Vars, lang: "en" | "fr" 
 <tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e2e8f0">
 <tr><td style="height:5px;background:linear-gradient(90deg,#1e3a5f,#14b8a6);background-color:${BRAND.teal}"></td></tr>
-<tr><td style="padding:26px 32px 10px"><a href="${home}" style="text-decoration:none"><img src="${BRAND.site}/brand/symbol-email.png" width="42" height="38" alt="" style="display:inline-block;vertical-align:middle;border:0;margin-right:10px"><span style="display:inline-block;vertical-align:middle;color:${BRAND.ink};font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700">Surface Legend</span></a></td></tr>
+<tr><td style="padding:26px 32px 10px"><a href="${home}" style="text-decoration:none"><img src="${BRAND.site}/brand/mark-email.png" width="36" height="36" alt="" style="display:inline-block;vertical-align:middle;border:0;margin-right:10px"><span style="display:inline-block;vertical-align:middle;color:${BRAND.ink};font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700">Surface Legend</span></a></td></tr>
 <tr><td style="padding:8px 32px 28px">
 ${heading ? `<h1 style="margin:0 0 18px;color:${BRAND.ink};font-size:24px;line-height:1.25">${esc(heading)}</h1>` : ""}
 ${bodyToHtml(filledBody)}

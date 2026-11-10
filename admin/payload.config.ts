@@ -33,7 +33,7 @@ export default buildConfig({
     importMap: { baseDir: root },
     meta: {
       titleSuffix: " · Surface Legend admin",
-      icons: [{ rel: "icon", type: "image/png", url: "/brand/symbol.png" }],
+      icons: [{ rel: "icon", type: "image/png", url: "/brand/favicon.png" }],
     },
     components: {
       graphics: {
